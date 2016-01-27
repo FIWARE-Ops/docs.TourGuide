@@ -1,0 +1,71 @@
+site_name: Developer tourguide
+site_description: Developer tour guide test
+docs_dir: doc/
+pages:
+  - Home: index.md
+  - 'Development of context-aware applications':
+      - 'Development of context-aware applications': 'development-context-aware-applications/development-context-aware-applications.md'
+      - 'Update – query context': 'development-context-aware-applications/how-to-update-and-query-context-information.md'
+      - 'Connection to context providers': 'development-context-aware-applications/how-to-connect-to-external-context-providers.md'
+      - 'Subscription to context changes': 'development-context-aware-applications/how-to-subscribe-to-changes-on-context-information.md'
+      - 'Geolocated context queries': 'development-context-aware-applications/how-to-perform-geo-located-queries.md'
+  - 'Connection to the Internet of Things':
+     - 'Connection to the Internet of Things': 'connection-to-the-internet-of-things/connection-to-the-internet-of-things.md'
+     - 'Reading data from IoT devices': 'connection-to-the-internet-of-things/how-to-read-measures-captured-from-iot-devices.md'
+     - 'Acting upon IoT devices': 'connection-to-the-internet-of-things/how-to-act-upon-iot-devices.md'
+  - 'Real-time processing of context events':
+     - 'Real-time processing of context events': 'real-time-processing-of-context-events/real-time-processing-of-context-events.md'
+     - 'How to define a CEP application': 'real-time-processing-of-context-events/how-to-define-a-cep-application.md'
+     - 'How to administrate the CEP': 'real-time-processing-of-context-events/how-to-administrate-the-cep.md'
+     - 'How to send input events to the CEP': 'real-time-processing-of-context-events/how-to-send-input-events-to-the-cep.md'
+  - 'Handling authorization and access control to APIs':
+     - 'Handling authorization and access control to APIs': 'handling-authorization-and-access-control-to-apis/handling-authorization-and-access-control-to-apis.md'
+     - 'Creating your identity in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-create-your-identity-in-fiware.md'
+     - 'Implementing OAuth2 in apps': 'handling-authorization-and-access-control-to-apis/how-to-implement-oauth2-in-your-applications.md'
+     - 'How to send requests to a FIWARE GE': 'handling-authorization-and-access-control-to-apis/how-to-send-requests-to-a-fiware-ge.md'
+     - 'How to secure your backend service': 'handling-authorization-and-access-control-to-apis/how-to-secure-your-backend-service.md'
+     - 'How to manage Access Control in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware.md'
+     - 'References': 'handling-authorization-and-access-control-to-apis/references.md'
+  - 'Publishing (Open) Data in FIWARE':
+     - 'Publishing (Open) Data in FIWARE': 'publishing-open-data-in-fiware/publishing-open-data-in-fiware.md'
+     - 'How to Publish (Open) Datasets in CKAN': 'publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2.md'
+     - 'How to Publish Context Information as (Open) Data in CKAN': 'publishing-open-data-in-fiware/how-to-publish-context-information-as-open-data-in-ckan.md'
+     - 'How to Offer Datasets (including Context Information) through the WStore':
+       - 'How to Offer Datasets (including Context Information) through the WStore': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/how-to-offer-datasets-including-context-information-through-the-wstore.md'
+       - 'Offering Datasets Directly Through the CKAN Interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface.md'
+       - 'Offering Datasets Through the WStore interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface.md'
+       - 'Acquiring Datasets Offered in the WStore': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore.md'
+  - 'Big Data analysis of historic context information': 'big-data-analysis-of-historic-context-information/big-data-analysis-of-historic-context-information.md'
+  - 'Creating application dashboards':
+     - 'Creating application dashboards': 'creating-application-dashboards/creating-application-dashboards.md'
+     - 'How to find widgets and other components for your dashboard': 'creating-application-dashboards/how-to-find-widgets-and-other-components-for-your-dashboard.md'
+     - 'How to create your application dashboard from these building blocks': 'creating-application-dashboards/how-to-create-your-application-dashboard-from-these-building-blocks.md'
+     - 'How to interconnect widgets and connect them to backend resources': 'creating-application-dashboards/how-to-interconnect-widgets-and-connect-them-to-backend-resources.md'
+     - 'How to share, sell or make available your new dashboard': 'creating-application-dashboards/how-to-share-sell-or-make-available-your-new-dashboard.md'
+     - 'How to develop new widgets and operators': 'creating-application-dashboards/how-to-develop-new-widgets-and-operators.md'
+     - 'How to make AJAX requests to external services': 'creating-application-dashboards/how-to-make-ajax-requests-to-external-services.md'
+     - 'How to receive events': 'creating-application-dashboards/how-to-receive-events.md'
+     - 'How to send events': 'creating-application-dashboards/how-to-send-events.md'
+     - 'How to use other FIWARE GEs from your widgets and operators': 'creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md'
+  - 'Real-time processing of media streams':
+     - 'Real-time processing of media streams': 'real-time-processing-of-media-streams/real-time-processing-of-media-streams.md'
+     - 'What is WebRTC and what is a media server': 'real-time-processing-of-media-streams/whats-webrtc-and-whats-a-media-server.md'
+     - 'What is the architecture of a Kurento enabled application': 'real-time-processing-of-media-streams/whats-the-architecture-of-a-kurento-enabled-application.md'
+     - 'How to develop a Kurento enabled application': 'real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application.md'
+  - 'Providing an advanced User Experience (UX)':
+     - 'Providing an advanced User Experience (UX)': 'providing-an-advanced-user-experience-ux/providing-an-advanced-user-experience-ux.md'
+     - '3D-UI: Interactive 3D graphics and Augmented Reality in any Web browser': 'providing-an-advanced-user-experience-ux/3d-ui-interactive-3d-graphics-and-augmented-reality-in-any-web-browser.md'
+     - 'XML3D: Interactive 3D graphics and Augmented Reality via DOM extensions':
+       - 'XML3D: Interactive 3D graphics and Augmented Reality via DOM extensions': 'providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions.md'
+       - 'How to set up a first XML3D scene': 'providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-set-up-a-first-xml3d-scene.md'
+       - 'How to use Xflow for AR applications with XML3D and the Augmented Reality GE': 'providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-use-xflow-for-ar-applications-with-xml3d-and-the-augmented-reality-ge.md'
+     - '3D graphics on the Web with Three.js': 'providing-an-advanced-user-experience-ux/3d-graphics-on-the-web-with-three-js.md'
+     - 'Multiuser 3D with WebTundra (Games, Virtual Worlds, Collaborative applications)': 'providing-an-advanced-user-experience-ux/multiuser-3d-with-webtundra-games-virtual-worlds-collaborative-applications.md'
+  - 'Hosting your application on a FIWARE Cloud':
+     - 'Hosting your application on a FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/hosting-your-application-on-a-fiware-cloud.md'
+     - 'How to provision and manage your virtual infrastructure on FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/how-to-provision-and-manage-your-virtual-infrastructure-on-fiware-cloud.md'
+     - 'How to use Object Storage capabilities of FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/how-to-use-object-storage-capabilities-of-fiware-cloud.md'
+     - 'How to use Blueprints to manage complex applications hosted on FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/how-to-use-blueprints-to-manage-complex-applications-hosted-on-fiware-cloud.md'
+     - 'How to invoke FIWARE Cloud capabilities via an API': 'hosting-your-application-on-a-fiware-cloud/how-to-invoke-fiware-cloud-capabilities-via-an-api.md'
+  - 'FIWARE Tour Guide Application. A tutorial on how to integrate the main FIWARE GEs': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges.md'
+
