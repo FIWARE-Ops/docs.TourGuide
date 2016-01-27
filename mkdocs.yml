@@ -1,6 +1,6 @@
 site_name: Developer tourguide
 site_description: Developer tour guide test
-docs_dir: doc/md/
+docs_dir: doc/
 pages:
   - Home: index.md
   - 'Development of context-aware applications':
