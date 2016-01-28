@@ -8,7 +8,7 @@ other analysis techniques, may generate rich information useful in
 different application areas including eHealth, smart cities, security
 and defence, entertainment, etc.  
 
-[![4](/uploads/2014/11/4.png)](/uploads/2014/11/4.png)
+[![4](images/4.png)](images/4.png)
 
 Incorporating into your application such features may be done using the
 Real-time Multimedia Stream processing GE (reference implementation
