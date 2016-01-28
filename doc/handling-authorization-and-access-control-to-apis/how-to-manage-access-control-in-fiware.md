@@ -1,7 +1,7 @@
 You can define custom roles for your applications via the IdM interface,
 then permissions for each role.
 
-[![6](/uploads/2014/11/6.png)](/uploads/2014/11/6.png)[![HowToImplementOAuth2InYourApplication9](/uploads/2015/04/HowToImplementOAuth2InYourApplication9-300x279.png)](/uploads/2015/04/HowToImplementOAuth2InYourApplication9.png)  
+[![6](images/6.png)](images/6.png)[![HowToImplementOAuth2InYourApplication9](images/HowToImplementOAuth2InYourApplication9-300x279.png)](images/HowToImplementOAuth2InYourApplication9.png)  
 When you define new role permissions, the IdM commits the resulting
 access control policy to the FIWARE Access Control GE. From now on, for
 every access request, the FIWARE Proxy protecting your application
@@ -11,4 +11,4 @@ replies with Permit or Deny Decision (XACML) to the IdM GE which in turn
 forwards the decision to the Proxy. The Proxy blocks the application
 request if and only if the decision is Deny.
 
-[![HowToImplementOAuth2InYourApplication11](/uploads/2015/04/HowToImplementOAuth2InYourApplication11.png)](/uploads/2015/04/HowToImplementOAuth2InYourApplication11.png)
+[![HowToImplementOAuth2InYourApplication11](images/HowToImplementOAuth2InYourApplication11.png)](images/HowToImplementOAuth2InYourApplication11.png)

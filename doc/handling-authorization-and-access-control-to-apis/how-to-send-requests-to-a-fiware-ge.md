@@ -6,7 +6,7 @@ your client requests in order to authenticate them. This way the GE will
 check your token with the IDM and decide if your requests are valid. The
 architecture of this flow is:
 
-[![HowToImplementOAuth2InYourApplication5](/uploads/2015/04/HowToImplementOAuth2InYourApplication51-1024x485.png)](/uploads/2015/04/HowToImplementOAuth2InYourApplication51.png)
+[![HowToImplementOAuth2InYourApplication5](images/HowToImplementOAuth2InYourApplication51-1024x485.png)](images/HowToImplementOAuth2InYourApplication51.png)
 
 So for include the access‐token in your requests you have to do:
 
@@ -17,7 +17,7 @@ GET /GE\_URL\_path HTTP/1.1
 For instance, using our OAuth2 example explained previously, you can get
 the access\_token in this code fragment:
 
-[![HowToImplementOAuth2InYourApplication6](/uploads/2015/04/HowToImplementOAuth2InYourApplication6.png)](/uploads/2015/04/HowToImplementOAuth2InYourApplication6.png)
+[![HowToImplementOAuth2InYourApplication6](images/HowToImplementOAuth2InYourApplication6.png)](images/HowToImplementOAuth2InYourApplication6.png)
 
  
 
