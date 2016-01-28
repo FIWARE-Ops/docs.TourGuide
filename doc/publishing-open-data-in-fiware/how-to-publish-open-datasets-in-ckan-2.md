@@ -3,7 +3,7 @@ To upload your own datasets (open data) to CKAN, you must access the
 logged in, you should go to the “Datasets” section and click on the “Add
 Dataset” button.
 
-[![HowToPublishDatasheetsInCkan1](/uploads/2015/04/HowToPublishDatasheetsInCkan1-1024x485.png)](/uploads/2015/04/HowToPublishDatasheetsInCkan1.png)
+[![HowToPublishDatasheetsInCkan1](images/HowToPublishDatasheetsInCkan1-1024x485.png)](images/HowToPublishDatasheetsInCkan1.png)
 
 In the first step, you will have to provide some basic information such
 as the name, the description or the tags of your dataset. In addition,
@@ -21,16 +21,16 @@ you will be asked for some additional information:
     -   This field is only enabled when “Visibility” is set to
         “Private”.​
 
-​​[![HowToPublishDatasheetsInCkan2](/uploads/2015/04/HowToPublishDatasheetsInCkan21.png)](/uploads/2015/04/HowToPublishDatasheetsInCkan21.png)
+​​[![HowToPublishDatasheetsInCkan2](images/HowToPublishDatasheetsInCkan21.png)](images/HowToPublishDatasheetsInCkan21.png)
 
 In the second step you will be asked to upload the data itself. You can
 provide a link or upload a file. Any type of file is allowed, but if you
 want to generate an automatic API to access your data, you must upload a
 CSV file.
 
-[![HowToPublishDatasheetsInCkan3](/uploads/2015/04/HowToPublishDatasheetsInCkan3.png)](/uploads/2015/04/HowToPublishDatasheetsInCkan3.png)
+[![HowToPublishDatasheetsInCkan3](images/HowToPublishDatasheetsInCkan3.png)](images/HowToPublishDatasheetsInCkan3.png)
 
 In the last step you are asked to provide some metadata. This metadata
 is not a must so you can avoid this section if you want.
 
-[![HowToPublishDatasheetsInCkan4](/uploads/2015/04/HowToPublishDatasheetsInCkan4.png)](/uploads/2015/04/HowToPublishDatasheetsInCkan4.png)
+[![HowToPublishDatasheetsInCkan4](images/HowToPublishDatasheetsInCkan4.png)](images/HowToPublishDatasheetsInCkan4.png)

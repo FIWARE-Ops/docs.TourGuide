@@ -11,7 +11,7 @@ implement on top of it. For this reason, many applications require using
 a media server.
 
 [![Real time processin media
-stream1](/uploads/2015/04/Real-time-processin-media-stream1.png)](/uploads/2015/04/Real-time-processin-media-stream1.png)
+stream1](images/Real-time-processin-media-stream1.png)](images/Real-time-processin-media-stream1.png)
 
 Conceptually, a WebRTC media server is just a kind of “multimedia
 middleware” (it is in the middle of the communicating peers) where media

@@ -2,7 +2,7 @@ You can also develop backend applications using FIWARE Account
 authentication. To do so you should use our FIWARE PEP Proxy that allows
 you to validate the requests before sending them to your server:
 
-[![HowToImplementOAuth2InYourApplication7](/uploads/2015/04/HowToImplementOAuth2InYourApplication7-1024x521.png)](/uploads/2015/04/HowToImplementOAuth2InYourApplication7.png)
+[![HowToImplementOAuth2InYourApplication7](images/HowToImplementOAuth2InYourApplication7-1024x521.png)](images/HowToImplementOAuth2InYourApplication7.png)
 
 You can download the proxy
 [here](https://github.com/ging/fi-ware-pep-proxy). The instructions to

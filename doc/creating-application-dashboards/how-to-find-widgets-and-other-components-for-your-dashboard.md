@@ -21,7 +21,7 @@ The following figure shows a screenshot of the Wirecloud catalogue,
 where you can see the FIWARE Lab marketplace and the different stores
 made available through it:
 
-[![8](/uploads/2014/11/8.png)](/uploads/2014/11/8.png)
+[![8](images/8.png)](images/8.png)
 
  
 

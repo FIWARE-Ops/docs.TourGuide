@@ -12,7 +12,7 @@ The following figure shows the structure of files for a widget, which is
 distributed as a zip package of such structure with .wgt extension.
 
 [![How to develop new widgets and
-operators](/uploads/2015/04/How-to-develop-new-widgets-and-operators.png)](/uploads/2015/04/How-to-develop-new-widgets-and-operators.png)
+operators](images/How-to-develop-new-widgets-and-operators.png)](images/How-to-develop-new-widgets-and-operators.png)
 
 There are three types of operators:
 

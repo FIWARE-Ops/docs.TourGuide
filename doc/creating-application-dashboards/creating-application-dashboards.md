@@ -31,9 +31,9 @@ Context Broker and the Object Storage GEris thanks to specialized APIs
 and libraries provided by Wirecloud.
 
 [![Creating application
-dashboards](/uploads/2015/04/Creating-application-dashboards-1024x640.png)](/uploads/2015/04/Creating-application-dashboards.png)
+dashboards](images/Creating-application-dashboards-1024x640.png)](images/Creating-application-dashboards.png)
 [![Creating application
-dashboards1](/uploads/2015/04/Creating-application-dashboards1-1024x639.png)](/uploads/2015/04/Creating-application-dashboards1.png)
+dashboards1](images/Creating-application-dashboards1-1024x639.png)](images/Creating-application-dashboards1.png)
 
 Wirecloud also offers support for mobile devices, especially for
 tablets, so that some of the widgets in an application mashup can be
@@ -45,7 +45,7 @@ component with better performance and with access to the GPS features of
 the tablet.
 
 [![Creating application
-dashboards2](/uploads/2015/04/Creating-application-dashboards2.png)](/uploads/2015/04/Creating-application-dashboards2.png)
+dashboards2](images/Creating-application-dashboards2.png)](images/Creating-application-dashboards2.png)
 
 If you are interested in more details about how to use WireCloud to (a)
 create your application dashboard from pre-existing widgets and
