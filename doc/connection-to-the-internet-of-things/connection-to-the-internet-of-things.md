@@ -20,7 +20,7 @@ architecture](http://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/In
 The simplest and more tested one is called “Common Simple Scenario” and
 it is depicted in the following picture: 
 
-[![3](/uploads/2014/11/3.png)](/uploads/2014/11/3.png)
+[![3](images/3.png)](images/3.png)
 
 **FIWARE IoT Device Management GE architecture**
 
