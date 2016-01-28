@@ -1,6 +1,7 @@
 site_name: Developer tourguide
 site_description: Developer tour guide test
 docs_dir: doc/
+extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
 pages:
   - Home: index.md
   - 'Development of context-aware applications':
