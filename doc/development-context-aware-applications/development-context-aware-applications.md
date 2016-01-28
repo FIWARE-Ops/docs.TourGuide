@@ -10,7 +10,7 @@ Orion)](http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-ori
 is able to handle context information at large scale by implementing
 standard REST APIs. 
 
-[![1](/uploads/2014/11/1.png)](/uploads/2014/11/1.png)  
+[![1](images/1.png)](images/1.png)  
 Context information may come from many different sources:
 
 -   Already existing systems
@@ -37,7 +37,7 @@ if the source of the temperature for a given place changes over time
 temperature sensors deployed on the streets rather than through buses
 equipped with sensors).
 
-[![2](/uploads/2014/11/2.png)](/uploads/2014/11/2.png)
+[![2](images/2.png)](images/2.png)
 
 If you are interested in more details about how to make your application
 a context-aware application check out:
