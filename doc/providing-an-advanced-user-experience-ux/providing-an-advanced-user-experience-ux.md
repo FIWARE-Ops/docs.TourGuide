@@ -21,7 +21,7 @@ The following diagram illustrates Advanced Web UI architecture and its
 GEs.
 
 [![Advanced user
-experience](/uploads/2015/04/Advanced-user-experience-1024x549.png)](/uploads/2015/04/Advanced-user-experience.png)
+experience](images/Advanced-user-experience-1024x549.png)](images/Advanced-user-experience.png)
 
 The diagram shows how all the GEs from the WebUI chapter fit and can be
 used together.
