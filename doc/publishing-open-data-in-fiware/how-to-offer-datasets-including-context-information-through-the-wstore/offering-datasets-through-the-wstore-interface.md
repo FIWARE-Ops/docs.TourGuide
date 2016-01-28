@@ -8,7 +8,7 @@ button and then in the “Register Resource”. You must note that an
 offering is composed by zero or more resources.
 
 [![Offering Datasets Through the WStore
-Interface](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface-1024x326.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface.png)
+Interface](../images/Offering-Datasets-Through-the-WStore-Interface-1024x326.png)](../images/Offering-Datasets-Through-the-WStore-Interface.png)
 
 In the new form you will have to complete some fields:
 
@@ -27,7 +27,7 @@ In the new form you will have to complete some fields:
     open resources. (Typically you should disable this checkbox).
 
 ​[![Offering Datasets Through the WStore
-Interface1](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface1.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface1.png)
+Interface1](../images/Offering-Datasets-Through-the-WStore-Interface1.png)](../images/Offering-Datasets-Through-the-WStore-Interface1.png)
 
 When you have registered your dataset as a resource, you will be able to
 provide it in the Store. To do so, you should create an offering. You
@@ -35,7 +35,7 @@ can do it by clicking the “Provider options” button and then the one
 titled “Create Offering”.
 
 [![Offering Datasets Through the WStore
-Interface2](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface2-1024x326.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface2.png)
+Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2-1024x326.png)](../images/Offering-Datasets-Through-the-WStore-Interface2.png)
 
 A new dialog will be displayed. This dialog will guide throughout the
 process of creating a new offering. In the first step, you will be asked
@@ -51,7 +51,7 @@ if you don’t fill this field properly, users won’t be able to access
 acquired dataset.
 
 [![Offering Datasets Through the WStore
-Interface3](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface3.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface3.png)
+Interface3](../images/Offering-Datasets-Through-the-WStore-Interface3.png)](../images/Offering-Datasets-Through-the-WStore-Interface3.png)
 
 In the following step you will be asked for the description, the pricing
 model and the legal terms. Using this form, you are only able to choose
@@ -62,7 +62,7 @@ accept these conditions before acquiring the offering. If you don’t want
 users to accept legal terms, you can leave these fields in blank.
 
 [![Offering Datasets Through the WStore
-Interface4](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface4.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface4.png)
+Interface4](../images/Offering-Datasets-Through-the-WStore-Interface4.png)](../images/Offering-Datasets-Through-the-WStore-Interface4.png)
 
 The next step asks you to select some applications. In this case you can
 avoid this section. The most important section is the next one, where
@@ -73,7 +73,7 @@ that can add extra value to your dataset. For example, you can add
 WireCloud widgets to plot graphs based on the data.
 
 [![Offering Datasets Through the WStore
-Interface5](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface5.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface5.png)
+Interface5](../images/Offering-Datasets-Through-the-WStore-Interface5.png)](../images/Offering-Datasets-Through-the-WStore-Interface5.png)
 
 At this point, the offering is already created but is not published yet.
 To publish the offering, we should click on the “Provided” button placed
@@ -82,16 +82,16 @@ created previously. Then click on it and add some tags. To do that,
 click on the “+” button placed below the “Tags” heading. 
 
 [![Offering Datasets Through the WStore
-Interface6](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface6.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface6.png)
+Interface6](../images/Offering-Datasets-Through-the-WStore-Interface6.png)](../images/Offering-Datasets-Through-the-WStore-Interface6.png)
 
 You can add all the tags that you want, but if you want your dataset to
 appear in the “Datasets” section of the Store, you must add the
 “dataset” tag.
 
 [![Offering Datasets Through the WStore
-Interface7](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface7.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface7.png)
+Interface7](../images/Offering-Datasets-Through-the-WStore-Interface7.png)](../images/Offering-Datasets-Through-the-WStore-Interface7.png)
 
 Finally, you must click in the “Publish” button to complete the process.
 
 [![Offering Datasets Through the WStore
-Interface8](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface8.png)](/uploads/2015/04/Offering-Datasets-Through-the-WStore-Interface8.png)
+Interface8](../images/Offering-Datasets-Through-the-WStore-Interface8.png)](../images/Offering-Datasets-Through-the-WStore-Interface8.png)

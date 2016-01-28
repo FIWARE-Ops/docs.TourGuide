@@ -94,7 +94,7 @@ under his duty and restaurant customers can make and browse reviews, or
 even ask for reservations.
 
 [![IMAGEN APP TOUR
-GUIDE\_1](/uploads/2016/01/IMAGEN-APP-TOUR-GUIDE_1-1024x511.jpg)](/uploads/2016/01/IMAGEN-APP-TOUR-GUIDE_1.jpg)
+GUIDE\_1](images/IMAGEN-APP-TOUR-GUIDE_1-1024x511.jpg)](images/IMAGEN-APP-TOUR-GUIDE_1.jpg)
 
 *Figure 1: Overall Tour Guide Application Architecture*
 
@@ -117,7 +117,7 @@ has all the advantages of using isolated environments and exposing each
 generic enabler from a desired port:
 
 [![IMAGEN APP TOUR
-GUIDE\_2](/uploads/2016/01/IMAGEN-APP-TOUR-GUIDE_2-1024x643.jpg)](/uploads/2016/01/IMAGEN-APP-TOUR-GUIDE_2.jpg)
+GUIDE\_2](images/IMAGEN-APP-TOUR-GUIDE_2-1024x643.jpg)](images/IMAGEN-APP-TOUR-GUIDE_2.jpg)
 
 **EXPERIMENTING**
 
