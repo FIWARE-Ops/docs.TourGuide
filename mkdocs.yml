@@ -2,7 +2,7 @@ site_name: QUICK FIWARE TOUR GUIDE
 site_description: QUICK FIWARE TOUR GUIDE
 docs_dir: doc/
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
-repo_url: https://github.com/Fiware/docs.TourGuide
+repo_url: https://github.com/Fiware/docs.TourGuide.git
 pages:
   - Home: index.md
   - 'Development of context-aware applications':
