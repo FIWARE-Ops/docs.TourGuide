@@ -278,8 +278,7 @@ Finally, you can check the policies that Keyrock generates in
 Authzforce. For that, we first retrieve the domain where the policies
 are stored:
 
-    docker exec -i -t compose_authzforce_1 curl -s --request GET
-    http://localhost:8080/authzforce/domains | awk '/href/{print $NF}' | cut -d '"' -f2
+    docker exec -i -t compose_authzforce_1 curl -s --request GET http://localhost:8080/authzforce/domains | awk '/href/{print $NF}' | cut -d '"' -f2
 
 And with the returned value, we retrieve the policy Set:
 
