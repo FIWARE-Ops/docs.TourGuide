@@ -131,6 +131,11 @@ running, then execute the following command:
 
 And everything will be up and running. 
 
+Then, you need to add the container IP address to your hosts file to
+make it reachable. In order to simplify this process, the
+[get-docker-hosts](https://github.com/Bitergia/docker/tree/master/utils#get-docker-hosts)
+script will do this job (sudo required), and it works both for Mac OS X and Linux platforms.
+
 Once done, the user interface will be available at the host configured
 in the docker-compose, which is ‘[tourguide](http://tourguide)’ by
 default. So you just need to open it in your favourite browser:
