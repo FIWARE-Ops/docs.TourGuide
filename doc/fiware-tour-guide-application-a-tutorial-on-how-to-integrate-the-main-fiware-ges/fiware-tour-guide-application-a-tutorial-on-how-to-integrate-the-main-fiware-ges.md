@@ -58,7 +58,7 @@ application, which integrates a number of GEs:
     information modelled as NGSI entities (Restaurant, Reservation,
     Review, …). 
 -   [Cygnus](https://github.com/telefonicaid/fiware-cygnus), part of the
-    [Cosmos](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos)ecosystem,
+    [Cosmos](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos) ecosystem,
     is responsible for persisting historical context data in a target
     backend (MySQL or Hadoop) or as open data (CKAN). Cygnus is
     connected to Orion Context Broker through the
@@ -73,7 +73,7 @@ application, which integrates a number of GEs:
 -   [PEP Proxy - Wilma](https://github.com/ging/fi-ware-pep-proxy), is a
     proxy that will respond to every application request. Working
     together with
-    [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce)and
+    [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce) and
     [KeyRock](https://github.com/ging/fi-ware-idm), it protects
     application resources based on the
     [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce)
@@ -111,7 +111,7 @@ the Generic Enablers.
 
 The docker-compose file created for the Developer’s Guide APP is
 available
-[here](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/compose/docker-compose.yml)and
+[here](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/compose/docker-compose.yml) and
 defines the scenario described by the image below. This configuration
 has all the advantages of using isolated environments and exposing each
 generic enabler from a desired port:
@@ -123,7 +123,7 @@ GUIDE\_2](images/IMAGEN-APP-TOUR-GUIDE_2-1024x643.jpg)](images/IMAGEN-APP-TOUR-G
 
 Download the
 [repository](https://github.com/Fiware/tutorials.TourGuide-App), make sure
-you have [Docker](https://www.docker.com/)and
+you have [Docker](https://www.docker.com/) and
 [Docker-compose](https://docs.docker.com/compose/) installed and
 running, then execute the following command:
 
@@ -152,7 +152,7 @@ the policies or store/publish data in Hadoop or CKAN.
 
 For consuming the existing data in the Context Broker, there is a set of
 queries that you can test by your own. Within that
-[queries](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/utils/orion/devguide-orion-requests.json)you
+[queries](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/utils/orion/devguide-orion-requests.json) you
 will be able to (among others):
 
 - Get a restaurant
@@ -231,7 +231,7 @@ There is an initial users, organizations, roles and permissions added by
 default using the [python-keystone
 client](http://docs.openstack.org/developer/python-keystoneclient/using-api-v3.html)
 for Keyrock. The file is available in the
-[repository](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/images/tutorials.tourguide-app/keystone_provision.py)and
+[repository](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/images/tutorials.tourguide-app/keystone_provision.py) and
 you can modify it according to your needs.
 
 **SENSORS DATA**
