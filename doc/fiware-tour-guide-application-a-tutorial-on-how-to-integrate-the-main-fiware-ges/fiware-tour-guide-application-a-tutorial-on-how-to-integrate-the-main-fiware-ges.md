@@ -58,7 +58,7 @@ application, which integrates a number of GEs:
     information modelled as NGSI entities (Restaurant, Reservation,
     Review, …). 
 -   [Cygnus](https://github.com/telefonicaid/fiware-cygnus), part of the
-    [Cosmos](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos)ecosystem,
+    [Cosmos](http://catalogue.fiware.org/enablers/bigdata-analysis-cosmos) ecosystem,
     is responsible for persisting historical context data in a target
     backend (MySQL or Hadoop) or as open data (CKAN). Cygnus is
     connected to Orion Context Broker through the
@@ -73,7 +73,7 @@ application, which integrates a number of GEs:
 -   [PEP Proxy - Wilma](https://github.com/ging/fi-ware-pep-proxy), is a
     proxy that will respond to every application request. Working
     together with
-    [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce)and
+    [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce) and
     [KeyRock](https://github.com/ging/fi-ware-idm), it protects
     application resources based on the
     [AuthZForce](http://catalogue.fiware.org/enablers/authorization-pdp-authzforce)
@@ -111,7 +111,7 @@ the Generic Enablers.
 
 The docker-compose file created for the Developer’s Guide APP is
 available
-[here](https://github.com/Bitergia/fiware-devguide-app/blob/master/docker/compose/docker-compose.yml)and
+[here](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/compose/docker-compose.yml) and
 defines the scenario described by the image below. This configuration
 has all the advantages of using isolated environments and exposing each
 generic enabler from a desired port:
@@ -122,25 +122,25 @@ GUIDE\_2](images/IMAGEN-APP-TOUR-GUIDE_2-1024x643.jpg)](images/IMAGEN-APP-TOUR-G
 **EXPERIMENTING**
 
 Download the
-[repository](https://github.com/Bitergia/fiware-devguide-app), make sure
-you have [Docker](https://www.docker.com/)and
+[repository](https://github.com/Fiware/tutorials.TourGuide-App), make sure
+you have [Docker](https://www.docker.com/) and
 [Docker-compose](https://docs.docker.com/compose/) installed and
 running, then execute the following command:
 
     docker-compose -f docker/compose/docker-compose.yml up
 
+And everything will be up and running. 
+
 Then, you need to add the container IP address to your hosts file to
 make it reachable. In order to simplify this process, the
 [get-docker-hosts](https://github.com/Bitergia/docker/tree/master/utils#get-docker-hosts)
-script will do this job (sudo required).
-
-And everything will be up and running. 
+script will do this job (sudo required), and it works both for Mac OS X and Linux platforms.
 
 Once done, the user interface will be available at the host configured
-in the docker-compose, which is ‘[devguide](http://devguide)’ by
+in the docker-compose, which is ‘[tourguide](http://tourguide)’ by
 default. So you just need to open it in your favourite browser:
 
-http://devguide
+http://tourguide
 
 However, if you only want to play with an individual GE, for example,
 Orion Context Broker, simply type:
@@ -157,24 +157,24 @@ the policies or store/publish data in Hadoop or CKAN.
 
 For consuming the existing data in the Context Broker, there is a set of
 queries that you can test by your own. Within that
-[queries](https://github.com/Bitergia/fiware-devguide-app/blob/master/utils/orion/devguide-orion-requests.json)you
+[queries](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/utils/orion/devguide-orion-requests.json) you
 will be able to (among others):
 
 - Get a restaurant
 
     Query using NGSIv1:
 
-    curl -s -X GET -H "Accept: application/json" -H "Fiware-Service: devguide" -H "Content-Type: application/json" 'http://orion:1026/v1/contextEntities/Elizalde' | python -m json.tool
+    curl -s -X GET -H "Accept: application/json" -H "Fiware-Service: tourguide" -H "Content-Type: application/json" 'http://orion:1026/v1/contextEntities/Elizalde' | python -m json.tool
 
     Query using NGSIv2:
 
-    curl -s -X GET -H "Accept: application/json" -H "fiware-service: devguide" -H "Content-Type: application/json" 'http://compose_orion_1:1026/v2/entities/Elizalde' | python -m json.tool
+    curl -s -X GET -H "Accept: application/json" -H "fiware-service: tourguide" -H "Content-Type: application/json" 'http://compose_orion_1:1026/v2/entities/Elizalde' | python -m json.tool
 
 - Filter by attribute and geo-location
 
     Query:
 
-    curl -s -X POST -H "Accept: application/json" -H "fiware-service: devguide" -H "Content-Type: application/json" -d '{
+    curl -s -X POST -H "Accept: application/json" -H "fiware-service: tourguide" -H "Content-Type: application/json" -d '{
         "entities": [
             {
                 "type": "Restaurant",
@@ -206,7 +206,7 @@ will be able to (among others):
 
     Query:
 
-    curl -X POST -H "Accept: application/json" -H "fiware-service: devguide" -H "Content-Type: application/json" -d '{
+    curl -X POST -H "Accept: application/json" -H "fiware-service: tourguide" -H "Content-Type: application/json" -d '{
         "entities": [
             {
                 "type": "Restaurant",
@@ -236,7 +236,7 @@ There is an initial users, organizations, roles and permissions added by
 default using the [python-keystone
 client](http://docs.openstack.org/developer/python-keystoneclient/using-api-v3.html)
 for Keyrock. The file is available in the
-[repository](https://github.com/Bitergia/fiware-devguide-app/blob/master/docker/images/fiware-devguide-app/keystone_provision.py)and
+[repository](https://github.com/Fiware/tutorials.TourGuide-App/blob/master/docker/images/tutorials.tourguide-app/keystone_provision.py) and
 you can modify it according to your needs.
 
 **SENSORS DATA**
@@ -251,8 +251,8 @@ modify the docker-compose.yml file setting the variables:
 And for the occupancy levels you can refer to a restaurant and/or time
 frame. Check the options by doing:
 
-    docker exec -i -t compose_devguide_1 node
-    fiware-devguide-app/server/feeders/occupancyupdater.js --help
+    docker exec -i -t compose_tourguide_1 node
+    tutorials.tourguide-app/server/feeders/occupancyupdater.js --help
 
 It will update the occupancy levels from a restaurant at the time of
 execution.
@@ -269,13 +269,13 @@ For Cosmos:
     cygnusagent.sinks.hdfs-sink.hdfs_password =
 
 After the data is stored, you can perform data analysis using the [tools
-provided](https://github.com/Bitergia/fiware-devguide-app/tree/master/utils/bigdata).
+provided](https://github.com/Fiware/tutorials.TourGuide-App/tree/master/utils/bigdata).
 
 For CKAN [(demo.ckan.org)](http://demo.ckan.org):
 
     cygnusagent.sinks.ckan-sink-XXXX.api_key=
 
-And sensors data will be published under ‘devguideidas’ organization.
+And sensors data will be published under ‘tourguideidas’ organization.
 
 **XACML SECURITY POLICIES**
 
@@ -283,8 +283,7 @@ Finally, you can check the policies that Keyrock generates in
 Authzforce. For that, we first retrieve the domain where the policies
 are stored:
 
-    docker exec -i -t compose_authzforce_1 curl -s --request GET
-    http://localhost:8080/authzforce/domains | awk '/href/{print $NF}' | cut -d '"' -f2
+    docker exec -i -t compose_authzforce_1 curl -s --request GET http://localhost:8080/authzforce/domains | awk '/href/{print $NF}' | cut -d '"' -f2
 
 And with the returned value, we retrieve the policy Set:
 
@@ -305,4 +304,4 @@ functional environment for experimenting with the main FIWARE GEs.
 and to deploy the application using the Docker infrastructure provided
 by the [FIWARE Lab](http://lab.fiware.org). Last but not least In the
 near future we will be integrating more GEs. Stay tuned by following our
-Github [repository](https://github.com/Bitergia/fiware-devguide-app)!
+Github [repository](https://github.com/Fiware/tutorials.TourGuide-App)!
