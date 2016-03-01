@@ -16,7 +16,7 @@ check out:
 -   [How to Publish (Open) Datasets in
     CKAN](/publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2/)
 -   [How to Offer Datasets (including Context Information) through the
-    WStore](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/how-to-offer-datasets-including-context-information-through-the-wstore/)
+    WStore](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/introduction/)
     -   [Offering Datasets Directly Through the CKAN
         Interface](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface/)
     -   [Offering Datasets Through the WStore
