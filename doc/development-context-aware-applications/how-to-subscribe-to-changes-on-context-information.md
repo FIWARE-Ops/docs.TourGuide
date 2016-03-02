@@ -41,7 +41,7 @@ owners in other to know how their restaurants score is evolving.
         "entities": [
             {
                 "type": "Restaurant",
-                "isPattern": "true",
+                "isPattern": "false",
                 "id": "LeBistro"
             }
         ],
