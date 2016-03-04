@@ -41,8 +41,8 @@ owners in other to know how their restaurants score is evolving.
         "entities": [
             {
                 "type": "Restaurant",
-                "isPattern": "true",
-                "id": ".*"
+                "isPattern": "false",
+                "id": "LeBistro"
             }
         ],
         "attributes": [ "average_scoring"  ],
