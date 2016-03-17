@@ -42,9 +42,7 @@ equipped with sensors).
 If you are interested in more details about how to make your application
 a context-aware application check out:
 
--   How to update and query context information
--   How to connect to external context providers
--   How to subscribe to changes on context information
--   How to perform geo-location queries
-
- 
+-   [How to update and query context information](how-to-update-and-query-context-information.md)
+-   [How to connect to external context providers](how-to-connect-to-external-context-providers.md)
+-   [How to subscribe to changes on context information](how-to-subscribe-to-changes-on-context-information.md)
+-   [How to perform geo-location queries](how-to-perform-geo-located-queries.md)
