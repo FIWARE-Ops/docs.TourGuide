@@ -48,7 +48,7 @@ WebUI:
 -   [3D-UI: Interactive 3D graphics and Augmented Reality in any Web
     browser](/providing-an-advanced-user-experience-ux/3d-ui-interactive-3d-graphics-and-augmented-reality-in-any-web-browser/)
 -   [XML3D: Interactive 3D graphics and Augmented Reality via DOM
-    extensions](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/)
+    extensions](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/introduction/)
     -   [​](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/)[How
         to set up a first XML3D
         scene](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-set-up-a-first-xml3d-scene/)
