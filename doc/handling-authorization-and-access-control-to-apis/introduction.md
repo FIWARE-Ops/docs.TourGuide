@@ -86,7 +86,11 @@ control in FIWARE check out:
     GE](/handling-authorization-and-access-control-to-apis/how-to-send-requests-to-a-fiware-ge/)
 -   [How to secure your backend
     service](/handling-authorization-and-access-control-to-apis/how-to-secure-your-backend-service/)
--   [How to manage Access Control in FIWARE
-    (Cyril)](/handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware/)
+-   [How to manage Access Control in FIWARE](/handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware/)
 
  
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [IdM GEri](https://github.com/Fiware/security.Idm)
+- [AuthZForce GEri](https://github.com/Fiware/security.AuthZForce)
+- [Pep-proxy GEri](https://github.com/Fiware/security.Pep-proxy)

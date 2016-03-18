@@ -144,3 +144,8 @@ must use the WebHDFS/HttpFS RESTful API:
 
     [remote-vm]$ curl -i -L "http://cosmos.lab.fi-ware.org:14000/webhdfs/v1/user/$COSMOS_USER/structured/structured_data.txt?op=OPEN&user.name=$COSMOS_USER"
 
+
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [Cygnus](https://github.com/Fiware/context.Cygnus)
+- [Cosmos](https://github.com/Fiware/context.Cosmos)

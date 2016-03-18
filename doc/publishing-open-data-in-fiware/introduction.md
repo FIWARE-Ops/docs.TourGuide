@@ -23,4 +23,9 @@ check out:
         interface](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface/)
     -   [Acquiring Datasets Offered in the
         WStore](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore/)
+        
+
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [CKAN](https://github.com/Fiware/context.Ckan)
 
