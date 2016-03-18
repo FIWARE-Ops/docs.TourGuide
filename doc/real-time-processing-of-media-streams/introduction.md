@@ -73,5 +73,7 @@ find useful the following information:
     application](/real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application/)
 
  
+If you want to start experimenting and doing hands-on work, have a look at:
 
+- [Kurento GEri](https://github.com/Fiware/context.Kurento)
  

@@ -69,6 +69,10 @@ operators or (b) develop these widgets and operators check out:
     events](/creating-application-dashboards/how-to-send-events/)
 -   [How to use other FIWARE GEs from your widgets and
     operators](/creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators/)
+    
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [Wirecloud GEri](http://github.com/fiware/apps.wirecloud)
 
  
 

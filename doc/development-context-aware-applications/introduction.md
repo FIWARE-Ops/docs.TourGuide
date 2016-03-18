@@ -46,3 +46,8 @@ a context-aware application check out:
 - [How to connect to external context providers](how-to-connect-to-external-context-providers.md)
 - [How to subscribe to changes on context information](how-to-subscribe-to-changes-on-context-information.md)
 - [How to perform geo-location queries](how-to-perform-geo-located-queries.md)
+
+
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [Orion Context Broker GEri](http://github.com/fiware/context.orion)

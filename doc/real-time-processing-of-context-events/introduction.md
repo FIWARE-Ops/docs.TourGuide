@@ -108,3 +108,6 @@ If you are interested in more details check out:
 -   [How to send input events to the
     CEP](/real-time-processing-of-context-events/how-to-send-input-events-to-the-cep/)
 
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [Proton GEri](https://github.com/Fiware/context.Proton)

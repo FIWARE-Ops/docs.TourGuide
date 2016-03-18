@@ -64,4 +64,7 @@ Things, keep on reading:
 -   [How to act upon IoT
     devices](/connection-to-the-internet-of-things/how-to-act-upon-iot-devices/)
 
- 
+
+If you want to start experimenting and doing hands-on work, have a look at:
+
+- [IDAS GEri - IoT Agent](https://github.com/Fiware/iot.IoTAgent-Cplusplus)
