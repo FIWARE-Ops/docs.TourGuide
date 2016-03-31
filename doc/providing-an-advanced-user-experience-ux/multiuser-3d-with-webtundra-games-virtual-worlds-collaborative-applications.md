@@ -14,11 +14,7 @@ Placeable attributes like position, scale, rotation are synchronized to
 other clients via the server (and changed in the corresponding three.js
 object).
 
-For setting up, you need to have a server to connect to; either FI-LAB
+For setting up, you need to have a server to connect to; either FIWARE LAB
 or own machine, we also have a server running you can use right away.
 Set up your local development environment and download WebTundra, or
-develop a client on a FI-LAB vm - we have an installation recipe:  
-
-https://forge.fi-ware.org/scmrepos/svn/testbed/trunk/cookbooks/GESoftware/webtundra/recipes/
-
- 
+develop a client on a FIWARE LAB VM.
