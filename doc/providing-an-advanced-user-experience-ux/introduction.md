@@ -21,7 +21,7 @@ The following diagram illustrates Advanced Web UI architecture and its
 GEs.
 
 [![Advanced user
-experience](images/Advanced-user-experience-1024x549.png)](images/Advanced-user-experience.png)
+experience](images/webui-architecture-r5.png)](images/webui-architecture-r5-full-size.png)
 
 The diagram shows how all the GEs from the WebUI chapter fit and can be
 used together.
@@ -34,7 +34,7 @@ wish to add 3D elements to your web page, without multiuser
 functionality nor extra data backends, you can just use the 3D-UI GE by
 itself.
 
-You can use FILAB to test and develop on the advanced Web UI
+You can use FIWARE LAB to test and develop on the advanced Web UI
 technologies. It is also possible to install them on your own machines
 and use web hosting services. For the Synchronization GE for multiuser
 collaborative applications there is a commercial hosting provider
@@ -49,9 +49,7 @@ WebUI:
     browser](/providing-an-advanced-user-experience-ux/3d-ui-interactive-3d-graphics-and-augmented-reality-in-any-web-browser/)
 -   [XML3D: Interactive 3D graphics and Augmented Reality via DOM
     extensions](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/introduction/)
-    -   [​](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/)[How
-        to set up a first XML3D
-        scene](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-set-up-a-first-xml3d-scene/)
+    -   [How to set up a first XML3D scene](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-set-up-a-first-xml3d-scene/)
     -   [How to use Xflow for AR applications with XML3D and the
         Augmented Reality
         GE](/providing-an-advanced-user-experience-ux/xml3d-interactive-3d-graphics-and-augmented-reality-via-dom-extensions/how-to-use-xflow-for-ar-applications-with-xml3d-and-the-augmented-reality-ge/)

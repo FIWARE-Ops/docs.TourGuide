@@ -28,7 +28,7 @@ in implementation and usage. A brief overview of both follows, with more
 details in dedicated sections later and further in the manuals.
 
 With Three.js everything is done in Javascript: you use the API to
-create the scene and add the objects there. Only a single \<canvas\>
+create the scene and add the objects there. Only a single ``<canvas>``
 element is put to the HTML document and even that is done automatically
 by the library. Three.js is the most popular 3D solution on the Web and
 there are huge amounts of examples and demos made with it. It is also
@@ -44,7 +44,7 @@ where needed.
 XML3D.js is the reference implementation of the XML3D specification to
 add 3D support to HTML with a specific set of new tags. This way you can
 add 3D elements to a web page without writing any Javascript. Similar to
-the pre-existing \<img\> and \<video\> tags, \<mesh\> works to add a 3D
+the pre-existing ``<img>`` and ``<video>`` tags, ``<mesh>`` works to add a 3D
 object to the view. The 3D elements are added to the DOM and can be
 manipulated via it like other HTML elements. XML3D.js also includes an
 implementation of XFlow, a new approach for declarative data processing.
@@ -59,8 +59,7 @@ GE for creating real-time collaborative applications using WebGL
 together with WebSockets. WebTundra is built using a
 Model-View-Controller architecture where the rendering and networking
 are separate modules built on an abstract core scene API (the model).
-Currently in the 1.0 release (in FIWARE 3.3) WebTundra includes and
-defaults to a Three.js view implementation. A XML3D.js view to WebTundra
+Currently  WebTundra includes and defaults to a Three.js view implementation. A XML3D.js view to WebTundra
 was also proven feasible in an experiment. Currently WebTundra includes
 an independent partial XML3D implementation: you can declare a 3D scene
 view in HTML in XML3D and it gets displayed by the Three.js view.
