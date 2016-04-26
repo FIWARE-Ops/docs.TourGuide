@@ -24,26 +24,19 @@ advantages:
 
 Let’s illustrate with an example based on the NiceEating case. Let’s
 consider an external restaurant booking system that is able to provide
-in real time the number of free places of a given restaurant and
-occupancy level (as a percentage). That system runs at
+in real time the occupancy level (as an absolute value). That system runs at
 http://booking.restaurants.foo.com and plays the role of a Context
 Provider.
 
-First, the Context Provider is registered as provider of free\_places
-and occupancy\_level for “LeBistro” restaurant:
+First, the Context Provider is registered as provider of `occupancyLevels` for Elizalde restaurant which id is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
-    POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/LeBistro/attributes/free_places
-    {
-      "duration" : "P1M",
-      "providingApplication" : "http://booking.restaurants.foo.com"
-    }
-    POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/LeBistro/attributes/occupancy_level
+    POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
     {
       "duration" : "P1M",
       "providingApplication" : "http://booking.restaurants.foo.com"
     }
 
-Thus, each time free\_places or occupancy\_level is queried at Context
+Thus, each time `occupancyLevels` is queried at Context
 Broker GE (e.g. from the user smartphone application), that query is
 forwarded to http://booking.restaurants.foo.com. From a Context Consumer
 perspective, all the process is transparent, as if the information were
