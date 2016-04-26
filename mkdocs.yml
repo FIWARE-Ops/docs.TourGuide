@@ -7,10 +7,16 @@ pages:
   - Home: index.md
   - 'Development of context-aware applications':
       - 'Introduction': 'development-context-aware-applications/introduction.md'
-      - 'Update – query context': 'development-context-aware-applications/how-to-update-and-query-context-information.md'
-      - 'Connection to context providers': 'development-context-aware-applications/how-to-connect-to-external-context-providers.md'
-      - 'Subscription to context changes': 'development-context-aware-applications/how-to-subscribe-to-changes-on-context-information.md'
-      - 'Geolocated context queries': 'development-context-aware-applications/how-to-perform-geo-located-queries.md'
+      - 'Using Context Broker API v1':
+        - 'Update – query context': 'development-context-aware-applications/how-to-update-and-query-context-information.md'
+        - 'Connection to context providers': 'development-context-aware-applications/how-to-connect-to-external-context-providers.md'
+        - 'Subscription to context changes': 'development-context-aware-applications/how-to-subscribe-to-changes-on-context-information.md'
+        - 'Geolocated context queries': 'development-context-aware-applications/how-to-perform-geo-located-queries.md'
+      - 'Using Context Broker API v2':
+        - 'Update – query context': 'development-context-aware-applications/v2/how-to-update-and-query-context-information.md'
+        - 'Connection to context providers': 'development-context-aware-applications/v2/how-to-connect-to-external-context-providers.md'
+        - 'Subscription to context changes': 'development-context-aware-applications/v2/how-to-subscribe-to-changes-on-context-information.md'
+        - 'Geolocated context queries': 'development-context-aware-applications/v2/how-to-perform-geo-located-queries.md'
       - 'Deep dive': 'development-context-aware-applications/deep-dive.md'
   - 'Connection to the Internet of Things':
      - 'Introduction': 'connection-to-the-internet-of-things/introduction.md'
