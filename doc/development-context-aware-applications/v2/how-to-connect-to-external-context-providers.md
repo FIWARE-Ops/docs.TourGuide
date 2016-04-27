@@ -30,7 +30,7 @@ Provider.
 
 First, the Context Provider is registered as provider of `occupancyLevel` for “Elizalde” restaurant which id is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
-    POST <cb_host>:<cb_port>/v2/entities/registrations    
+    POST <cb_host>:<cb_port>/v2/registrations    
     {
       "subject": {
         "entities": [
@@ -50,8 +50,7 @@ First, the Context Provider is registered as provider of `occupancyLevel` for �
 
 The Context Provider could be registered for all restaurants instead:
 
-    POST <cb_host>:<cb_port>/v2/registrations
-    POST <cb_host>:<cb_port>/v2/entities/registrations    
+    POST <cb_host>:<cb_port>/v2/registrations  
     {
       "subject": {
         "entities": [

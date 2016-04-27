@@ -12,7 +12,7 @@ geo-located queries. You can query entities using the following spatial relation
  city center (identified by GPS coordinates 42.846718, -2.671635)
 a Context Consumer application will use the following query:
 
-    GET <cb_host>:<cb_port>/v2/Entities?georel=near;maxDistance:13000&geometry=point&coords=42.846718, -2.671635
+    GET <cb_host>:<cb_port>/v2/entities?georel=near;maxDistance:13000&geometry=point&coords=42.846718,-2.671635
 
 
 To query for all restaurants inside a defined zone inside Vitoria-Gasteiz city a Context Consumer application will use the following query: 

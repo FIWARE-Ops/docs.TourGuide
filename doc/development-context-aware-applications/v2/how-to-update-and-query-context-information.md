@@ -21,7 +21,7 @@ Entities that would be relevant to the NiceEating application are of
 type Restaurant, Client and Review. 
 In this guide, the restaurant Elizalde is used as an example. In order to get its id for perform the different requests, we can use:
 
-    GET <cb_host>:<cb_port>/v2/Entities?type=Restaurant&q=name==Elizalde&attrs=name&options=keyValues 
+    GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name&options=keyValues 
     [
       {
         "id": "0115206c51f60b48b77e4c937835795c33bb953f",
@@ -34,7 +34,7 @@ When a given user reviews a restaurant (e.g. in a scale from 0 to 5, “Client12
 “4” for the Elizalde restaurant and describes his/her experience with "Cheap and nice place to eat.") the smartphone application plays the Context Producer role **creating** a Review entity by issuing the
 following HTTP request :
 
-    POST <cb_host>:<cb_port>/v2/Entities?options=keyValues
+    POST <cb_host>:<cb_port>/v2/entities?options=keyValues
     {
       "type": "Review",
       "id": "review-Elizalde-34",
@@ -49,7 +49,7 @@ corresponding restaurant is recalculated by the application backend
 which (playing also the role of Context Producer) **updates** the
 Restaurant entity accordingly:
 
-    PUT <cb_host>:<cb_port>/v2/Entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating?options=keyValues
+    PUT <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating
     {
       "reviewCount": 2,
       "ratingValue": 4
@@ -61,7 +61,7 @@ Context Consumer, **querying** the Restaurant entity. For example, to get
 the aggregateRating attribute, the client application could query for
 it in the following way:
 
-    GET <cb_host>:<cb_port>/v2/Entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating/value
+    GET <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating/value
     {
       "reviewCount": 2,
       "ratingValue": 4
@@ -70,7 +70,7 @@ it in the following way:
 You can also obtain the values of all attributes of the "Elizalde"
 restaurant in a single shot:
 
-    GET <cb_host>:<cb_port>/v2/Entities/0115206c51f60b48b77e4c937835795c33bb953f
+    GET <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f
     {
       "id": "0115206c51f60b48b77e4c937835795c33bb953f",
       "type": "Restaurant",
@@ -144,7 +144,7 @@ restaurant in a single shot:
 Alternatively, if you want to get the **attributes as a key values**, you can use the `keyValues` parameter, in the
 following way:
 
-    GET <cb_host>:<cb_port>/v2/Entities/0115206c51f60b48b77e4c937835795c33bb953f?options=keyValues    
+    GET <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?options=keyValues    
     {
       "id": "0115206c51f60b48b77e4c937835795c33bb953f",
       "type": "Restaurant",
@@ -170,7 +170,7 @@ following way:
 
 Finally, the application can query entities by attribute content. For example, to get all restaurants with capacity greater than 50 the next request can be used:
 
-    GET <cb_host>:<cb_port>/v2/Entities?type=Restaurant&q=capacity>=50&options=keyValues 
+    GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=capacity>=50&options=keyValues 
     [
       {
         "id": "0115206c51f60b48b77e4c937835795c33bb953f",
