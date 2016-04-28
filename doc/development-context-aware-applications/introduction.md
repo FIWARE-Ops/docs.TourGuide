@@ -48,7 +48,6 @@ a context-aware application check out:
 
 - Using NGSI v2:
     - [How to update and query context information](v2/how-to-update-and-query-context-information.md)
-    - [How to connect to external context providers](v2/how-to-connect-to-external-context-providers.md)
     - [How to subscribe to changes on context information](v2/how-to-subscribe-to-changes-on-context-information.md)
     - [How to perform geo-location queries](v2/how-to-perform-geo-located-queries.md)
 
