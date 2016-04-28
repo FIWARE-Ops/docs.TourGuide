@@ -7,11 +7,11 @@ geo-located queries. You can query entities using the following spatial relation
  * `georel=coveredBy`: covered by a defined geometry.
  * `georel=intersects`: intersected with a reference gometry.
  * `georel=equals`: equality to a geometry.
- * `georel=disjoint`: not intersected with the geometry.
+ * `georel=disjoint`: not intersected with a geometry.
 
 
  For example, to query for all the restaurants within 13 km of Vitoria-Gasteiz
- city center (identified by GPS coordinates 42.846718, -2.671635)
+ city center (identified by GPS coordinates `42.846718`, `-2.671635`)
 a Context Consumer application will use the following query:
 
     GET <cb_host>:<cb_port>/v2/entities?georel=near;maxDistance:13000&geometry=point&coords=42.846718,-2.671635
