@@ -49,7 +49,7 @@ corresponding restaurant is recalculated by the application backend
 which (playing also the role of Context Producer) **updates** the
 Restaurant entity accordingly:
 
-    PUT <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating
+    PUT <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f/attrs/aggregateRating/value
     {
       "reviewCount": 2,
       "ratingValue": 4
@@ -168,7 +168,7 @@ following way:
     }
 
 
-Finally, the application can query entities by attribute content. For example, to get all restaurants with capacity greater than 50 the next request can be used:
+Finally, the application can query entities by attribute content. For example, to get all restaurants with capacity equal or greater than 50 the next request can be used:
 
     GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=capacity>=50&options=keyValues 
     [

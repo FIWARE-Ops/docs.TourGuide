@@ -17,4 +17,4 @@ a Context Consumer application will use the following query:
 
 To query for all restaurants inside a defined zone inside Vitoria-Gasteiz city a Context Consumer application will use the following query: 
 
-    GET <cb_host>:<cb_port>/v2/Entities?georel=coveredBy&geometry=polygon&coords=42.847476,-2.763969;42.826006,-2.743151;42.826485,-2.653740;42.867061,-2.630934;42.881801,-2.640617;42.867767,-2.726723;42.847476,-2.763969
+    GET <cb_host>:<cb_port>/v2/entities?georel=coveredBy&geometry=polygon&coords=42.847476,-2.763969;42.826006,-2.743151;42.826485,-2.653740;42.867061,-2.630934;42.881801,-2.640617;42.867767,-2.726723;42.847476,-2.763969
