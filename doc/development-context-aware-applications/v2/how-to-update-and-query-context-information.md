@@ -144,7 +144,7 @@ restaurant in a single shot:
 
 
 
-Alternatively, if you want to get only attributes values, you can use the `keyValues` parameter, in the
+Alternatively, if you want to get only attribute values, you can use the `keyValues` parameter, in the
 following way:
 
     GET <cb_host>:<cb_port>/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?options=keyValues    
