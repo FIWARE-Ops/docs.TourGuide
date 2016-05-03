@@ -40,10 +40,16 @@ equipped with sensors).
 If you are interested in more details about how to make your application
 a context-aware application check out:
 
-- [How to update and query context information](how-to-update-and-query-context-information.md)
-- [How to connect to external context providers](how-to-connect-to-external-context-providers.md)
-- [How to subscribe to changes on context information](how-to-subscribe-to-changes-on-context-information.md)
-- [How to perform geo-location queries](how-to-perform-geo-located-queries.md)
+- Using NGSI v1: 
+    - [How to update and query context information](how-to-update-and-query-context-information.md)
+    - [How to connect to external context providers](how-to-connect-to-external-context-providers.md)
+    - [How to subscribe to changes on context information](how-to-subscribe-to-changes-on-context-information.md)
+    - [How to perform geo-location queries](how-to-perform-geo-located-queries.md)
+
+- Using NGSI v2:
+    - [How to update and query context information](v2/how-to-update-and-query-context-information.md)
+    - [How to subscribe to changes on context information](v2/how-to-subscribe-to-changes-on-context-information.md)
+    - [How to perform geo-location queries](v2/how-to-perform-geo-located-queries.md)
 
 
 If you want to start experimenting and doing hands-on work, have a look at:
