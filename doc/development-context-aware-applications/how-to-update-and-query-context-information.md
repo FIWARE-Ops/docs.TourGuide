@@ -74,6 +74,7 @@ the aggregateRating attribute, the client application could query for
 it in the following way:
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/aggregateRating    
+    
     {
       "attributes" : [
         {
@@ -97,6 +98,7 @@ restaurant in a single shot:
 
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f
+    
     {
       "contextElement" : {
         "type" : "Restaurant",
@@ -183,6 +185,7 @@ of as a vector**, you can use the `attributesFormat` parameter, in the
 following way:
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f?attributesFormat=object    
+    
     {
       "contextElement" : {
         "type" : "Restaurant",
