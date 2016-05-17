@@ -25,6 +25,16 @@ Context Producer role **creating** a Review entity by issuing the
 following HTTP request:
 
     POST <cb_host>:<cb_port>/v1/contextEntities/type/Review/id/review-Elizalde-34
+    
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "attributes":
       [
@@ -62,16 +72,28 @@ which (playing also the role of Context Producer) **updates** the
 Restaurant entity accordingly. For this example the user has reviewed the Elizalde restaurant:
 
     PUT <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/aggregateRating
+
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "value" : 4,
       "reviewCount": 1
     }
 
+
+
 Finally, the user can get the information of a given Restaurant using
 the smartphone application. In that case the application works as
 Context Consumer, **querying** the Restaurant entity. For example, to get
 the aggregateRating attribute, the client application could query for
-it in the following way:
+it in the following way (with extra headers `Fiware-Service: tourguide`):
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/aggregateRating    
     
@@ -94,7 +116,7 @@ it in the following way:
 
 
 You can also obtain the values of all attributes of the "Elizalde"
-restaurant in a single shot:
+restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
 
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f
@@ -182,7 +204,7 @@ restaurant in a single shot:
 
 Alternatively, if you want to get the **attributes as a key map instead
 of as a vector**, you can use the `attributesFormat` parameter, in the
-following way:
+following way (with extra headers `Fiware-Service: tourguide`):
 
     GET <cb_host>:<cb_port>/v1/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f?attributesFormat=object    
     

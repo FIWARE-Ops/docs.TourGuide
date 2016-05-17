@@ -6,6 +6,16 @@ Vitoria-Gasteiz city center (identified by GPS coordinates 42.846718, -2.671635)
 a Context Consumer application will use the following query:
 
     POST <cb_host>:<cb_port>/v1/queryContext
+        
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "entities": [
         {
@@ -31,11 +41,19 @@ a Context Consumer application will use the following query:
     }
 
 
-
 To query for all restaurants inside a defined zone inside Vitoria-Gasteiz city a Context Consumer application will use the following query: 
 
-
     POST <cb_host>:<cb_port>/v1/queryContext
+        
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "entities": [
         {

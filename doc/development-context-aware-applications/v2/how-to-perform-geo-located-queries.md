@@ -9,6 +9,7 @@ geo-located queries. You can query entities using the following spatial relation
  * `georel=equals`: equality to a geometry.
  * `georel=disjoint`: not intersected with a geometry.
 
+The header `Fiware-Service: tourguide` must be added to every request, so that the proper tenant is specified.
 
  For example, to query for all the restaurants within 13 km of Vitoria-Gasteiz
  city center (identified by GPS coordinates `42.846718`, `-2.671635`)
