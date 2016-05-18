@@ -22,7 +22,7 @@ please have a look [here](http://docs.telefonicaiotiotagents.apiary.io/).
 
 A typical IoT data workflow using FIWARE consists of the following steps:
 
-1. **Create an IDAS Service**
+Step 1 : **Create an IDAS Service**
 
   If you are using the public IDAS instance with the public `openiot`
 testing service available at `130.206.80.47` (Port `5073`) you may skip this
@@ -55,14 +55,14 @@ your devices need to know) is the string `4jggokgpepnvsb2uv4s40d59ov`.
       ]
     }
 
-Where `0.0.0.0:1026` might be replaced by a private instance of
+  Where `0.0.0.0:1026` might be replaced by a private instance of
 a Context Broker or just leave it as it is (`0.0.0.0:1026`) if the public
 instance is running at the same VM (`130.206.80.40:1026`) will be used. The apikey
 string should be updated with a shared secret to be known by your IoT devices. An OAuth
 token is needed as well, a simple way of obtaining one
 is described [here](http://fiware-orion.readthedocs.io/en/develop/quick_start_guide/index.html).
 
-Likewise, you may want to experiment using the *FIWARE Tour Guide Application*.
+  Likewise, you may want to experiment using the *FIWARE Tour Guide Application*.
 Assuming you have installed it locally, you can issue the following request: 
 
     POST http://localhost:4041/iot/services/
@@ -88,7 +88,7 @@ Assuming you have installed it locally, you can issue the following request:
     }
 
 
-2. **Register your IoT device**
+Step 2: **Register your IoT device**
 
   Before your device sends observations or receives commands a register operation is needed:
 
@@ -170,7 +170,7 @@ Assuming you have installed it locally, you can issue the following request:
       ]
     }
 
-3. **Send Observations related to your IoT device**
+Step 3: **Send Observations related to your IoT device**
 
   Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
 
@@ -213,7 +213,7 @@ identifier formerly registered.
     
     't|23#h|80#l|95#m|Quiet'
 
-4. **Reading measurements sent by your IoT device**
+Step 4: **Reading measurements sent by your IoT device**
 
   Finally, after connecting your IoT devices you (or any other
 developer with the right access permissions) should be able to use the
