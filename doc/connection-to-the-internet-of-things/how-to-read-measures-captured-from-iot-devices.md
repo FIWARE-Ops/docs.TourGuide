@@ -22,7 +22,7 @@ please have a look [here](http://docs.telefonicaiotiotagents.apiary.io/).
 
 A typical IoT data workflow using FIWARE consists of the following steps:
 
-+ **Create an IDAS Service**
+1. **Create an IDAS Service**
 
  If you are using the public IDAS instance with the public `openiot`
 testing service available at `130.206.80.47` (Port `5073`) you may skip this
@@ -63,32 +63,32 @@ token is needed as well, a simple way of obtaining one
 is described [here](http://fiware-orion.readthedocs.io/en/develop/quick_start_guide/index.html).
 
 Likewise, you may want to experiment using the *FIWARE Tour Guide Application*.
-Assuming you have installed it locally, you can follow these steps: 
+Assuming you have installed it locally, you can issue the following request: 
 
     POST http://localhost:4041/iot/services/
     
     Headers:
         
-        {
-          'Content-Type':       'application/json',
-          'Fiware-Service':     'tourguide',
-          'Fiware-ServicePath': '/'
-        }
+    {
+      'Content-Type':       'application/json',
+      'Fiware-Service':     'tourguide',
+      'Fiware-ServicePath': '/'
+    }
         
-        Payload:
+    Payload:
         
+    {
+      "services": [
         {
-          "services": [
-            {
-              "apikey":   "tourguide-devices",
-              "cbroker":  "http://orion:1026",
-              "resource": "/iot/dev-restaurants"
-            }
-          ]
+          "apikey":   "tourguide-devices",
+          "cbroker":  "http://orion:1026",
+          "resource": "/iot/dev-restaurants"
         }
+      ]
+    }
 
 
-+ **Register your IoT device**
+2. **Register your IoT device**
 
 Before your device sends observations or receives commands a register operation is needed:
 
@@ -144,33 +144,33 @@ Such device will provide ambient measurements, for instance `temperature`, for a
      
     Headers:
     
-      {
-        'Content-Type':       'application/json',
-        'Fiware-Service':     'tourguide',
-        'Fiware-ServicePath': '/'
-      }
+    {
+      'Content-Type':       'application/json',
+      'Fiware-Service':     'tourguide',
+      'Fiware-ServicePath': '/'
+    }
     
     Payload:
     
-      {
-        "devices": [
-          {
-            "device_id": "restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f",
-            "protocol": "UL20",
-            "entity_name": "0115206c51f60b48b77e4c937835795c33bb953f",
-            "entity_type": "Restaurant",
-            "attributes": [
-              {
-                "object_id": "t",
-                "name":      "temperature",
-                "type":      "number"
-              }
-            ]
-          }
-        ]
-    }
+    {
+      "devices": [
+        {
+          "device_id": "restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f",
+          "protocol": "UL20",
+          "entity_name": "0115206c51f60b48b77e4c937835795c33bb953f",
+          "entity_type": "Restaurant",
+          "attributes": [
+            {
+              "object_id": "t",
+              "name":      "temperature",
+              "type":      "number"
+            }
+          ]
+        }
+      ]
+  }
 
-+ **Send Observations related to your IoT device**
+3. **Send Observations related to your IoT device**
 
  Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
 
@@ -213,7 +213,7 @@ Sending multiple observations in the same message is also possible with the foll
     
     't|23#h|80#l|95#m|Quiet'
 
-+ **Reading measurements sent by your IoT device**
+4. **Reading measurements sent by your IoT device**
 
 Finally, after connecting your IoT devices you (or any other
 developer with the right access permissions) should be able to use the
