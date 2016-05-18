@@ -24,7 +24,7 @@ A typical IoT data workflow using FIWARE consists of the following steps:
 
 1. **Create an IDAS Service**
 
- If you are using the public IDAS instance with the public `openiot`
+  If you are using the public IDAS instance with the public `openiot`
 testing service available at `130.206.80.47` (Port `5073`) you may skip this
 step. Just keep in mind the shared secret for this public service (that
 your devices need to know) is the string `4jggokgpepnvsb2uv4s40d59ov`.  
@@ -90,7 +90,7 @@ Assuming you have installed it locally, you can issue the following request:
 
 2. **Register your IoT device**
 
-Before your device sends observations or receives commands a register operation is needed:
+  Before your device sends observations or receives commands a register operation is needed:
 
     POST http://130.206.80.40:5371/iot/devices
     
@@ -130,15 +130,15 @@ Before your device sends observations or receives commands a register operation 
       ]
     }
 
-The important parameters to be provided are:
+  The important parameters to be provided are:
 
-* `entity_type` the entity type to be used at the Context Broker. In the example above, `thing`.
-* `entity_name` the entity ID to be used at the Context Broker. In the example above, `thing:[ENTITY\_ID]`.
-* `attributes`  they should include an alias (a letter representing this attribute).
-* `static\_attributes` only if your device needs to define static attributes (sent in every observation).
+  * `entity_type` the entity type to be used at the Context Broker. In the example above, `thing`.
+  * `entity_name` the entity ID to be used at the Context Broker. In the example above, `thing:[ENTITY\_ID]`.
+  * `attributes`  they should include an alias (a letter representing this attribute).
+  * `static\_attributes` only if your device needs to define static attributes (sent in every observation).
  
-Likewise, using the *Tour Guide Application*, you can create a device bound to a restaurant entity.
-Such device will provide ambient measurements, for instance `temperature`, for a specific restaurant.
+  Likewise, using the *Tour Guide Application*, you can create a device bound to a restaurant entity.
+  Such device will provide ambient measurements, for instance `temperature`, for a specific restaurant.
  
     POST http://localhost:4041/iot/devices/
      
@@ -168,11 +168,11 @@ Such device will provide ambient measurements, for instance `temperature`, for a
           ]
         }
       ]
-  }
+    }
 
 3. **Send Observations related to your IoT device**
 
- Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
+  Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
 
     POST  http://130.206.80.40:5371/iot/d?k=[APIKEY]&i=[DEV_ID]
     
@@ -187,13 +187,13 @@ Such device will provide ambient measurements, for instance `temperature`, for a
     
     't|25'
 
-The previous example sends a new temperature measurement which
+  The previous example sends a new temperature measurement which
 is automatically propagated to the corresponding entity at the
 Context Broker and FIWARE Service defined previously in our IDAS service.
 `[API_KEY]` must be the one used when creating the service and `[DEV_ID]`must be the device
 identifier formerly registered. 
 
-Similarly, you can do the same with the *Tour Guide Application*:
+  Similarly, you can do the same with the *Tour Guide Application*:
 
     POST http://localhost:7896/iot/d?k=tourguide-devices&i=restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f
     
@@ -207,7 +207,7 @@ Similarly, you can do the same with the *Tour Guide Application*:
     
     't|22.3'
 
-Sending multiple observations in the same message is also possible with the following payload:
+  Sending multiple observations in the same message is also possible with the following payload:
 
     "alias1|value1#alias2|value2#alias3|value3..."
     
@@ -215,15 +215,15 @@ Sending multiple observations in the same message is also possible with the foll
 
 4. **Reading measurements sent by your IoT device**
 
-Finally, after connecting your IoT devices you (or any other
+  Finally, after connecting your IoT devices you (or any other
 developer with the right access permissions) should be able to use the
 Context Broker NGSI API to query the NGSI entity assigned to your device. 
 
-In the first example, using the public FIWARE instance,
+  In the first example, using the public FIWARE instance,
 you may check in the public Context Broker (at `130.206.80.40:1026`), the
 Entity\_ID=”thing:[ENTITY\_ID]” and the attribute `temperature` with the correct updated value.
 
-In the *Tour Guide Application* example you can check that the temperature value has been properly
+  In the *Tour Guide Application* example you can check that the temperature value has been properly
 propagated by running (with extra headers `fiware-service: tourguide`):
 
     GET http://localhost:1026/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?attrs=temperature
