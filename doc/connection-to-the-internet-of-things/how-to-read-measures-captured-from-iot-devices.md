@@ -35,7 +35,7 @@ your devices need to know) is the string `4jggokgpepnvsb2uv4s40d59ov`.
     Headers:
     
     {
-      'Content-Type':       'application/json’,
+      'Content-Type':       'application/json',
       'X-Auth-Token' :      '[TOKEN]',
       'Fiware-Service':     'openiot',
       'Fiware-ServicePath': '/'
