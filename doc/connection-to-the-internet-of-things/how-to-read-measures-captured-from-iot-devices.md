@@ -7,7 +7,7 @@ simplification of the SensorML (SML) standard - and get those devices
 sending their measurements (observations) to the FIWARE Lab public
 Context Broker. Ultralight2.0 is selected in this example because of its
 simplicity. In addition we show you how you can do the same locally with the
-*FIWARE Tour Guide Application*. 
+*FIWARE Tour Guide Application* as it integrates the [IDAS UL2.0 IoT Agent](https://github.com/telefonicaid/iotagent-ul). 
 
 If you want to quickly connect or simulate virtual devices you may also
 check [https://github.com/telefonicaid/fiware-figway](FIGWAY),
@@ -17,12 +17,12 @@ This way you may skip the steps described below and use the python
 commands as described in the README.md file available at the Github
 repository linked above.
 
-For a more detailed description of the IDAS APIs,
+For a more detailed description of the IDAS (FIWARE IoT Agent suite) APIs,
 please have a look [here](http://docs.telefonicaiotiotagents.apiary.io/).
 
-Basically, there are four simple steps to follow:
+A typical IoT data workflow using FIWARE consists of the following steps:
 
-1. **Create an IDAS Service**
++ **Create an IDAS Service**
 
  If you are using the public IDAS instance with the public `openiot`
 testing service available at `130.206.80.47` (Port `5073`) you may skip this
@@ -88,7 +88,7 @@ Assuming you have installed it locally, you can follow these steps:
         }
 
 
-1. **Register your IoT device**
++ **Register your IoT device**
 
 Before your device sends observations or receives commands a register operation is needed:
 
@@ -170,7 +170,7 @@ Such device will provide ambient measurements, for instance `temperature`, for a
         ]
     }
 
-1. **Send Observations related to your IoT device**
++ **Send Observations related to your IoT device**
 
  Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
 
