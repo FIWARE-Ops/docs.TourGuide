@@ -4,4 +4,4 @@ Should you wish to learn much more about this, please check:
    - [Play with the Docker container](https://hub.docker.com/r/fiware/ckan/)
    - [Browse the API](http://docs.ckan.apiary.io/)
    - [Read the full documentation](http://docs.ckan.org/en/latest/)
-   - [Latest stable release](https://github.com/Fiware/context.Ckan/releases/tag/ckan-2.5.2)
+   - [Latest stable release](https://github.com/Fiware/context.Ckan/releases/latest)
