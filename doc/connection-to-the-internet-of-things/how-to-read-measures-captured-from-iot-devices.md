@@ -65,39 +65,39 @@ is described [here](http://fiware-orion.readthedocs.io/en/develop/quick_start_gu
 Likewise, you may want to experiment using the *FIWARE Tour Guide Application*.
 Assuming you have installed it locally, you can follow these steps: 
 
-  POST http://localhost:4041/iot/services/
-  
-  Headers:
-      
-      {
-        'Content-Type':       'application/json’,
-        'Fiware-Service':     'tourguide',
-        'Fiware-ServicePath': '/'
-      }
-      
-      Payload:
-      
-      {
-        "services": [
-          {
-            "apikey":   "tourguide-devices",
-            "cbroker":  "http://orion:1026",
-            "resource": "/iot/dev-restaurants"
-          }
-        ]
-      }
+    POST http://localhost:4041/iot/services/
+    
+    Headers:
+        
+        {
+          'Content-Type':       'application/json',
+          'Fiware-Service':     'tourguide',
+          'Fiware-ServicePath': '/'
+        }
+        
+        Payload:
+        
+        {
+          "services": [
+            {
+              "apikey":   "tourguide-devices",
+              "cbroker":  "http://orion:1026",
+              "resource": "/iot/dev-restaurants"
+            }
+          ]
+        }
 
 
-2. **Register your IoT device**
+1. **Register your IoT device**
 
- Before your device sends observations or receives commands a register operation is needed:
+Before your device sends observations or receives commands a register operation is needed:
 
     POST http://130.206.80.40:5371/iot/devices
     
     Headers:
     
     {
-      'Content-Type':       'application/json’,
+      'Content-Type':       'application/json',
       'X-Auth-Token' :      '[TOKEN]',
       'Fiware-Service' :    'openiot',
       'Fiware-ServicePath': '/'
@@ -132,20 +132,20 @@ Assuming you have installed it locally, you can follow these steps:
 
 The important parameters to be provided are:
 
- * `entity_type` the entity type to be used at the Context Broker. In the example above, `thing`.
- * `entity_name` the entity ID to be used at the Context Broker. In the example above, `thing:[ENTITY\_ID]`.
- * `attributes`  they should include an alias (a letter representing this attribute).  
- * `static\_attributes` only if your device needs to define static attributes (sent in every observation)
+* `entity_type` the entity type to be used at the Context Broker. In the example above, `thing`.
+* `entity_name` the entity ID to be used at the Context Broker. In the example above, `thing:[ENTITY\_ID]`.
+* `attributes`  they should include an alias (a letter representing this attribute).
+* `static\_attributes` only if your device needs to define static attributes (sent in every observation).
  
- Likewise, using the *Tour Guide Application*, you can create a device bound to a restaurant entity.
- Such device will provide ambient measurements, for instance `temperature`, for a specific restaurant.
+Likewise, using the *Tour Guide Application*, you can create a device bound to a restaurant entity.
+Such device will provide ambient measurements, for instance `temperature`, for a specific restaurant.
  
     POST http://localhost:4041/iot/devices/
      
     Headers:
     
       {
-        'Content-Type':       'application/json’,
+        'Content-Type':       'application/json',
         'Fiware-Service':     'tourguide',
         'Fiware-ServicePath': '/'
       }
@@ -170,7 +170,7 @@ The important parameters to be provided are:
         ]
     }
 
-+ **Send Observations related to your IoT device**
+1. **Send Observations related to your IoT device**
 
  Sending an observation from an IoT device is extremely efficient and simple with the following HTTP request:
 
@@ -179,8 +179,8 @@ The important parameters to be provided are:
     Headers:
     
     {
-      'Content-Type':       'text/plain’,
-      'X-Auth-Token' :      '[TOKEN]'
+      'Content-Type':  'text/plain',
+      'X-Auth-Token' : '[TOKEN]'
     }
     
     Payload:
@@ -200,7 +200,7 @@ Similarly, you can do the same with the *Tour Guide Application*:
     Headers:
     
     {
-      'Content-Type':       'text/plain’,
+      'Content-Type': 'text/plain',
     }
     
     Payload:
@@ -226,16 +226,16 @@ Entity\_ID=”thing:[ENTITY\_ID]” and the attribute `temperature` with the cor
 In the *Tour Guide Application* example you can check that the temperature value has been properly
 propagated by running (with extra headers `fiware-service: tourguide`):
 
-GET http://localhost:1026/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?attrs=temperature
-
-{
-  "id": "0115206c51f60b48b77e4c937835795c33bb953f",
-  "type": "Restaurant",
-  "temperature": {
-    "type": "number",
-    "value": "22.3",
-    "metadata": {}
-  }
-}
+    GET http://localhost:1026/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?attrs=temperature
+    
+    {
+      "id": "0115206c51f60b48b77e4c937835795c33bb953f",
+      "type": "Restaurant",
+      "temperature": {
+        "type": "number",
+        "value": "22.3",
+        "metadata": {}
+      }
+    }
 
 For more examples on how to access the Context Broker, please refer to such component section.
