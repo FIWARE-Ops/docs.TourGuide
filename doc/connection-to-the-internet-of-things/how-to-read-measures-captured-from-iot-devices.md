@@ -47,7 +47,6 @@ your devices need to know) is the string `4jggokgpepnvsb2uv4s40d59ov`.
       "services": [
         {
           "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
-          "token":       "aToken",
           "cbroker":     "http://0.0.0.0:1026",
           "entity_type": "thing",
           "resource":    "/iot/d"
@@ -135,7 +134,7 @@ Step 2: **Register your IoT device**
   * `entity_type` the entity type to be used at the Context Broker. In the example above, `thing`.
   * `entity_name` the entity ID to be used at the Context Broker. In the example above, `thing:[ENTITY\_ID]`.
   * `attributes`  they should include an alias (a letter representing this attribute).
-  * `static\_attributes` only if your device needs to define static attributes (sent in every observation).
+  * `static_attributes` only if your device needs to define static attributes (sent in every observation).
  
   Likewise, using the *Tour Guide Application*, you can create a device bound to a restaurant entity.
   Such device will provide ambient measurements, for instance `temperature`, for a specific restaurant.
