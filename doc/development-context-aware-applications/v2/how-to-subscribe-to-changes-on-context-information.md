@@ -11,6 +11,16 @@ gets notified (in order to recalculate restaurant average rating and
 publish it back in the Context Broker GE).
 
     POST <cb_host>:<cb_port>/v2/subscriptions 
+        
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "description": "Update average rating",
       "subject": {
@@ -46,6 +56,16 @@ average ratings of a given restaurant. This may be useful for restaurant
 owners in order to know how their restaurants score is evolving.
 
     POST <cb_host>:<cb_port>/v2/subscriptions
+        
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "description": "Get aggregateRating for Elizalde",
       "subject": {

@@ -31,6 +31,16 @@ Provider.
 First, the Context Provider is registered as provider of `occupancyLevels` for Elizalde restaurant which id is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
     POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
+        
+    Headers:
+
+    {
+      'Content-Type':     'application/json',
+      'Fiware-Service':   'tourguide'
+    }
+
+    Payload:
+
     {
       "duration" : "P1M",
       "providingApplication" : "http://booking.restaurants.foo.com"
