@@ -1,5 +1,6 @@
 Should you wish to learn much more about this, please check: 
 
+   - [Introduction to NGSI API and Orion Context Broker](http://bit.ly/fiware-orion)
    - [Github repository (reference implementation) ](https://github.com/Fiware/context.Orion)
    - [Play with the Docker container](https://hub.docker.com/r/fiware/orion/)
    - [Browse NGSI v1](http://fiware.github.io/context.Orion/api/v1/)
