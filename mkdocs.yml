@@ -3,7 +3,7 @@ site_description: QUICK FIWARE TOUR GUIDE
 docs_dir: doc/
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
 repo_url: https://github.com/Fiware/docs.TourGuide.git
-google_analytics: ['UA-79939750-2', 'fiwaretourguide.readthedocs.io']
+google_analytics: ['UA-80297547-1', 'fiwaretourguide.readthedocs.io']
 pages:
   - Home: index.md
   - 'Development of context-aware applications':
