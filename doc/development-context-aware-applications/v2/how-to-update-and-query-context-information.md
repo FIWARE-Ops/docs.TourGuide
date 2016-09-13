@@ -108,7 +108,7 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
         "metadata": {}
       },
       "aggregateRating": {
-        "type": "none",
+        "type": "StructuredValue",
         "value": {
           "reviewCount": 2,
           "ratingValue": 4
@@ -117,16 +117,16 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
       },
       "capacity": {
         "type": "PropertyValue",
-        "value": 50,
+        "value": 80,
         "metadata": {}
       },
       "department": {
-        "type": "none",
+        "type": "Text",
         "value": "Franchise1",
         "metadata": {}
       },
       "description": {
-        "type": "none",
+        "type": "Text",
         "value": "Restaurante de estilo sidrería ubicado en Alegria-Dulantzi. Además ...",
         "metadata": {}
       },
@@ -145,18 +145,18 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
         "value": 0,
         "metadata": {
           "timestamp": {
-            "type": "date",
+            "type": "DateTime",
             "value": "2016-04-20T18:15:15.434Z"
           }
         }
       },
       "priceRange": {
-        "type": "none",
+        "type": "Number",
         "value": 0,
         "metadata": {}
       },
       "telephone": {
-        "type": "none",
+        "type": "Text",
         "value": "945 400 868",
         "metadata": {}
       }
@@ -182,9 +182,10 @@ following way (with extra headers `Fiware-Service: tourguide`):
         "reviewCount": 2,
         "ratingValue": 4
       },
-      "capacity": 50,
+      "capacity": 80,
       "department": "Franchise1",
       "description": "Restaurante de estilo sidrería ubicado en Alegria-Dulantzi. Además ...",
+      "location": "42.8404625, -2.5123277",
       "name": "Elizalde",
       "occupancyLevels": 0,
       "priceRange": 0,
@@ -210,7 +211,7 @@ Finally, the application can query entities by attribute content. For example, t
           "reviewCount": 2,
           "ratingValue": 4
         },
-        "capacity": 50,
+        "capacity": 80,
         "department": "Franchise1",
         "description": "Restaurante de estilo sidrería ubicado en Alegria-Dulantzi. Además ...",
         "location": "42.8404625, -2.5123277",
