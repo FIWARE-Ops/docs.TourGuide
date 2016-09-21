@@ -19,15 +19,16 @@ of restaurants.
 
 Entities that would be relevant to the NiceEating application are of
 type Restaurant, Client and Review. 
-In this guide, the restaurant Elizalde is used as an example. In order to get its id for perform the different requests, we can use (with extra headers `Fiware-Service: tourguide`):
+In this guide, the restaurant Elizalde is used as an example. In order to get its id and department for performing the different requests, we can use (with extra headers `Fiware-Service: tourguide`):
 
-    GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name&options=keyValues 
+    GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name,department&options=keyValues 
     
     [
       {
         "id": "0115206c51f60b48b77e4c937835795c33bb953f",
         "type": "Restaurant",
         "name": "Elizalde"
+        "department": "Franchise1"
       }
     ]
 
@@ -65,8 +66,9 @@ Restaurant entity accordingly:
     Headers:
 
     {
-      'Content-Type':     'application/json',
-      'Fiware-Service':   'tourguide'
+      'Content-Type':        'application/json',
+      'Fiware-Service':      'tourguide'
+      'Fiware-ServicePath':  '/Franchise1'
     }
 
     Payload:
@@ -76,8 +78,10 @@ Restaurant entity accordingly:
       "ratingValue": 4
     }
 
+Note that the `Fiware-ServicePath: /Franchise1` header is needed for update operations because all restaurants are defined inside the scope of their department. For further information about this option visit <http://fiware-orion.readthedocs.io/en/develop/user/service_path/>.
+
 Also, the user can get the information of a given Restaurant using
-the smartphone application. In that case the application works as
+the smartphone application. In that case, the application works as
 Context Consumer, **querying** the Restaurant entity. For example, to get
 the aggregateRating attribute, the client application could query for
 it in the following way (with extra headers `Fiware-Service: tourguide`):
@@ -136,7 +140,7 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
         "metadata": {}
       },
       "name": {
-        "type": "none",
+        "type": "Text",
         "value": "Elizalde",
         "metadata": {}
       },
