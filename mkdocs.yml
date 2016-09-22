@@ -85,5 +85,12 @@ pages:
      - 'How to use Object Storage capabilities of FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/how-to-use-object-storage-capabilities-of-fiware-cloud.md'
      - 'How to use Blueprints to manage complex applications hosted on FIWARE Cloud': 'hosting-your-application-on-a-fiware-cloud/how-to-use-blueprints-to-manage-complex-applications-hosted-on-fiware-cloud.md'
      - 'How to invoke FIWARE Cloud capabilities via an API': 'hosting-your-application-on-a-fiware-cloud/how-to-invoke-fiware-cloud-capabilities-via-an-api.md'
-  - 'FIWARE Tour Guide Application. A tutorial on how to integrate the main FIWARE GEs': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/introduction.md'
+  - 'FIWARE Tour Guide Application. A tutorial on how to integrate the main FIWARE GEs':
+     - 'Introduction': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/introduction.md'
+     - 'Installation': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/installation.md'
+     - 'Managing Context Information': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/managing-context-information.md'
+     - 'Managing IoT Data': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/managing-iot-data.md'
+     - 'Configuring Security Aspects': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/configuring-security-aspects.md'
+     - 'Publishing historical data': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/publishing-historical-data.md'
+     - 'Using the front-end application': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/using-the-front-end-application.md'
 
