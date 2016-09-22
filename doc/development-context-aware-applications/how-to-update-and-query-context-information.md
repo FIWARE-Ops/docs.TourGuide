@@ -45,7 +45,7 @@ following HTTP request:
         },
         {
           "name": "dateCreated",
-          "type": "date",
+          "type": "DateTime",
           "value": "2016-04-20T18:19:33.00Z"
         },
         {
@@ -55,7 +55,7 @@ following HTTP request:
         },
         {
           "name": "reviewBody",
-          "type": "none",
+          "type": "Text",
           "value": "Cheap and nice place to eat."
         },
         {
@@ -76,17 +76,21 @@ Restaurant entity accordingly. For this example the user has reviewed the Elizal
     Headers:
 
     {
-      'Content-Type':     'application/json',
-      'Fiware-Service':   'tourguide'
+      'Content-Type':       'application/json',
+      'Fiware-Service':     'tourguide'
+      'Fiware-ServicePath': '/Franchise1'
     }
 
     Payload:
 
     {
-      "value" : 4,
-      "reviewCount": 1
+      "value" :{
+        "ratingValue" : 4,
+        "reviewCount": 1
+      }
     }
 
+Note that the `Fiware-ServicePath: /Franchise1` header is needed for update operations because all restaurants are defined inside the scope of their department. For further information about this option visit <http://fiware-orion.readthedocs.io/en/develop/user/service_path/>.
 
 
 Finally, the user can get the information of a given Restaurant using
@@ -101,7 +105,7 @@ it in the following way (with extra headers `Fiware-Service: tourguide`):
       "attributes" : [
         {
           "name" : "aggregateRating",
-          "type" : "none",
+          "type" : "StructuredValue",
           "value" : {
             "reviewCount" : 1,
             "ratingValue" : 4
@@ -139,7 +143,7 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
           },
           {
             "name" : "aggregateRating",
-            "type" : "none",
+            "type" : "StructuredValue",
             "value" : {
               "reviewCount" : 1,
               "ratingValue" : 4
@@ -152,12 +156,12 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
           },
           {
             "name" : "department",
-            "type" : "none",
+            "type" : "Text",
             "value" : "Franchise1"
           },
           {
             "name" : "description",
-            "type" : "none",
+            "type" : "Text",
             "value" : "Restaurante de estilo sidrería ubicado en Alegria-Dulantzi. Además ..."
           },
           {
@@ -167,7 +171,7 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
           },
           {
             "name" : "name",
-            "type" : "none",
+            "type" : "Text",
             "value" : "Elizalde"
           },
           {
@@ -177,19 +181,19 @@ restaurant in a single shot (with extra headers `Fiware-Service: tourguide`):
             "metadatas" : [
               {
                 "name" : "timestamp",
-                "type" : "date",
+                "type" : "DateTime",
                 "value" : "2016-04-20T18:15:15.434Z"
               }
             ]
           },
           {
             "name" : "priceRange",
-            "type" : "none",
+            "type" : "Number",
             "value" : 0
           },
           {
             "name" : "telephone",
-            "type" : "none",
+            "type" : "Text",
             "value" : "945 400 868"
           }
         ]
@@ -224,7 +228,7 @@ following way (with extra headers `Fiware-Service: tourguide`):
             }
           },
           "aggregateRating" : {
-            "type" : "none",
+            "type" : "StructuredValue",
             "value" : {
               "reviewCount" : 1,
               "ratingValue" : 4
@@ -235,11 +239,11 @@ following way (with extra headers `Fiware-Service: tourguide`):
             "value" : 50
           },
           "department" : {
-            "type" : "none",
+            "type" : "Text",
             "value" : "Franchise1"
           },
           "description" : {
-            "type" : "none",
+            "type" : "Text",
             "value" : "Restaurante de estilo sidrería ubicado en Alegria-Dulantzi. Además ..."
           },
           "location" : {
@@ -247,7 +251,7 @@ following way (with extra headers `Fiware-Service: tourguide`):
             "value" : "42.8404625, -2.5123277"
           },
           "name" : {
-            "type" : "none",
+            "type" : "Text",
             "value" : "Elizalde"
           },
           "occupancyLevels" : {
@@ -256,17 +260,17 @@ following way (with extra headers `Fiware-Service: tourguide`):
             "metadatas" : [
               {
                 "name" : "timestamp",
-                "type" : "date",
+                "type" : "DateTime",
                 "value" : "2016-04-20T18:15:15.434Z"
               }
             ]
           },
           "priceRange" : {
-            "type" : "none",
+            "type" : "Number",
             "value" : 0
           },
           "telephone" : {
-            "type" : "none",
+            "type" : "Text",
             "value" : "945 400 868"
           }
         }
