@@ -90,7 +90,7 @@ Headers:
             "addressLocality": "Alegría-Dulantzi",
             "postalCode": "01240"
         }
-        },
+    },
     "aggregateRating": {
         "type": "AggregateRating",
         "value": {
@@ -100,17 +100,16 @@ Headers:
     },
     "capacity": {
         "type": "PropertyValue",
-        "value": 100
-        
+        "value": 100      
     },
     "department": {
         "type": "Text",
         "value": "Franchise1"            
-},
+    },
     "description": {
         "type": "Text",
         "value": "Sample description"            
-},
+    },
     "location": {
         "type": "geo:point",
         "value": "42.8404625, -2.5123277"
