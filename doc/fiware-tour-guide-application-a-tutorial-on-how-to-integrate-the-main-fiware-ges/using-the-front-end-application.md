@@ -12,7 +12,7 @@ For running the front-end application, assuming you are on the folder where you 
  * Configure the hosts file in order to run the images using their aliases with `./tour-guide configure hosts`
 
 
-After performing all the above steps, the front-end application is ready to be used. If you open http://tourguide/client in your web browser you should see something like:
+After performing all the above steps, the front-end application is ready to be used. If you open `http://tourguide/client` in your web browser you should see something like:
 
 [![FRONT END MAIN VIEW](images/main-app-not-logged.png)](images/main-app-not-logged.png)
 
@@ -111,7 +111,7 @@ The functions provided by this module are:
  * `getReview(reviewID, sucessCallback, errorCallback)`: Retrieves a specific review.
  * `createNewReview(restaurantName, ratingValue, reviewBody, sucessCallback, errorCallback)`: Creates a new review for  the specified restaurant using the passed rating value and review content.
  * `updateReview(reviewId, ratingValue, reviewBody, sucessCallback, errorCallback)`: Updates the specified review using the new provided values.
-* `deleteReview(reviewId, sucessCallback, errorCallback)`: Delete the specified review.
+* `deleteReview(reviewId, sucessCallback, errorCallback)`: Deletes the specified review.
  * `createNewReservation(restaurantName, partySize, reservationDatetime, sucessCallback, errorCallback)`: Creates a new reservation for the logged user at the specified restaurant and at the given date.
  * `cancelReservation(reservationId, sucessCallback, errorCallback)`: Cancels the specified reservation.
 * `simplifyRestaurantsFormat (restaurants)`: Takes an array of restaurants and return another one  with the restaurants simplified. The expected format for the input array is the same than the format used for `getOrganizationRestaurants` or `getAllRestaurants`. This function also filters out restaurants with invalid coordinates.
