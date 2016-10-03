@@ -6,15 +6,11 @@ First of all you need to install Docker. Docker is a container technology which 
 
 ### Windows
 
-You have two options for installing Docker on Windows depending on the requirements.
-
-Find detailed information on how to install it [here](https://docs.docker.com/engine/installation/windows/).
+You can find detailed information on how to install it [here](https://docs.docker.com/engine/installation/windows/).
 
 ### Mac
 
-You have two options for installing Docker on Mac OS X depending on the requirements.
-
-Find detailed information on how to install it [here](https://docs.docker.com/engine/installation/mac/).
+You can find detailed information on how to install it [here](https://docs.docker.com/engine/installation/mac/).
 
 ### Linux
 
@@ -22,7 +18,7 @@ Docker is supported on the main Linux distributions. Find detailed information o
 
 ## Installing Docker-compose
 
-Next step is installing docker-compose. This tool allows to instantiate different containers that have dependencies between them. The configuration of the containers to be instantiated is normally described by a file names docker-compose.yml.
+Next step is installing docker-compose. This tool allows to instantiate different containers that have dependencies between them. The configuration of the containers to be instantiated is normally described by a file named docker-compose.yml.
 
 ### Windows
 
@@ -34,11 +30,11 @@ By installing Docker (any method) it satisfies this requirement.
 
 ### Linux
 
-A complete guide for installing Docker Compose can be found here: https://docs.docker.com/compose/install/.
+A complete guide for installing Docker Compose can be found [here](https://docs.docker.com/compose/install/).
 
 ## Clone repository
 
-Once you have all the tools needed you can start by cloning the Github repository of the Tour Guide Application. If you have not previously installed git, please see this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) which explains how to install git.
+Once you have all the tools needed you can start by cloning the Github repository of the Tour Guide Application. If you have not previously installed git, please have a look at this [link](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) which explains how to install git.
 
 - Open Terminal (or Git Terminal if using Windows).
 - Change the current working directory to the location where you want the cloned directory to be made.
