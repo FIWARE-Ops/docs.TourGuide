@@ -2,14 +2,16 @@
 
 ## Starting with Keyrock
 
-For testing purposes, we've generated a set of users, organizations, apps, roles and permissions to be loaded automatically in Keyrock. To load them, we just need to run the following:
+[Keyrock](https://github.com/ging/fi-ware-idm) is a Generic Enabler integrated in the Tour Guide Application, aware of the user profile management, authorization and authentication among others.
+
+For testing purposes, we have generated a set of users, organizations, apps, roles and permissions to be loaded automatically in Keyrock. To load them, we just need to run the following:
 
 ```
 $ ./tour-guide configure keyrock
 ```
-This will load all the information in Keyrock, and automatically sync with Authzforce.
+This will load all the information in Keyrock, and automatically sync with [Authzforce](http://authzforce-ce-fiware.readthedocs.io/en/latest/), the Generic Enabler aware of storing the XACML policies.
 
-Once the information is loaded, we will need to get the Oauth credentials from Keyrock and add them to the Tour Guide configuration by doing:
+Once the information is loaded, we will need to get the Oauth credentials from Keyrock and add them to the Tour Guide Application configuration by doing:
 
 ```
 $ ./tour-guide configure oauth
@@ -143,7 +145,7 @@ You can list all of the organizations using:
 curl -X GET -H "Content-Type: application/json" -H "X-auth-token: ADMIN" "http://keyrock:5000/v3/OS-SCIM/v2/Organizations/"
 ```
 
-This will output the organizations generated:
+This will display the organizations generated:
 
 ```
 {
@@ -161,24 +163,9 @@ This will output the organizations generated:
       "name": "Franchise1",
       "id": "f3aa9a45d1174b32a178dd281e801fd8"
     },
-    {
-      "active": true,
-      "urn:scim:schemas:extension:keystone:2.0": {
-        "domain_id": "default"
-      },
-      "description": "Test Franchise2",
-      "name": "Franchise2",
-      "id": "22db6633cc014421ad451c522385b461"
-    },
-    {
-      "active": true,
-      "urn:scim:schemas:extension:keystone:2.0": {
-        "domain_id": "default"
-      },
-      "description": "Test Franchise3",
-      "name": "Franchise3",
-      "id": "9f4a44391a334cd5a6c1b66c6cd037d6"
-    },
+
+    ...
+
     {
       "active": true,
       "urn:scim:schemas:extension:keystone:2.0": {
@@ -295,7 +282,7 @@ You can retrieve them by executing the following query:
 curl -X GET -H "Content-Type: application/json" -H "X-auth-token: ADMIN" "http://keyrock:5000/v3/OS-ROLES/roles/"
 ```
 
-Showing the following output:
+Generating the following output:
 
 ```
 {
@@ -497,26 +484,51 @@ By running:
 $ ./tour-guide configure keyrock
 ```
 
-Policies are generated and synchronized with Authzforce. Still, you can always query yourself the Authzforce container to check the policies generated manually:
+Policies are generated and synchronized with Authzforce. To be able to query the Authzforce container, we will need to add the container IP to our hostfile. This can be achieved by doing (sudo required):
 
+```
+sudo ./tour-guide configure hosts -m
+```
+
+After that you will be able to query the Authzforce container to check the policies generated.
 
 First getting the domain where the policies are stored:
 ```
 curl -s --request GET http://authzforce:8080/authzforce-ce/domains | awk '/href/{print $NF}' | cut -d '"' -f2
 ```
 
+Will give us something like:
+
+```
+_lczKYmCEeaNFgJCrBEACA
+```
+
 Secondly, retrieving the list of policies id’s stored:
 ```
 curl -s --request GET http://authzforce:8080/authzforce-ce/domains/{$DOMAIN}/pap/policies | xmllint --format -
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources xmlns="http://authzforce.github.io/rest-api-model/xmlns/authz/5" xmlns:ns2="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:ns3="http://authzforce.github.io/core/xmlns/pdp/3.6" xmlns:ns4="http://www.w3.org/2005/Atom" xmlns:ns5="http://authzforce.github.io/pap-dao-flat-file/xmlns/properties/3.6">
+  <ns4:link rel="item" href="b0654ddd-e74a-4f4f-8f91-d81470af70a1"/>
+  <ns4:link rel="item" href="root"/>
+</resources>
+
 ```
 
 And selecting one of the policies, we can get the versions stored of this policy:
 
 ```
 curl -s --request GET http://authzforce:8080/authzforce-ce/domains/{$DOMAIN}/pap/policies/{$POLICY_ID} | xmllint --format -
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<resources xmlns="http://authzforce.github.io/rest-api-model/xmlns/authz/5" xmlns:ns2="urn:oasis:names:tc:xacml:3.0:core:schema:wd-17" xmlns:ns3="http://authzforce.github.io/core/xmlns/pdp/3.6" xmlns:ns4="http://www.w3.org/2005/Atom" xmlns:ns5="http://authzforce.github.io/pap-dao-flat-file/xmlns/properties/3.6">
+  <ns4:link rel="item" href="1.0"/>
+</resources>
 ```
 
 Finally, choosing one of the versions, we can get the full policy set:
 ```
 curl -s --request GET http://authzforce:8080/authzforce-ce/domains/{$DOMAIN}/pap/policies/{$POLICY_ID}/{$VERSION} | xmllint --format -
+
+
 ```
