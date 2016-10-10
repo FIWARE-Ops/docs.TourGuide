@@ -137,7 +137,7 @@ mysql> select * from Franchise1_0115206c51f60b48b77e4c937835795c33bb953f_Restaur
 
 As we can see, the temperature in the kitchen of the restaurant with Id `0115206c51f60b48b77e4c937835795c33bb953f` is `25` degrees.  Let's see what happens when the temperature changes.  To do this, we will use the following command:
 ```
-$ ./tourguide sensors send-data -i "0115206c51f60b48b77e4c937835795c33bb953f-kitchen-temperature" -d "t|21"
+$ ./tour-guide sensors send-data -i "0115206c51f60b48b77e4c937835795c33bb953f-kitchen-temperature" -d "t|21"
 ```
 
 We can see that Orion sends a new notification with the temperature change:
