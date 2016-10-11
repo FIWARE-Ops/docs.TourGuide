@@ -3,7 +3,7 @@
 In this section the steps needed to run Orion Context Broker and some example operations are detailed. Further information about Orion Context Broker can be found in the [Development of context-aware applications](../development-context-aware-applications/introduction/) section or in the [oficial documentation](http://fiware-orion.readthedocs.io/en/latest/).
 
 
-For running an empty Orion instance ready to be used, run:
+For running an Orion instance ready to be used, run:
 
 ```
  docker-compose up orion
@@ -15,28 +15,7 @@ or using the Command Line Interface (CLI):
 ./tour-guide start orion
 ```
 
-If you want an Orion instance with preloaded examples, run the whole Tour Guide application using:
-
-```
-docker-compose up
-```
-
-or using the CLI:
-
-```
-./tour-guide start
-```
-
-
-Once all the containers are running, you can load the sample data using the CLI:
-
- * Load restaurants: `./tour-guide load restaurants`
-
- * Load reviews:  `./tour-guide load reviews`
-
- * Load reservations: `./tour-guide load reservations`
-
-Note that in order to use the sample data, the `Fiware-Service: tourguide` HTTP header has to be added to every request.
+Information regarding restaurants, reviews and reservations is already loaded.
 
 In order to perform a request to the Context Broker we need to know its hostname. You can modify the system hosts file using the CLI provided in the Tour Guide Application by executing `./tour-guide configure hosts`. After executing the configure hosts command, you can perform requests to the context broker using `orion` instead of its IP.
 
@@ -65,7 +44,7 @@ Then, you will obtain a JSON response similar to:
 
 If you want to create a new restaurant, you can issue a request with restaurant information in the payload body and specifying a franchise using the `Fiware-ServicePath` HTTP header.  
 
-For instance, in order to create a restaurant belonging to  `Franchise1` the following HTTP request can be used: 
+For instance, in order to create a restaurant belonging to  `Franchise1` the following HTTP request can be used:
 
 ```
 POST orion:1026/v2/entities/

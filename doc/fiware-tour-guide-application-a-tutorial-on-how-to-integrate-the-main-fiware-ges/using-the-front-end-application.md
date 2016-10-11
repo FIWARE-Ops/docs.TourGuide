@@ -3,10 +3,6 @@
 For running the front-end application, assuming you are on the folder where you downloaded the source code, follow these steps: 
 
  * Launch the application using the command line interface (from now on CLI) with: `./tour-guide start`
- * Load sample data using the CLI:
-     * Load restaurants: `./tour-guide load restaurants`.
-     * Load reviews: `./tour-guide load reviews`.
-     * Load reservations: `./tour-guide load reservations`.
  * Provide user, roles and permissions on Keyrock with `tour-guide configure keyrock`
  * Get the Oauth credentials from Keyrock and add them to the Tourguide configuration with `./tour-guide configure oauth`
  * Configure the hosts file in order to run the images using their aliases with `./tour-guide configure hosts`

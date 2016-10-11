@@ -1,13 +1,7 @@
 # Managing IoT data
 With the Tour Guide application, you can generate, simulate and give persistence to data coming from IoT devices.  For that purpose, we generate humidity and temperature (virtual) sensors for the kitchen and dining room of restaurants.  All the data provided by sensors will be propagated to Cygnus, using MySQL database by default.
 
-Note that, to this aim, we will need to previously load the Restaurants information. For further information on how to generate them just execute the load command with the `--help` parameter:
-
-```
-./tour-guide load --help
-```
-
-And make sure the required services (`tourguide, orion, idas and cygnus`) are up and running. By executing:
+Make sure the required services (`tourguide, orion, idas and cygnus`) are up and running. By executing:
 
 ```
 ./tour-guide start tourguide
