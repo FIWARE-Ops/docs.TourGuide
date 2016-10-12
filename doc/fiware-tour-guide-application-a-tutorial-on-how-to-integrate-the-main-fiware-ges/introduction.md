@@ -7,7 +7,7 @@ The FIWARE Tour Guide Application is a reference application aimed at teaching a
 ## Approach
 
 The first step taken to build the FIWARE Tour Guide application was to think up a rich use case: the  smart management of a big restaurant franchise, including reservations, reviews and all the parameters which have to do with managing each restaurant on a day by day basis.
-Another important point was to define a bootstrap process that would enable to load initial data into the application. For this purpose, data coming from the Open Euskadi (Basque Country Government) open data portal was used. Data from restaurants located at the Basque Country Region in Spain were loaded. All this bootstrapping process was automated for the benefit of the end user who will be able to try and tweak with mock data.
+For this purpose, data coming from the Open Euskadi (Basque Country Government) open data portal was used to generate a docker image with a set of restaurants, reviews and reservations. All this process was automated for the benefit of the end user who will be able to try and tweak with mock data.
 
 ## Application functionalities
 
