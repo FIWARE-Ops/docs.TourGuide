@@ -9,4 +9,4 @@ Should you wish to learn much more about this, please check:
    - [Browse the API cookbook](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
    - [Read the full documentation](http://fiware-orion.readthedocs.org/en/latest/)
    - [Latest stable release](https://github.com/Fiware/context.Orion/releases/latest)
-   - [FIWARE Harmonized Data Models](https://schema.fiware.org)
+   - [FIWARE Harmonized Data Models](http://schema.fiware.org)
