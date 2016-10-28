@@ -1,97 +1,126 @@
 As mentioned before, you can also publish the datasets in the Store by
 using the methods provided by the Store itself. To do so, first of all
 you have to enter the [FIWARE
-Store](https://account.lab.fiware.org/users/sign_in). Once in the Store,
-you should click in the “My Offerings” button, in the left side bar. To
-register your dataset as a resource, click on the “Provider Options”
-button and then in the “Register Resource”. You must note that an
-offering is composed by zero or more resources.
+Store](https://store.lab.fiware.org/) and sign in. Once in the Store,
+you should click in the “My Stock” button, in the left side bar. 
 
 [![Offering Datasets Through the WStore
 Interface](../images/Offering-Datasets-Through-the-WStore-Interface-1024x326.png)](../images/Offering-Datasets-Through-the-WStore-Interface.png)
 
-In the new form you will have to complete some fields:
-
--   Name: The name of your dataset (it mustn’t match with the name
-    provided in CKAN).
--   Version: The version of the dataset (typically: 1.0)
--   Description: Description of the dataset
--   Content Type: dataset
--   How to provide the resource: Provide resource URL
--   Resource URL: the URL that you get when you create your dataset in
-    the FIWARE Data Portal (typically:
-    https://data.lab.fiware.org/dataset/{dataset\_name}). You can check
-    this URL by accessing your dataset in FIWARE Data Portal.
--   Open Resource: open offerings (those that cannot be acquired) can
-    only contain open resources. However, non-open offerings can contain
-    open resources. (Typically you should disable this checkbox).
-
-​[![Offering Datasets Through the WStore
-Interface1](../images/Offering-Datasets-Through-the-WStore-Interface1.png)](../images/Offering-Datasets-Through-the-WStore-Interface1.png)
-
-When you have registered your dataset as a resource, you will be able to
-provide it in the Store. To do so, you should create an offering. You
-can do it by clicking the “Provider options” button and then the one
-titled “Create Offering”.
+To register your dataset as a product, click on “Product Specifications”
+and then in the “New” button.
 
 [![Offering Datasets Through the WStore
-Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2-1024x326.png)](../images/Offering-Datasets-Through-the-WStore-Interface2.png)
+Interface1](../images/Offering-Datasets-Through-the-WStore-Interface1.png)](../images/Offering-Datasets-Through-the-WStore-Interface1.png)
 
-A new dialog will be displayed. This dialog will guide throughout the
-process of creating a new offering. In the first step, you will be asked
-to fulfil some basic information such as the name, the version or the
-logo. You should also note that you are asked for a Notification URL.
-This URL is the one that will be called when a user acquires a dataset.
-The Data Portal needs to be notified every time a user acquires a
-dataset in order to allow this user to access the dataset. In this
-option you should choose “Provide a notification URL” and introduce the
-following one:
-“https://data.lab.fiware.org/api/action/dataset\_acquired”. Please note:
-if you don’t fill this field properly, users won’t be able to access
-acquired dataset.
+In the new form you will have to complete some fields, ditributed in several steps (Only the steps required for creating a CKAN Dataset are described):
+
+* **General**: General information of the product to be created. You have to fill the following fields:
+
+    -   Name: The name of your dataset (it doesn’t have to match with the name
+        provided in CKAN).
+    -   Version: The version of the dataset (typically: 1.0)
+    -   Brand: Your brand name (It migth be your username if you don’t have one)
+    -   ID Number: An external Id used for identify the dataset outside of the FIWARE Store (i.e the Id in CKAN of the dataset)
+    -   Description: Description of the dataset
+
+[![Offering Datasets Through the WStore
+Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../images/Offering-Datasets-Through-the-WStore-Interface2.png)
+
+* **Assets**: Information of the asset to be included as a product. In this case, as the CKAN dataset is a digital product, you have to set the  “Is Digital product” checkbox to yes. For providing the dataset you have to fill the following fields:
+
+    -   Digital Asset Type: Type of the asset to be provided. You have to select “CKAN Dataset”
+    -   Asset URL: the URL that you get when you create your dataset in
+        the FIWARE Data Portal (typically:
+        https://data.lab.fiware.org/dataset/{dataset\_name}). You can check
+        this URL by accessing your dataset in FIWARE Data Portal.
+    -   Media Type: Mime type of the dataset (e.g application/json, text/csv, etc.)
+
 
 [![Offering Datasets Through the WStore
 Interface3](../images/Offering-Datasets-Through-the-WStore-Interface3.png)](../images/Offering-Datasets-Through-the-WStore-Interface3.png)
 
-In the following step you will be asked for the description, the pricing
-model and the legal terms. Using this form, you are only able to choose
-two pricing models: single payment or free offerings. If you want to set
-a more complex pricing model, you should provide a custom USDL. Relating
-to the legal conditions, you must note that all users will be forced to
-accept these conditions before acquiring the offering. If you don’t want
-users to accept legal terms, you can leave these fields in blank.
+* **Attachments**: Picture to be shown in the Store portal regarding the product. To provide the picture fill the following fields:
+
+    -   How to provide: Whether you want to provide a URL of the picture or upload it directly to the platform
+    -   Picture URL: URL of the picture if you have decided to use a URL
+    -   Upload Picture: File field to upload the image if you have decided to provide it as a file
 
 [![Offering Datasets Through the WStore
 Interface4](../images/Offering-Datasets-Through-the-WStore-Interface4.png)](../images/Offering-Datasets-Through-the-WStore-Interface4.png)
 
-The next step asks you to select some applications. In this case you can
-avoid this section. The most important section is the next one, where
-you will have to select the resources that are bounded to the offering.
-Here you must select the resource created in the previous step.
-Additionally, you can add some other resources such as WireCloud widgets
-that can add extra value to your dataset. For example, you can add
-WireCloud widgets to plot graphs based on the data.
+* **Terms & Conditions**: Terms and conditions that apply to the product and that must be accepted by the customers.
+
+    -   Agreement title: Title given to the terms and conditions clauses
+    -   Agreement text: Text with the terms and conditions clauses
 
 [![Offering Datasets Through the WStore
 Interface5](../images/Offering-Datasets-Through-the-WStore-Interface5.png)](../images/Offering-Datasets-Through-the-WStore-Interface5.png)
 
-At this point, the offering is already created but is not published yet.
-To publish the offering, we should click on the “Provided” button placed
-on the left side bar. In this section, you have to look for the offering
-created previously. Then click on it and add some tags. To do that,
-click on the “+” button placed below the “Tags” heading. 
+When you have registered your dataset as a product, you will be able to
+offer it in the Store. To do so, you have to create an offering. You
+can do it by going to the “Offerings” section and then click in the “New”
+button.
 
 [![Offering Datasets Through the WStore
 Interface6](../images/Offering-Datasets-Through-the-WStore-Interface6.png)](../images/Offering-Datasets-Through-the-WStore-Interface6.png)
 
-You can add all the tags that you want, but if you want your dataset to
-appear in the “Datasets” section of the Store, you must add the
-“dataset” tag.
+A new form will be displayed. This form will guide throughout the
+process of creating a new offering. In particular, the steps you have
+to follow in order to create an offering for your dataset product are
+the following:
+
+* **General**: General information regarding the offering. You have to fill the following fields:
+
+    -   Name: The name of your offering
+    -   Version: The version of your offering
+    -   Description: The description of your offering
+    -   Places: List of places where you offering will be available
 
 [![Offering Datasets Through the WStore
 Interface7](../images/Offering-Datasets-Through-the-WStore-Interface7.png)](../images/Offering-Datasets-Through-the-WStore-Interface7.png)
 
-Finally, you must click in the “Publish” button to complete the process.
+* **Product Spec**: Product to be included in the offering. In this step you have to select your dataset product.
 
 [![Offering Datasets Through the WStore
 Interface8](../images/Offering-Datasets-Through-the-WStore-Interface8.png)](../images/Offering-Datasets-Through-the-WStore-Interface8.png)
+
+* **Catalogue**: Catalogue where you want to publish the offering
+
+[![Offering Datasets Through the WStore
+Interface9](../images/Offering-Datasets-Through-the-WStore-Interface9.png)](../images/Offering-Datasets-Through-the-WStore-Interface9.png)
+
+* **Category**: Set of categories of your offering used to easy the process of finding it to potential customers
+
+[![Offering Datasets Through the WStore
+Interface10](../images/Offering-Datasets-Through-the-WStore-Interface10.png)](../images/Offering-Datasets-Through-the-WStore-Interface10.png)
+
+* **Price Plans**: Pricing model of your offering. You can create different price plans which can be selected by the customers according to their needs. You can create price plans clicking in “New price plan”. Then, you have to fill the form and click in “Create” to save the plan. To create a plan you have to provide the following information:
+
+    -   Name: The name of the price plan
+    -   Type: The type of the price plan. It can be “One Time”, “Recurring”, or “Usage”
+    -   Price: The amount to be charged once for one time plans, periodically for recurring models, and based on the consumption for usage models
+    -   Description: The description of the price plan
+    -   Charge period: This field is only used in recurring plans and contain the period between charges
+    -   Unit: This field is only used in usage models and contains the unit to be monitored in order to calculate the charges
+
+[![Offering Datasets Through the WStore
+Interface11](../images/Offering-Datasets-Through-the-WStore-Interface11.png)](../images/Offering-Datasets-Through-the-WStore-Interface11.png)
+
+* **RS Model**: Revenue Sharing model used to distribute the revenue generated by the offering
+
+[![Offering Datasets Through the WStore
+Interface12](../images/Offering-Datasets-Through-the-WStore-Interface12.png)](../images/Offering-Datasets-Through-the-WStore-Interface12.png)
+
+
+At this point, the offering is already created but is not published yet.
+To publish the offering, we should update the status of the product and
+the offering to  “Launched”. To do that, open the details of the product or
+the offering, click in “Launched” and then in “Update” 
+
+
+[![Offering Datasets Through the WStore
+Interface13](../images/Offering-Datasets-Through-the-WStore-Interface13.png)](../images/Offering-Datasets-Through-the-WStore-Interface13.png)
+
+[![Offering Datasets Through the WStore
+Interface14](../images/Offering-Datasets-Through-the-WStore-Interface14.png)](../images/Offering-Datasets-Through-the-WStore-Interface14.png)

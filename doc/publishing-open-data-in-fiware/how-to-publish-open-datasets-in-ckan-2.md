@@ -1,5 +1,5 @@
 To upload your own datasets (open data) to CKAN, you must access the
-[FIWARE Data portal](https://data.lab.fi-ware.org/). Once that you are
+[FIWARE Data portal](https://data.lab.fiware.org/). Once that you are
 logged in, you should go to the “Datasets” section and click on the “Add
 Dataset” button.
 
