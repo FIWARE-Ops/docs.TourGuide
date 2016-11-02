@@ -9,7 +9,7 @@ FIWARE Store](../images/Acquiring-Datasets-Offered-in-the-WStore.png)](../images
 
 Once in the Data category, you will see all the offerings that contain
 data. you can choose those ones that fits your requirements and add them
-to the shopping cart by clicking on “Add to Shopping Cart”.
+to the shopping cart by clicking on “Add to Cart”.
 
 [![Acquiring Datasets Offered in the
 FIWARE Store1](../images/Acquiring-Datasets-Offered-in-the-WStore1.png)](../images/Acquiring-Datasets-Offered-in-the-WStore1.png)
