@@ -5,7 +5,7 @@ Store](https://store.lab.fiware.org/) and sign in. Once in the Store,
 you should click in the “My Stock” button, in the left side bar. 
 
 [![Offering Datasets Through the WStore
-Interface](../images/Offering-Datasets-Through-the-WStore-Interface-1024x326.png)](../images/Offering-Datasets-Through-the-WStore-Interface.png)
+Interface](../images/Offering-Datasets-Through-the-WStore-Interface.png)](../images/Offering-Datasets-Through-the-WStore-Interface.png)
 
 To register your dataset as a product, click on “Product Specifications”
 and then in the “New” button.
