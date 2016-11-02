@@ -2,15 +2,15 @@ As mentioned before, you can also publish the datasets in the Store by
 using the methods provided by the Store itself. To do so, first of all
 you have to enter the [FIWARE
 Store](https://store.lab.fiware.org/) and sign in. Once in the Store,
-you should click in the “My Stock” button, in the left side bar. 
+you should click on the “My Stock” button, in the left side bar.
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface](../images/Offering-Datasets-Through-the-WStore-Interface.png)](../images/Offering-Datasets-Through-the-WStore-Interface.png)
 
 To register your dataset as a product, click on “Product Specifications”
-and then in the “New” button.
+and then on the “New” button.
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface1](../images/Offering-Datasets-Through-the-WStore-Interface1.png)](../images/Offering-Datasets-Through-the-WStore-Interface1.png)
 
 In the new form you will have to complete some fields, ditributed in several steps (Only the steps required for creating a CKAN Dataset are described):
@@ -24,7 +24,7 @@ In the new form you will have to complete some fields, ditributed in several ste
     -   ID Number: An external Id used for identify the dataset outside of the FIWARE Store (i.e the Id in CKAN of the dataset)
     -   Description: Description of the dataset
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../images/Offering-Datasets-Through-the-WStore-Interface2.png)
 
 * **Assets**: Information of the asset to be included as a product. In this case, as the CKAN dataset is a digital product, you have to set the  “Is Digital product” checkbox to yes. For providing the dataset you have to fill the following fields:
@@ -37,7 +37,7 @@ Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../i
     -   Media Type: Mime type of the dataset (e.g application/json, text/csv, etc.)
 
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface3](../images/Offering-Datasets-Through-the-WStore-Interface3.png)](../images/Offering-Datasets-Through-the-WStore-Interface3.png)
 
 * **Attachments**: Picture to be shown in the Store portal regarding the product. To provide the picture fill the following fields:
@@ -46,7 +46,7 @@ Interface3](../images/Offering-Datasets-Through-the-WStore-Interface3.png)](../i
     -   Picture URL: URL of the picture if you have decided to use a URL
     -   Upload Picture: File field to upload the image if you have decided to provide it as a file
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface4](../images/Offering-Datasets-Through-the-WStore-Interface4.png)](../images/Offering-Datasets-Through-the-WStore-Interface4.png)
 
 * **Terms & Conditions**: Terms and conditions that apply to the product and that must be accepted by the customers.
@@ -54,15 +54,15 @@ Interface4](../images/Offering-Datasets-Through-the-WStore-Interface4.png)](../i
     -   Agreement title: Title given to the terms and conditions clauses
     -   Agreement text: Text with the terms and conditions clauses
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface5](../images/Offering-Datasets-Through-the-WStore-Interface5.png)](../images/Offering-Datasets-Through-the-WStore-Interface5.png)
 
 When you have registered your dataset as a product, you will be able to
 offer it in the Store. To do so, you have to create an offering. You
-can do it by going to the “Offerings” section and then click in the “New”
+can do it by going to the “Offerings” section and then click on the “New”
 button.
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface6](../images/Offering-Datasets-Through-the-WStore-Interface6.png)](../images/Offering-Datasets-Through-the-WStore-Interface6.png)
 
 A new form will be displayed. This form will guide throughout the
@@ -77,50 +77,50 @@ the following:
     -   Description: The description of your offering
     -   Places: List of places where you offering will be available
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface7](../images/Offering-Datasets-Through-the-WStore-Interface7.png)](../images/Offering-Datasets-Through-the-WStore-Interface7.png)
 
 * **Product Spec**: Product to be included in the offering. In this step you have to select your dataset product.
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface8](../images/Offering-Datasets-Through-the-WStore-Interface8.png)](../images/Offering-Datasets-Through-the-WStore-Interface8.png)
 
 * **Catalogue**: Catalogue where you want to publish the offering
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface9](../images/Offering-Datasets-Through-the-WStore-Interface9.png)](../images/Offering-Datasets-Through-the-WStore-Interface9.png)
 
 * **Category**: Set of categories of your offering used to easy the process of finding it to potential customers
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface10](../images/Offering-Datasets-Through-the-WStore-Interface10.png)](../images/Offering-Datasets-Through-the-WStore-Interface10.png)
 
-* **Price Plans**: Pricing model of your offering. You can create different price plans which can be selected by the customers according to their needs. You can create price plans clicking in “New price plan”. Then, you have to fill the form and click in “Create” to save the plan. To create a plan you have to provide the following information:
+* **Price Plans**: Pricing model of your offering. You can create different price plans which can be selected by the customers according to their needs. You can create price plans clicking on “New price plan”. Then, you have to fill the form and click on “Create” to save the plan. To create a plan you have to provide the following information:
 
     -   Name: The name of the price plan
     -   Type: The type of the price plan. It can be “One Time”, “Recurring”, or “Usage”
-    -   Price: The amount to be charged once for one time plans, periodically for recurring models, and based on the consumption for usage models
+    -   Price: The amount to be charged once for one time models, periodically for recurring models, and based on the consumption for usage models
     -   Description: The description of the price plan
-    -   Charge period: This field is only used in recurring plans and contain the period between charges
+    -   Charge period: This field is only used in recurring plans and contains the period between charges
     -   Unit: This field is only used in usage models and contains the unit to be monitored in order to calculate the charges
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface11](../images/Offering-Datasets-Through-the-WStore-Interface11.png)](../images/Offering-Datasets-Through-the-WStore-Interface11.png)
 
 * **RS Model**: Revenue Sharing model used to distribute the revenue generated by the offering
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface12](../images/Offering-Datasets-Through-the-WStore-Interface12.png)](../images/Offering-Datasets-Through-the-WStore-Interface12.png)
 
 
 At this point, the offering is already created but is not published yet.
 To publish the offering, we should update the status of the product and
 the offering to  “Launched”. To do that, open the details of the product or
-the offering, click in “Launched” and then in “Update” 
+the offering, click on “Launched” and then on “Update”
 
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface13](../images/Offering-Datasets-Through-the-WStore-Interface13.png)](../images/Offering-Datasets-Through-the-WStore-Interface13.png)
 
-[![Offering Datasets Through the WStore
+[![Offering Datasets Through the FIWARE Store
 Interface14](../images/Offering-Datasets-Through-the-WStore-Interface14.png)](../images/Offering-Datasets-Through-the-WStore-Interface14.png)
