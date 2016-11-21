@@ -1,10 +1,14 @@
-This section explains how users (both end users and developers) can
-publish data in CKAN, the Open Data publication GE, as well as how they
-can publish offerings containing this data in the FIWARE Store (Biz 
-Ecosystem GE) so as to set access control policies over it and/or 
-monetize it. You should note that at the time of writing this document,
-FIWARE offers two different types of data: context information and 
-datasets. Each type of data should be published in a different way 
+Publishing and consuming open data is a cornerstone for the development
+of applications and the creation of an innovation ecosystem. In this regard,
+this section explains how users (both end users and developers) can
+expose their data publishing it in CKAN, the Open Data publication GE,
+as well as how they can create offerings containing this data in the FIWARE Store (Biz
+Ecosystem GE) so as to set access control policies and/or monetize it.
+
+You should note that at the time of writing this document, FIWARE offers
+two different types of data: context information (as seen in in the section
+[Development of context-aware applications](/development-context-aware-applications/development-context-aware-applications/))
+and datasets. Each type of data is published in a different way
 and for this reason you’ll find two differentiated sections. A third 
 section is devoted to explain the benefits of publishing your data 
 in the FIWARE Store and the way of doing it.
@@ -29,4 +33,5 @@ check out:
 If you want to start experimenting and doing hands-on work, have a look at:
 
 - [CKAN](https://github.com/Fiware/context.Ckan)
+- [Biz Ecosystem GEri](https://github.com/FIWARE-TMForum/Business-API-Ecosystem)
 
