@@ -1,9 +1,21 @@
 Publishing and consuming open data is a cornerstone for the development
 of applications and the creation of an innovation ecosystem. In this regard,
 this section explains how users (both end users and developers) can
-expose their data publishing it in CKAN, the Open Data publication GE,
-as well as how they can create offerings containing this data in the FIWARE Store (Biz
-Ecosystem GE) so as to set access control policies and/or monetize it.
+expose their data publishing it in CKAN, the Open Data publication GE.
+
+CKAN is an open source solution for the publication, management and
+consumption of open data, usually, but not only, through static
+datasets. CKAN allows to catalogue, upload and manage open datasets and
+data sources, while supports searching, browsing, visualizing or
+accessing open data. CKAN is the Open Data publication platform that is
+most widely used by many cities, public authorities and organizations.
+
+In addition, this section also deals with how users can create offerings
+containing their published data so as to set access control policies and/or
+monetize it, using the FIWARE Store (Biz Ecosystem GE). This component
+allows the monetization of different kind of assets during the whole
+service life cycle, from offering creation to its charging, accounting
+and revenue settlement and sharing
 
 You should note that at the time of writing this document, FIWARE offers
 two different types of data: context information (as seen in in the section

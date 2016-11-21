@@ -14,13 +14,6 @@ is also required to store and publish historical information of the
 context data generated over time. This is one of the usages of the Open
 Data publication GE, CKAN, in FIWARE.
 
-CKAN is an open source solution for the publication, management and
-consumption of open data, usually, but not only, through static
-datasets. CKAN allows to catalogue, upload and manage open datasets and
-data sources, while supports searching, browsing, visualizing or
-accessing open data. CKAN is the Open Data publication platform that is
-most widely used by many cities, public authorities and organizations.
-
 You may take advantage of the connectors supported by the Context Broker
 that automatically generate historic records generated each time there
 is a change in the context information and make those records available
