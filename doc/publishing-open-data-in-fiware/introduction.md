@@ -7,7 +7,7 @@ Ecosystem GE) so as to set access control policies and/or monetize it.
 
 You should note that at the time of writing this document, FIWARE offers
 two different types of data: context information (as seen in in the section
-[Development of context-aware applications](/development-context-aware-applications/development-context-aware-applications/))
+[Development of context-aware applications](/development-context-aware-applications/introduction/))
 and datasets. Each type of data is published in a different way
 and for this reason you’ll find two differentiated sections. A third 
 section is devoted to explain the benefits of publishing your data 
