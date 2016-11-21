@@ -30,7 +30,7 @@ Datastore, and can be downloaded and queried through REST APIs.
 In order to achieve this behaviour it is necessary to deploy and
 configure Cygnus, a piece of software complementary to the Context
 Broker GE. The instructions to install Cygnus can be found
-[here](http://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/BigData_Analysis_-_Installation_and_Administration_Guide#Installation_and_configuration_2). 
+[here](https://fiware-cygnus.readthedocs.io/en/latest/index.html). 
 
 Once Cygnus has been installed, it is required to configure it. In a
 nutshell, there are three steps: configure CKAN storage, create the
