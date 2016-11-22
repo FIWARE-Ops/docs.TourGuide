@@ -19,8 +19,8 @@ the data in the FIWARE Store since you will also get the possibility of:
     and the FIWARE Store together to charge the users for using your data.
     You are able to choose different payment models:
     -   **One time payments:** users pay once.
-    -   **Recurring payments:** users are forced to pay periodically (daily,
-        monthly,...) for using your data. In addition, users will be
+    -   **Recurring payments:** users are forced to pay periodically (monthly,
+        yearly, etc) for using your data. In addition, users will be
         able to cancel the subscription but they won’t be able to access
         the data anymore.
     -   **Usage payment:** users pay based on the amount of information
@@ -29,8 +29,8 @@ the data in the FIWARE Store since you will also get the possibility of:
 Once that your data (datasets or context information) is published in
 CKAN, you are able to publish it in the FIWARE Store. You can do it in
 two different ways: through the CKAN interface or through the Store. The
-first option is the easiest one but is more constrained since you can
+first option is the easiest one, but is more constrained since you can
 only provide an offering with a single product: the dataset itself. On
 the other hand, if you choose the second option, you will be able to
-offer the dataset in a bundle with other resources (such as widgets...)
-that can add some extra value to your data.
+offer the dataset in a bundle with other resources (such as widgets,
+apps, etc) that can add some extra value to your data.
