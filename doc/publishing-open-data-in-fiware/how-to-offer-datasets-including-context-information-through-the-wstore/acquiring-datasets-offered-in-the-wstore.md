@@ -14,7 +14,7 @@ the “Datasets” category.
 FIWARE Store](../images/Acquiring-Datasets-Offered-in-the-WStore.png)](../images/Acquiring-Datasets-Offered-in-the-WStore.png)
 
 Once you have selected the Data category, all the Product Offerings where a dataset is
-offered are displayed. Therefore, you can choose those ones that fits
+offered are displayed. Therefore, you can choose those ones that fit
 your requirements and add them to the shopping cart by clicking on “Add to Cart”.
 
 [![Acquiring Datasets Offered in the
@@ -23,7 +23,7 @@ FIWARE Store1](../images/Acquiring-Datasets-Offered-in-the-WStore1.png)](../imag
 By clicking this button, a new dialog is displayed in order to
 allow you to select characteristics, if available, and the price
 plan. In addition, if the offering has some legal conditions attached,
-you will be forced to accept them before completing the process. 
+you will have to accept them before completing the process. 
 
 [![Acquiring Datasets Offered in the
 FIWARE Store2](../images/Acquiring-Datasets-Offered-in-the-WStore2.png)](../images/Acquiring-Datasets-Offered-in-the-WStore2.png)
@@ -57,7 +57,7 @@ FIWARE Store6](../images/Acquiring-Datasets-Offered-in-the-WStore6.png)](../imag
 
 In the details of the product, you can see several information regarding
 the acquisition, including the characteristics and the price model you have
-selected, and the list of charges you have made (Including its invoice).
+selected, and the list of charges you have made (including its invoice).
 To access the dataset published in CKAN, click on the “Download” button.
 
 [![Acquiring Datasets Offered in the

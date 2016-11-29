@@ -8,7 +8,7 @@ consumption of open data, usually, but not only, through static
 datasets. CKAN allows to catalogue, upload and manage open datasets and
 data sources, while supports searching, browsing, visualizing or
 accessing open data. CKAN is the Open Data publication platform that is
-most widely used by many cities, public authorities and organizations.
+most widely used by cities, public authorities and organizations.
 
 In addition, this section also deals with how users can create offerings
 containing their published data so as to set access control policies and/or

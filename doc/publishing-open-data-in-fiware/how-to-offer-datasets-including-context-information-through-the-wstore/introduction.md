@@ -16,7 +16,7 @@ the data in the FIWARE Store since you will also get the possibility of:
 -   **Charging the users for accessing your data**: there are some
     conditions (conflicts of interest, security, competence...) that
     force you to publish data with cost. In that cases, you can use CKAN
-    and the FIWARE Store together to charge the users for using your data.
+    and the FIWARE Store together to charge users for using your data.
     You are able to choose different payment models:
     -   **One time payments:** users pay once.
     -   **Recurring payments:** users are forced to pay periodically (monthly,

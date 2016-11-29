@@ -4,7 +4,7 @@ interface for offering your CKAN datasets allows you to create more advanced
 offerings, including composite ones, offerings with multiple pricing models,
 offerings with recurring and usage pricing models, etc. As an alternative,
 you can use the CKAN interface to create a basic offering, and then use
-the FIWARE Store interface to include these advance features.
+the FIWARE Store interface to include these advanced features.
 
 To create offerings, the first step is entering the [FIWARE
 Store](https://store.lab.fiware.org/) and signing in using a valid FIWARE
@@ -35,13 +35,13 @@ are described, for more details have a look at the user guide in
 [here](http://business-api-ecosystem.readthedocs.io/en/latest/user-programmer-guide.html)):
 
 * **General**: This step is intended to provide the basic information of
-  the Product Spec. being created. In particular, you have to fill the
+  the product specification. being created. In particular, you have to fill in the
   following fields:
 
-    -   Name: The name of your dataset (it doesn’t have to match with the name
+    -   Name: The name of your dataset (it does not have to match with the name
         provided in CKAN).
     -   Version: The version of the dataset (typically: 1.0)
-    -   Brand: Your brand name (It migth be your username if you don’t have one)
+    -   Brand: Your brand name (It migth be your username if you do not have one)
     -   ID Number: An external Id used for identify the dataset outside
         of the FIWARE Store (i.e the Id in CKAN of the dataset)
     -   Description: Description of the dataset
@@ -50,7 +50,7 @@ are described, for more details have a look at the user guide in
 Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../images/Offering-Datasets-Through-the-WStore-Interface2.png)
 
 * **Assets**: This step is intended to provide information of the asset
-  to be included as a Product Spec. In this case, as the CKAN dataset is
+  to be included as a product specification. In this case, as the CKAN dataset is
   a digital product, you have to set the  “Is Digital product” checkbox
   to yes. For including the dataset info, you have to fill the following
   fields:
@@ -69,8 +69,8 @@ Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../i
 Interface3](../images/Offering-Datasets-Through-the-WStore-Interface3.png)](../images/Offering-Datasets-Through-the-WStore-Interface3.png)
 
 * **Attachments**: This step is intended to provide the picture to be shown
-  in the Store portal regarding the Product Spec. To provide the picture
-  fill the following fields:
+  in the Store portal regarding the product specification. To provide the picture
+  fill in the following fields:
 
     -   How to provide: Whether you want to provide a URL of the picture
         or upload it directly to the platform
@@ -124,7 +124,7 @@ Interface7](../images/Offering-Datasets-Through-the-WStore-Interface7.png)](../i
 
 * **Product Spec**: This step is intended to specify the Product Spec to
   be included in the Product Offering. In this step you have to select
-  the dataset Product Spec you created previously.
+  the dataset product specification you created previously.
 
 [![Offering Datasets Through the FIWARE Store
 Interface8](../images/Offering-Datasets-Through-the-WStore-Interface8.png)](../images/Offering-Datasets-Through-the-WStore-Interface8.png)
