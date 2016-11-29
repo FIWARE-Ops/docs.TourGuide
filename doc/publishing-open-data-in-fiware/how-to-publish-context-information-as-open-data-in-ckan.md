@@ -1,7 +1,5 @@
-Publishing and consuming open data is a cornerstone for the development
-of applications and the creation of an innovation ecosystem. Through the
-mechanisms described in the section [Development of context-aware
-applications](/development-context-aware-applications/development-context-aware-applications/),
+Through the mechanisms described in the section [Development of context-aware
+applications](/development-context-aware-applications/introduction/),
 the Context Broker can be used to publish and consume context
 information. In particular, this information can be indeed open data and
 consumed through the queries and subscriptions APIs (NGSI10). This way,
@@ -16,13 +14,6 @@ is also required to store and publish historical information of the
 context data generated over time. This is one of the usages of the Open
 Data publication GE, CKAN, in FIWARE.
 
-CKAN is an open source solution for the publication, management and
-consumption of open data, usually, but not only, through static
-datasets. CKAN allows to catalogue, upload and manage open datasets and
-data sources, while supports searching, browsing, visualizing or
-accessing open data. CKAN is the Open Data publication platform that is
-most widely used by many cities, public authorities and organizations.
-
 You may take advantage of the connectors supported by the Context Broker
 that automatically generate historic records generated each time there
 is a change in the context information and make those records available
@@ -32,7 +23,7 @@ Datastore, and can be downloaded and queried through REST APIs.
 In order to achieve this behaviour it is necessary to deploy and
 configure Cygnus, a piece of software complementary to the Context
 Broker GE. The instructions to install Cygnus can be found
-[here](http://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/BigData_Analysis_-_Installation_and_Administration_Guide#Installation_and_configuration_2). 
+[here](https://fiware-cygnus.readthedocs.io/en/latest/index.html). 
 
 Once Cygnus has been installed, it is required to configure it. In a
 nutshell, there are three steps: configure CKAN storage, create the

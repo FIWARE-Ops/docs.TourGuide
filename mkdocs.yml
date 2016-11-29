@@ -42,11 +42,11 @@ pages:
      - 'Introduction': 'publishing-open-data-in-fiware/introduction.md'
      - 'How to Publish (Open) Datasets in CKAN': 'publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2.md'
      - 'How to Publish Context Information as (Open) Data in CKAN': 'publishing-open-data-in-fiware/how-to-publish-context-information-as-open-data-in-ckan.md'
-     - 'How to Offer Datasets (including Context Information) through the WStore':
+     - 'How to Offer Datasets (including Context Information) through the FIWARE Store':
        - 'Introduction': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/introduction.md'
        - 'Offering Datasets Directly Through the CKAN Interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface.md'
-       - 'Offering Datasets Through the WStore interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface.md'
-       - 'Acquiring Datasets Offered in the WStore': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore.md'
+       - 'Offering Datasets Through the FIWARE Store interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface.md'
+       - 'Acquiring Datasets Offered in the FIWARE Store': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore.md'
      - 'Deep dive': 'publishing-open-data-in-fiware/deep-dive.md'
   - 'Big Data analysis of historic context information':
      - 'Introduction': 'big-data-analysis-of-historic-context-information/introduction.md'
