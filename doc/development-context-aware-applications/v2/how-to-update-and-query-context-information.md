@@ -78,7 +78,7 @@ Restaurant entity accordingly:
       "ratingValue": 4
     }
 
-Note that the `Fiware-ServicePath: /Franchise1` header is needed for update operations because all restaurants are defined inside the scope of their department. For further information about this option visit <http://fiware-orion.readthedocs.io/en/develop/user/service_path/>.
+Note that the `Fiware-ServicePath: /Franchise1` header is needed for update operations because all restaurants are defined inside the scope of their department. For further information about this option visit <http://fiware-orion.readthedocs.io/en/master/user/service_path/>.
 
 Also, the user can get the information of a given Restaurant using
 the smartphone application. In that case, the application works as
