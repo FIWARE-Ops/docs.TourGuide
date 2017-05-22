@@ -37,16 +37,27 @@ provide a link or upload a file with the data. Any type of file is allowed, but 
 want to generate an automatic API to access your data, you must upload a
 CSV file.
 
+> **NOTE**: Take into account that “Private” resources created using the link
+> option must be secured using the appropiated mechanism (e.g. by following the
+> [Handling authorization and access control to APIs][] tutorial). CKAN will
+> only control the access using the CKAN interface, but direct access to the
+> linked resource must be controlled on the resource itself.
+
+
 [![HowToPublishDatasheetsInCkan3](images/HowToPublishDatasheetsInCkan3.png)](images/HowToPublishDatasheetsInCkan3.png)
 
 You can also provide dynamic context information by providing a context broker
 URL and selecting the `fiware-ngsi` format. Once selected the `fiware-ngsi`
-format, three new fields will appear allowing you to configure the tenant and
+format, three extra fields will appear allowing you to configure the tenant and
 the service path to use for accesing the context broker (you can leave them
 empty if the data is stored in the default tenant or service path). The last
 field allows you to indicate whether the context broker requires authentication
-(see the [Handling authorization and access control to APIs](/handling-authorization-and-access-control-to-apis/introduction/)
+(see the [Handling authorization and access control to APIs][]
 tutorial for more details).
+
+> **NOTE**: `fiware-ngsi` resources are always linked resources, so if the
+> dataset is private, the `fiware-ngsi` must require an auth token for
+> coherence.
 
 [<img src="../images/PublishDyncamicContextInformationResource.png" srcset="../images/PublishDyncamicContextInformationResource.png 2x" alt="Empty workspace"/>](images/PublishDyncamicContextInformationResource.png)
 
@@ -55,3 +66,6 @@ In the last step you can provide some metadata (Author, version, maintainer, etc
 is not a must, so you can skip this section if you want.
 
 [![HowToPublishDatasheetsInCkan4](images/HowToPublishDatasheetsInCkan4.png)](images/HowToPublishDatasheetsInCkan4.png)
+
+
+[Handling authorization and access control to APIs]: /handling-authorization-and-access-control-to-apis/introduction/
