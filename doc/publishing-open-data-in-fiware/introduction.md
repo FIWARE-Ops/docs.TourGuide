@@ -18,19 +18,19 @@ service life cycle, from offering creation to its charging, accounting
 and revenue settlement and sharing
 
 You should note that at the time of writing this document, FIWARE offers
-two different types of data: context information (as seen in in the section
-[Development of context-aware applications](/development-context-aware-applications/introduction/))
-and datasets. Each type of data is published in a different way
-and for this reason you’ll find two differentiated sections. A third 
-section is devoted to explain the benefits of publishing your data 
-in the FIWARE Store and the way of doing it.
+two different types of data: context information and datasets, both supported
+by the FIWARE extended CKAN. In this regard, the following section explains
+what are the existing CKAN extensions build within FIWARE, and the 
+architecture followed for the monetization of those resources.
 
-If you are interested in more details about how to publish open data,
-check out:
+-   [FIWARE Extended CKAN](/publishing-open-data-in-fiware/fiware-extended-ckan)
 
--   [How to Publish Context Information as (Open) Data in
-    CKAN](/publishing-open-data-in-fiware/how-to-publish-context-information-as-open-data-in-ckan/)
--   [How to Publish (Open) Datasets in
+If you are not interested in the technical details, the following sections
+explain how data and context information can be published in CKAN, what
+are the benefits of publishing your data in the FIWARE Store and the
+way of doing it.
+
+-   [How to Publish datasets and context information in
     CKAN](/publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2/)
 -   [How to Offer Datasets (including Context Information) through the
     FIWARE Store](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/introduction/)
