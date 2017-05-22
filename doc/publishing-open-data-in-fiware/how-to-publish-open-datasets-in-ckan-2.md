@@ -23,14 +23,14 @@ the visibility of the dataset:
     only some selected users will be able to access the dataset.
 -   Searchable: you can choose if you want your dataset to be displayed
     in the queries performed by the FIWARE Data portal users.
-    -   ​This field is only enabled when “Visibility” is set to
+    -   This field is only enabled when “Visibility” is set to
         “Private”.
     -   If you create a public dataset, it will be always searchable.
 -   Allowed Users: the list of users that can access your dataset.
     -   This field is only enabled when “Visibility” is set to
-        “Private”.​
+        “Private”.
 
-​​[![HowToPublishDatasheetsInCkan2](images/HowToPublishDatasheetsInCkan21.png)](images/HowToPublishDatasheetsInCkan21.png)
+[![HowToPublishDatasheetsInCkan2](images/HowToPublishDatasheetsInCkan21.png)](images/HowToPublishDatasheetsInCkan21.png)
 
 In the second step you have to provide the data itself. To do that, you can
 provide a link or upload a file with the data. Any type of file is allowed, but if you
@@ -38,6 +38,18 @@ want to generate an automatic API to access your data, you must upload a
 CSV file.
 
 [![HowToPublishDatasheetsInCkan3](images/HowToPublishDatasheetsInCkan3.png)](images/HowToPublishDatasheetsInCkan3.png)
+
+You can also provide dynamic context information by providing a context broker
+URL and selecting the `fiware-ngsi` format. Once selected the `fiware-ngsi`
+format, three new fields will appear allowing you to configure the tenant and
+the service path to use for accesing the context broker (you can leave them
+empty if the data is stored in the default tenant or service path). The last
+field allows you to indicate whether the context broker requires authentication
+(see the [Handling authorization and access control to APIs](/handling-authorization-and-access-control-to-apis/introduction/)
+tutorial for more details).
+
+[<img src="../images/PublishDyncamicContextInformationResource.png" srcset="../images/PublishDyncamicContextInformationResource.png 2x" alt="Empty workspace"/>](images/PublishDyncamicContextInformationResource.png)
+
 
 In the last step you can provide some metadata (Author, version, maintainer, etc). Nevertheless, this metadata
 is not a must, so you can skip this section if you want.
