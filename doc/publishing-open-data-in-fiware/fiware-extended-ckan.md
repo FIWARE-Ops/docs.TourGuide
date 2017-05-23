@@ -3,11 +3,11 @@
 In the context of the FIWARE platform, CKAN is used as the catalog where
 data can be published, discovered, managed, and consumed. Within the FIWARE
 platform, not only static datasets (CSV, XLSX, etc) are supported, but also
-right time context information can be published in CKAN as Context Broker
-queries (pollutants level in Madrid, etc.)
+real (right) time context information can be published in CKAN as Context Broker
+queries (for instance, pollutants level in Madrid, etc.)
 
-In addition, FIWARE supports to manage the access and monetize the published
-datasets, using the Biz Ecosystem GE. 
+In addition, using the Biz Ecosystem GE, FIWARE provides the components
+that allow to manage the access and monetisation of published datasets.
 
 The following picture shows the architecture followed in FIWARE for the
 publication and monetization of data.
@@ -21,7 +21,7 @@ integrated in order to manage and monetize data:
 the Context Broker queries.
 - Biz Ecosystem: Used for the creation and acquisition of data offerings,
 including customer charging, and access grant
-- IdM + PEP + PDP (Security Framework): Used for provision of identities,
+- IdM + PEP + PDP (Security Framework): Used for the provision of identities,
 authentication, and authorization of users.
 
 It is needed to remark that the context information published in CKAN is
@@ -44,7 +44,7 @@ to the customer user. This role has a bound policy that specifies the
 permissions to access to the acquired query.
 
 To support the aforementioned functionality, it has been needed to
-extend CKAN with features as NGSI management, OAUth2, or datasets privacy
+extend CKAN with features as NGSI support, OAUth2, or datasets privacy
 restrictions. In the following sections it is described the different
 extensions that have been developed within FIWARE, and that made up
 the FIWARE Extended CKAN.
@@ -76,8 +76,8 @@ This extension is available in [GitHub](https://github.com/conwetlab/ckanext-pri
 
 ## NGSI View
 
-This CKAN extension provides the ability to generate right-time resources
-provided by a Context broker, offering the means for registering a 
+This CKAN extension provides the ability to generate real time (or right time)
+resources provided by a Context broker, offering the means for registering a 
 query as a dataset resource.
 
 This extension defines the NGSI format and provides a basic view for 

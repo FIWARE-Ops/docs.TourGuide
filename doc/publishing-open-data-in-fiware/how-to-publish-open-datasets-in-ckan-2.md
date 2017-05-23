@@ -38,7 +38,7 @@ want to generate an automatic API to access your data, you must upload a
 CSV file.
 
 > **NOTE**: Take into account that “Private” resources created using the link
-> option must be secured using the appropiated mechanism (e.g. by following the
+> option must be secured using the appropriate mechanism (e.g. by following the
 > [Handling authorization and access control to APIs][] tutorial). CKAN will
 > only control the access using the CKAN interface, but direct access to the
 > linked resource must be controlled on the resource itself.
