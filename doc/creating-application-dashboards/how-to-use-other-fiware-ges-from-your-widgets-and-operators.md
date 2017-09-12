@@ -1,14 +1,14 @@
-Wirecloud offers support for a number of GEs including the Context
+WireCloud offers support for a number of GEs including the Context
 Broker and the Object Storage GE. What follows is an example of how a
 developer can access [Orion Context
 Broker](https://github.com/telefonicaid/fiware-orion) (reference
 implementation of the FIWARE's Pub/Sub Context Broker GE) instances from
-widgets and operators running on Wirecloud. For more detailed
-information on how to use this and other FIWARE GEs from Wirecloud,
-please refer to Wirecloud tutorials.
+widgets and operators running on WireCloud. For more detailed
+information on how to use this and other FIWARE GEs from WireCloud,
+please refer to WireCloud tutorials.
 
 First of all, widgets and operators wishing to use the javascript
-bindings provided by Wirecloud for accessing the [FIWARE NGSI Open
+bindings provided by WireCloud for accessing the [FIWARE NGSI Open
 RESTful
 API](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI_Open_RESTful_API_Specification_(PRELIMINARY))
 in order to seamlessly interoperate with the Orion Context Broker must
@@ -166,7 +166,7 @@ to the onNotify callback when using the flat option:
         "originator": "localhost"
     }
 
-Wirecloud tutorial on how to use Orion Context Broker from widgets and
+WireCloud tutorial on how to use Orion Context Broker from widgets and
 operators further explain how to create connections, make queries, deal
 with pagination, create entities and update their attributes, use
 geolocation capabilities, etc. It also includes a complete example.

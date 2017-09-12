@@ -1,7 +1,7 @@
-The first step to create an application dashboard using Wirecloud is the
+The first step to create an application dashboard using WireCloud is the
 discovering of the components you are going to use. You can obtain those
 component in several ways, but one of the easiest way is accessing the
-Wirecloud catalogue. This catalog is seamlessly integrated with the
+WireCloud catalogue. This catalog is seamlessly integrated with the
 FIWARE Marketplace. This marketplace is in turn made up of stores, where
 they can offer and deal with Application Mashup Components (MACs),
 namely widgets and operators, but also other existing mashups, they can
@@ -17,7 +17,7 @@ mashups and find the store, where to buy. The final business transaction
 (buying) is done at the store and the whole back office process is
 handled by the store.
 
-The following figure shows a screenshot of the Wirecloud catalogue,
+The following figure shows a screenshot of the WireCloud catalogue,
 where you can see the FIWARE Lab marketplace and the different stores
 made available through it:
 
@@ -25,7 +25,7 @@ made available through it:
 
  
 
-The Wirecloud community has already made available an ever-growing
+The WireCloud community has already made available an ever-growing
 catalogue of widgets, operators and pre-built mashups that help you to
 create your application dashboards. Some of them take advantage of other
 GEris like Kurento, CKAN or Orion. As an example, the Kurento catalogue

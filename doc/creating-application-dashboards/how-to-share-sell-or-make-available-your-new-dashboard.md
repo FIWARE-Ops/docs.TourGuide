@@ -1,7 +1,7 @@
 Once you are finished with your dashboard, you can either describe and
-share it with other people by uploading it to the Wirecloud catalogue,
+share it with other people by uploading it to the WireCloud catalogue,
 or offer it in a store of the FIWARE Marketplace. You can even embed the
-resulting dashboard in other web pages or sites outside Wirecloud by
+resulting dashboard in other web pages or sites outside WireCloud by
 using the HTML code provided by the platform. For further information
 regarding how to create an offering you can refer to the Store
 documentation. The following figures illustrate how to obtain the HTML

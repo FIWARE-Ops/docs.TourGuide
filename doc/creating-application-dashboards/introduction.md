@@ -1,20 +1,20 @@
-Wirecloud is a web mashup platform aimed at empowering end users,
+WireCloud is a web mashup platform aimed at empowering end users,
 without programming skills, to easily create fully-fledged application
 dashboards built up from widgets, operators and other pre-existing
 mashups. These building blocks have been made available beforehand by
 developers (and even other end users in the case of pre-built mashups)
 in a shared catalogue.
 
-Wirecloud offers two different perspectives of use depending on whether
+WireCloud offers two different perspectives of use depending on whether
 you are a developer or an end user:
 
--   As a developer, Wirecloud allows you to use cutting-edge web
+-   As a developer, WireCloud allows you to use cutting-edge web
     technologies for easily developing mashable web components, namely
     widgets and operators, and connecting them to backend services (e.g.
     support for pub/sub, “connectors” to a number of FIWARE GEs, etc.)
-    and data sources (e.g. data APIs). Once created, Wirecloud fosters
+    and data sources (e.g. data APIs). Once created, WireCloud fosters
     their shareability and reuse by end users.
--   As an end user, Wirecloud allows you to develop application
+-   As an end user, WireCloud allows you to develop application
     dashboards without the need of programming skills (e.g.
     infomediaries, domain experts, etc.). These dashboards are created
     visually by mashing up widgets and operators, i.e. integrating
@@ -22,20 +22,20 @@ you are a developer or an end user:
     create value added “instant” applications.
 
 The following screenshots pertain to an application dashboard created in
-Wirecloud by a domain expert to manage and operate lamp posts and
+WireCloud by a domain expert to manage and operate lamp posts and
 reported issues (e.g. breakdowns, sabotages) in the context of a smart
 city. The widgets and operators mashed up to produce the dashboard were
 created and shared beforehand by developers and are connected to backend
 resources by making the most of other FIWARE GEs such as the Orion
 Context Broker and the Object Storage GEris thanks to specialized APIs
-and libraries provided by Wirecloud.
+and libraries provided by WireCloud.
 
 [![Creating application
 dashboards](images/Creating-application-dashboards-1024x640.png)](images/Creating-application-dashboards.png)
 [![Creating application
 dashboards1](images/Creating-application-dashboards1-1024x639.png)](images/Creating-application-dashboards1.png)
 
-Wirecloud also offers support for mobile devices, especially for
+WireCloud also offers support for mobile devices, especially for
 tablets, so that some of the widgets in an application mashup can be
 enhanced to support native features of the device and/or transformed
 into a native component to improve their performance when shown in a
@@ -72,7 +72,7 @@ operators or (b) develop these widgets and operators check out:
     
 If you want to start experimenting and doing hands-on work, have a look at:
 
-- [Wirecloud GEri](http://github.com/fiware/apps.wirecloud)
+- [WireCloud GEri](http://github.com/fiware/apps.wirecloud)
 
  
 
