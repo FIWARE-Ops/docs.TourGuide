@@ -32,26 +32,9 @@ implementations:
     representing devices and Developers may also send commands to
     devices by updating command-related attributes, providing they have
     access rights for that operation.
--   **IDAS Backend Device Manager:** This component stays at the
-    southbound of the Orion ContextBroker and it is used by IoT
-    integrators to connect devices in this scenario.
-
-IDAS supports several IoT protocols with a modular architecture where
-modules are called “IoT Agents”. Therefore, integrators need to
-determine first which protocol they will be using to connect devices and
-select the right IoT Agent.   
- At present, the following IoT Agents and supported IoT protocols are:
-
--   **IDAS Ultralight2.0 & MQTT:** Supports Ultralight2.0/HTTP and/or
-    MQTT (depends on the compilation options). Github repository is
-    [here](https://github.com/telefonicaid/fiware-IoTAgent-Cplusplus/).
-    FIWARE Lab public instance details are
-    [here](http://catalogue.fiware.org/enablers/backend-device-management-idas/instances). 
--   **IDAS LWM2M:** Supports OMA LightweightM2M over IETF CoAP (IPv4 and
-    IPv6 supported). Github repository is
-    [here](https://github.com/telefonicaid/lightweightm2m-iotagent).
-    FIWARE Lab public instance details are
-    [here](http://catalogue.fiware.org/enablers/backend-device-management-idas/instances).
+-   **IotAgents[here](https://github.com/Fiware?utf8=%E2%9C%93&q=IoTAgent):** Acting like translators 
+    between devices specific platforms and Orion.
+    
 
 For simplicity, in this article Ultralight2.0/HTTP is explained. Please
 refer to the FIWARE Catalogue to find out more information on the other
