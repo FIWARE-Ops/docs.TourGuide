@@ -32,7 +32,7 @@ implementations:
     representing devices and Developers may also send commands to
     devices by updating command-related attributes, providing they have
     access rights for that operation.
--   **IotAgents[here](https://github.com/Fiware?utf8=%E2%9C%93&q=IoTAgent):** Acting like translators 
+-   **[IotAgents](https://github.com/Fiware?utf8=%E2%9C%93&q=IoTAgent):** Acting like translators 
     between devices specific platforms and Orion.
     
 
