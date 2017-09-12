@@ -22,7 +22,6 @@ where you can see the FIWARE Lab marketplace and the different stores
 made available through it:
 
 [![8](images/8.png)](images/8.png)
-
  
 
 The WireCloud community has already made available an ever-growing

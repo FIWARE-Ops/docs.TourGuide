@@ -13,7 +13,7 @@ RESTful
 API](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI_Open_RESTful_API_Specification_(PRELIMINARY))
 in order to seamlessly interoperate with the Orion Context Broker must
 add the NGSI feature as a requirement into their description files
-(config.xml files).
+(`config.xml` files).
 
 The following is an example of a widget description using the XML
 flavour of the WDL:
@@ -96,7 +96,7 @@ The RDF/xml flavour of the same widget description is:
 
 One of the most important operations provided by the context broker is
 the support for subscriptions. By using subscriptions our dashboard can
-obtain "real time" notifications about the status of the entities of
+obtain right time notifications about the status of the entities of
 interest. Subscriptions are very similar to queries, the main difference
 between queries and subscriptions is that queries are synchronous
 operations, whilst subscriptions are asynchronous. Moreover, the Orion
@@ -105,7 +105,7 @@ would be returned for the equivalent query operation. This way, you will
 know that there is no gap between the current values and the notified
 changes.
 
-Subscriptions are created through the createSubscription method. The
+Subscriptions are created through the `createSubscription` method. The
 following example explains how to be notified about the changes of the
 position of the vans we are managing:
 
@@ -141,12 +141,13 @@ entities provided that the notify conditions are meet.
 This subscription will be expiring after 3 hours, time from which the
 context broker will stop sending notifications. Anyway,
 widgets/operators can renew those subscriptions by using the
-updateSubscription method, even if they have expired. Subscriptions can
-be cancelled using the cancelSubscription method making the context
+`updateSubscription` method, even if they have expired. Subscriptions can
+be cancelled using the `cancelSubscription` method making the context
 broker release any info about the subscription. In any case, WireCloud
 will cancel any subscription automatically when widgets/operators are
-unloaded.  
- As an example, what follows is the value of the data parameter passed
+unloaded.
+
+As an example, what follows is the value of the data parameter passed
 to the onNotify callback when using the flat option:
 
     {

@@ -34,11 +34,8 @@ This is how to declare the output endpoint when using RDF (turtle):
                     dcterms:title "location_coord";
                     wire:friendcode "location";
                     wire:type "text" ];
-                    
 
 After adding the output endpoint to the widget description, we can send
 data through it using the MashupPlatform.wiring.pushEvent method. The
 following code adds an event listener to the location title that sends
 the location of the current forecast.
-
- 
