@@ -44,7 +44,7 @@ select the right IoT Agent. 
 
 -   **IDAS Ultralight2.0 & MQTT:** Supports Ultralight2.0/HTTP and/or
     MQTT (depends on the compilation options). Github repository is
-    [here](https://github.com/telefonicaid/fiware-IoTAgent-Cplusplus/).
+    [here](https://github.com/telefonicaid/iotagent-ul/).
     FIWARE Lab public instance details are
     [here](http://catalogue.fiware.org/enablers/backend-device-management-idas/instances). 
 -   **IDAS LWM2M:** Supports OMA LightweightM2M over IETF CoAP (IPv4 and
@@ -64,7 +64,5 @@ Things, keep on reading:
 -   [How to act upon IoT
     devices](/connection-to-the-internet-of-things/how-to-act-upon-iot-devices/)
 
-
 If you want to start experimenting and doing hands-on work, have a look at:
-
-- [IDAS GEri - IoT Agent](https://github.com/Fiware/iot.IoTAgent-Cplusplus)
+- [IDAS GEri - IoT Agent](https://github.com/telefonicaid/fiware-IoTAgent-Cplusplus)
