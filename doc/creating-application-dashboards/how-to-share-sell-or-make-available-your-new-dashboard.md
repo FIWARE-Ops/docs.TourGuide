@@ -7,7 +7,6 @@ regarding how to create an offering you can refer to the Store
 documentation. The following figures illustrate how to obtain the HTML
 code needed to embed your dashboard in external sites:
 
-[![13](images/13.png)](images/13.png)
+<img src="../images/wiring/embed_workspace_entry.png" srcset="../images/wiring/embed_workspace_entry.png 2x" alt="*Embed* workspace option"/>
 
-[![How to share, sell or make available your new
-dashboard1](images/How-to-share-sell-or-make-available-your-new-dashboard1.png)](images/How-to-share-sell-or-make-available-your-new-dashboard1.png)
+<img src="../images/wiring/embed_workspace_dialog.png" srcset="../images/wiring/embed_workspace_dialog.png 2x" alt="Embed workspace dialog"/>
