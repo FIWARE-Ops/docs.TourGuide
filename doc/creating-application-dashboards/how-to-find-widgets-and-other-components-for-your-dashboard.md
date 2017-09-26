@@ -12,7 +12,7 @@ search, find and compare widgets, operators, and even pre-built mashups.
 The following figure illustrates how the FIWARE Store portal is viewed from
 WireCloud:
 
-<img src="../images/user_guide/bae/summary.png" srcset="../images/user_guide/bae/summary.png 2x" alt="Initial marketplace view"/>
+<img src="../images/bae/summary.png" srcset="../images/bae/summary.png 2x" alt="Initial marketplace view"/>
 
 The WireCloud community has already made available an ever-growing
 catalogue of widgets, operators and pre-built mashups that help you to

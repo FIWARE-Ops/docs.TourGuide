@@ -21,19 +21,14 @@ you are a developer or an end user:
     heterogeneous data, application logic, and UI web components to
     create value added “instant” applications.
 
-The following screenshots pertain to an application dashboard created in
-WireCloud by a domain expert to manage and operate lamp posts and
-reported issues (e.g. breakdowns, sabotages) in the context of a smart
-city. The widgets and operators mashed up to produce the dashboard were
-created and shared beforehand by developers and are connected to backend
-resources by making the most of other FIWARE GEs such as the Orion
-Context Broker and the Object Storage GEris thanks to specialized APIs
-and libraries provided by WireCloud.
+The following screenshots showcases some dashboards created using WireCloud.
 
-[![Creating application
-dashboards](images/Creating-application-dashboards-1024x640.png)](images/Creating-application-dashboards.png)
-[![Creating application
-dashboards1](images/Creating-application-dashboards1-1024x639.png)](images/Creating-application-dashboards1.png)
+<img src="../images/sample-dashboard1.png" srcset="../images/sample-dashboard1.png 2x" alt="Fleet management dashboard"/>
+<img src="../images/sample-dashboard2.png" srcset="../images/sample-dashboard2.png 2x" alt="Weather Forecast dashboard"/>
+
+Usually, those dashboards are build by domain experts by means of mashing up
+widgets and operators that were previously developed and shared by other
+developers.
 
 WireCloud also offers support for mobile devices, especially for
 tablets, so that some of the widgets in an application mashup can be

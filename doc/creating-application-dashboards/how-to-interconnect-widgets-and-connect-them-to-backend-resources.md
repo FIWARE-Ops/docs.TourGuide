@@ -14,7 +14,7 @@ that help you to identify compatible endpoints that could be connected.
 <img src="../images/wiring/final_wiring.png" srcset="../images/wiring/final_wiring.png 2x" alt="Final wiring configuration"/>
 
 
-Once you have wired all the widgets/operators that compose the
+Once you have wired all the widgets and operators, you can play with you new
 dashboard.
 
 <img src="../images/wiring/final_mashup.png" srcset="../images/wiring/final_mashup.png 2x" alt="Final mashup"/>
