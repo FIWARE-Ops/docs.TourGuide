@@ -7,13 +7,14 @@ filters, aggregators, adapters, etc.
 The wiring editor comes with a recommendation system for connections
 that help you to identify compatible endpoints that could be connected.
 
-[![10](images/10.png)](images/10.png)
+<img src="../images/wiring/endpoint_recommendation.png" srcset="../images/wiring/endpoint_recommendation.png 2x" alt="Endpoint details"/>
 
-[![How to interconnect widgets and connect them to backend
-resources1](images/How-to-interconnect-widgets-and-connect-them-to-backend-resources1-1024x352.png)](images/How-to-interconnect-widgets-and-connect-them-to-backend-resources1.png)
+<img src="../images/wiring/modify_connection2.png" srcset="../images/wiring/modify_connection2.png 2x" alt="Endpoint recommendations"/>
 
-Once you have wired all the widgets/operators that compose the
+<img src="../images/wiring/final_wiring.png" srcset="../images/wiring/final_wiring.png 2x" alt="Final wiring configuration"/>
+
+
+Once you have wired all the widgets and operators, you can play with you new
 dashboard.
 
-[![How to interconnect widgets and connect them to backend
-resources2](images/How-to-interconnect-widgets-and-connect-them-to-backend-resources2.png)](images/How-to-interconnect-widgets-and-connect-them-to-backend-resources2.png)
+<img src="../images/wiring/final_mashup.png" srcset="../images/wiring/final_mashup.png 2x" alt="Final mashup"/>
