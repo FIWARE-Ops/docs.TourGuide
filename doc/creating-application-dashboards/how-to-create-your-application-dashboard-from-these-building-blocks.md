@@ -1,7 +1,7 @@
 Once obtained the initial set of components, you can start creating your
 dashboard by adding some of the widgets into your workspace area:
 
-<img src="../images/building_mashup/add_widget_button.png" srcset="../images/building_mashup/add_widget_button.png 2x" alt="Click *Add conponents*"/>
+<img src="../images/building_mashup/add_widget_button.png" srcset="../images/building_mashup/add_widget_button.png 2x" alt="Click *Add components*"/>
 
 <img src="../images/building_mashup/add_linear_graph.png" srcset="../images/building_mashup/add_linear_graph.png 2x" alt="Click *Add to workspace*"/>
 
