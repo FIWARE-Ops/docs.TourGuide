@@ -17,14 +17,12 @@ it is tricky to find a global deployment.  
 There are three IoT typical use-case scenarios (combination of IoT GEs)
 described in the [FIWARE IoT
 architecture](http://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/Internet_of_Things_%28IoT%29_Services_Enablement_Architecture).
-The simplest and more tested one is called “Common Simple Scenario” and
-it is depicted in the following picture: 
+The simplest and more tested one is called “Common Simple Scenario” and it is depicted in the following picture: 
 
 [![3](images/3.png)](images/3.png)
 
 **FIWARE IoT Device Management GE architecture**
 
-This simple scenarios relies on two different components:
 
 -   **Orion ContextBroker:** That remains as the main front-end for
     developers. Developers access IoT data as attributes of entities
@@ -37,7 +35,7 @@ This simple scenarios relies on two different components:
     IoT protocols with a modular architecture Therefore, integrators need to determine first which protocol they will be using 
     to connect devices and then select the right IoT Agent.
 
-For simplicity, in this article Ultralight2.0/HTTP is explained. To find out more information plese visit Github site.  
+For simplicity, in this article Ultralight2.0/HTTP is explained. To find out more information plese visit Github [site](https://github.com/telefonicaid/iotagent-ul).  
 If you are interested to connect your application to the Internet of Things, keep on reading:
 
 -   [How to read measures captured from IoT
