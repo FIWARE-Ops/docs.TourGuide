@@ -32,7 +32,7 @@ The simplest and more tested one is called “Common Simple Scenario” and it i
     You can see the lastest version [here](https://github.com/Fiware/context.Orion)
 -   **[IoT Agents](https://github.com/Fiware?utf8=%E2%9C%93&q=IoTAgent):** These components stay at the southbound of the 
     Orion ContextBroker and they are used by IoT integrators to connect devices in this scenario. IoT Agents support several 
-    IoT protocols with a modular architecture Therefore, integrators need to determine first which protocol they will be using 
+    IoT protocols with a modular architecture. Therefore, integrators need to determine first which protocol they will be using 
     to connect devices and then select the right IoT Agent.
 
 For simplicity, in this article Ultralight2.0/HTTP is explained. To find out more information plese visit Github [site](https://github.com/telefonicaid/iotagent-ul).  
