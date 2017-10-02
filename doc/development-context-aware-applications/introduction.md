@@ -45,7 +45,7 @@ a context-aware application check out:
     - [How to subscribe to changes on context information](v2/how-to-subscribe-to-changes-on-context-information.md)
     - [How to perform geo-location queries](v2/how-to-perform-geo-located-queries.md)
     
-  By other hand, you can see a the full API [here](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
+On the other hand, you can browse the full API description [here](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
 
 It exists an early NGSI version, call NGSI v1 but it has been largely overpassed by the current NGSIv2 version and it will be deprecated soon. Anyway you can check it [here](http://fiware.github.io/context.Orion/api/v1/)
 
