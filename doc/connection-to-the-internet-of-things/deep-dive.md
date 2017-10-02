@@ -6,7 +6,7 @@ Should you wish to learn much more about this, please check the following IoT Ag
 and NGSI.
 - [IoT Agent Node Lib](https://github.com/Fiware/iot.IoTagent-node-lib): library to create new agents. This core library allows to develop new agents for specific southbound protocols/standards/messages.
 
-There are existing [IoT Agents instances up and running](https://catalogue.fiware.org/enablers/backend-device-management-idas/instances) available.These would be useful for testing purpose and learning about how to interact between IoT Agents and Orion Context Broker. 
+There are existing [IoT Agents instances up and running](https://catalogue.fiware.org/enablers/backend-device-management-idas/instances) available. These would be useful for testing purpose and learning about how to interact between IoT Agents and Orion Context Broker. 
 Orion Context Broker implements the FIWARE NGSI standard. 
 
 Other alternative implementations would be used instead
