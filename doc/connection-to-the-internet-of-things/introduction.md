@@ -31,7 +31,7 @@ This simple scenarios relies on two different components:
     representing devices and Developers may also send commands to
     devices by updating command-related attributes, providing they have
     access rights for that operation.
-    You can see the lastest version [here](https://github.com/Fiware/context.Orion/tree/release/1.7.0)
+    You can see the lastest version [here](https://github.com/Fiware/context.Orion)
 -   **[IoT Agents](https://github.com/Fiware?utf8=%E2%9C%93&q=IoTAgent):** These components stay at the southbound of the 
     Orion ContextBroker and they are used by IoT integrators to connect devices in this scenario. IoT Agents support several 
     IoT protocols with a modular architecture Therefore, integrators need to determine first which protocol they will be using 
