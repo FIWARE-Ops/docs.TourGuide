@@ -47,7 +47,7 @@ a context-aware application check out:
     
 On the other hand, you can browse the full API description [here](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
 
-It exists an early NGSI version, call NGSI v1 but it has been largely overpassed by the current NGSIv2 version and it will be deprecated soon. Anyway you can check it [here](http://fiware.github.io/context.Orion/api/v1/)
+There is an early FIWARE NGSI HTTP binding, named NGSI v1 but it has been largely overpassed by the current NGSIv2 version and it will be deprecated soon. Anyway you can check it [here](http://fiware.github.io/context.Orion/api/v1/)
 
 
 If you want to start experimenting and doing hands-on work, have a look at:
