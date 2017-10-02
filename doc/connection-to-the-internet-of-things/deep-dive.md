@@ -1,4 +1,4 @@
-Should you wish to learn much more about this. Currently exists the following IoT Agents:
+Should you wish to learn much more about this, please check the following IoT Agents:
 
 - [IoT Agent Ultralight2.0](https://github.com/Fiware/iot.IoTagent-UL): This IoT Agent is designed to be a bridge between the UltraLight2.0 protocol and NGSI. FIWARE Lab public instance details are [here](https://catalogue.fiware.org/enablers/backend-device-management-idas/instances). 
 - [IoT LWM2M](https://github.com/Fiware/iot.IoTagent-LWM2M): This IoT Agent is designed to be a bridge between an Lightweight M2M protocol and an Orion Context Broker.. 
