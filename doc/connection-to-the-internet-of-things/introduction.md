@@ -24,8 +24,7 @@ it is depicted in the following picture: 
 
 **FIWARE IoT Device Management GE architecture**
 
-This simple scenario has got two basics
-implementations:
+This simple scenarios relies on two different components:
 
 -   **Orion ContextBroker:** That remains as the main front-end for
     developers. Developers access IoT data as attributes of entities
