@@ -46,4 +46,4 @@ The Tour Guide Application uses the official Docker from the GEris and has contr
 
 ## 	Development approach
 
-[https://github.com/fiware/tutorials.TourGuide-App](This repository) holds all the code of the Tour Guide Application. It has been released using the MIT License. Contributions from external developers are welcome. The development process follows usual Github workflows with pull requests, reviews and code landing. The application code has been developed using Node.js and HTML5 technologies. The Travis CI tool is used for running all tests and ensuring quality.
+[This repository](https://github.com/fiware/tutorials.TourGuide-App) holds all the code of the Tour Guide Application. It has been released using the MIT License. Contributions from external developers are welcome. The development process follows usual Github workflows with pull requests, reviews and code landing. The application code has been developed using Node.js and HTML5 technologies. The Travis CI tool is used for running all tests and ensuring quality.
