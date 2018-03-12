@@ -17,7 +17,7 @@ After ensuring that you have docker and docker-compose running on your machine. 
 
 ![docker-compose.yml](Images/docker-compose.png "docker compose yaml file")
 
-Suppose you have various applications on various containers and all of those containers are actually linked together, and you don’t want to execute each of those containers one by one but you want to run those containers at once with a single command. So that’s where [docker compose](https://docs.docker.com/compose/compose-file/#service-configuration-reference) comes to the picture, with docker compose we can actually run multiple applications, present in various containers, with one single command “docker-compose up”. As you can see in the example below, we are able to define three containers; one running an orion Context-Broker, one running a MongoDB and another running an STH-comet in a *.yml file, that is called “docker-compose” file.
+In the previous example we have various applications on various containers, all of those containers are actually linked together, and you don’t want to execute each of those containers one by one but you want to run those containers at once with a single command. So that’s where [docker compose](https://docs.docker.com/compose/compose-file/#service-configuration-reference) comes to the picture, with docker compose we can actually run multiple applications, present in various containers, with one single command “docker-compose up”. As you can see in the example above, we are able to define three containers; one running an orion Context-Broker, one running a MongoDB and another running an STH-comet in a *.yml file, that is called “docker-compose” file.
 
 You need to notice in the previous image that the STH component allows the user to configure the component using *.conf file or *.js, but if we set environment variables then it has the precedence over other configurations set in one of the files. For more info about the STH environment variable you can find it [here](https://fiware-sth-comet.readthedocs.io/en/latest/running/index.html?q=DB_URI&check_keywords=yes&area=default).
 
@@ -224,11 +224,11 @@ Here we will query, through the STH, all the raw data for the values that have b
 ![STH Raw Data](Images/QueryTimeSeriesValues.png)
 
 
-In the response payload we can see that the name of the changed attribute is "speed", follows with the values that have been changed within different time periods. For Example; we can see that the speed value 22 is happened on "2018-03-05T12:00:56:728Z".
+In the response payload we can see that the name of the changed attribute is "speed", follows with the values that have been changed within different time periods. for example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
 
 ## Resolution and Aggregation
 
-**aggrMethod:** The aggregation method. The STH component supports the following aggregation methods: _max_ (maximum value), _min_ (minimum value), _sum_ (sum of all the samples) and sum2 (sum of the square value of all the samples) for numeric attribute values and occur for attributes values of type string. Combining the information provided by these aggregated methods with the number of samples, it is possible to calculate probabilistic values such as the average value, the variance as well as the standard deviation. It is a mandatory parameter.
+**aggrMethod:** The aggregation method. The STH component supports the following aggregation methods: _max_ (maximum value), _min_ (minimum value), _sum_ (sum of all the samples) and sum2 (sum of the square value of all the samples) for numeric attribute values and occur for attributes values of type string.
 
 **aggrPeriod:** Aggregation period or resolution. A fixed resolution determines the origin time format and the possible offsets. It is a mandatory parameter. Resolution or aggregation period is the time period by which the aggregated time series information is grouped. Possible valid resolution values supported by the STH are: month, day, hour, minute and second.
 Note: In our example, aggregated time series context information is set for a resolution of minutes because we are performing changes on attribute’s value in seconds. Therefore,  if values are changing in hourly manner then we set the aggregated time period parameter to day so we can see the underlying hourly changes.
@@ -239,7 +239,7 @@ For more info you can go the the [StH-Comet documentation](https://fiware-sth-co
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=max&aggrPeriod=minute&dateFrom=2016-01-22T00:00:00.000Z&dateTo=2020-01-22T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**max**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
 
 ![max of the updated values](Images/max.png)
 
@@ -249,9 +249,9 @@ In this example, we can see that the resolution that we are performing our queri
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**occur**&aggrPeriod=**minute**&dateFrom=2016-01-22T00:00:00.000Z&dateTo=2020-01-22T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**occur**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
 
-![occur aggregation](Images/occurrence.png)
+![occur aggregation](Images/occur.png)
 
 In the picture we can see that for the hour 11:00 and minute 58 we have only 1 sample that has occurred. Whereas, for the hour 12:00 and minute 1 we have 3 samples that have been occurred.
 
@@ -259,6 +259,8 @@ In the picture we can see that for the hour 11:00 and minute 58 we have only 1 s
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**sum**&aggrPeriod=**minute**&dateFrom=2016-01-22T00:00:00.000Z&dateTo=2020-01-22T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**sum**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
 
-![aggregated data - sum](Images/SumAggregation.png)
+![aggregated data - sum](Images/sum.png)
+
+We can calculate the average by combining the information provided by these aggregated methods with the number of samples, it is possible to calculate probabilistic values such as the average value, the variance as well as the standard deviation. It is a mandatory parameter. For instance, we can calculate manually the average by dividing the sum by the sample number.
