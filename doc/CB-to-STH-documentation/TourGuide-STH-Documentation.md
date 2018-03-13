@@ -224,7 +224,7 @@ Here we will query, through the STH, all the raw data for the values that have b
 ![STH Raw Data](Images/QueryTimeSeriesValues.png)
 
 
-In the response payload we can see that the name of the changed attribute is "speed", follows by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
+In the response payload we can see that the name of the changed attribute is `speed`, followed by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
 
 ## Resolution and Aggregation
 
