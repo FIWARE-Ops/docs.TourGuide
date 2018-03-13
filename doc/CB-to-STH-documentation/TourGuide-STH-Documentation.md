@@ -7,11 +7,11 @@ Therefore, the three main components used are:
 * [STH-Comet](https://fiware-sth-comet.readthedocs.io/en/latest/ "STH-Comet Documentation")
 * [MongoDB](https://docs.mongodb.com/ "MongoDB Documentation")
 
-In the image below we can see that the user can apply operation using RestAPI. All operations are sent to the Orion Context Broker to be processed. STH subscribes to Orion Context Broker, so that STH is notified of any change made to entities stored by Orion. As a result STH is capable of generating the historical database.
+In the figure below we can see that the user can issue REST HTTP requests. All operations are sent to the Orion Context Broker to be processed. STH subscribes to Orion Context Broker, so that STH is notified of any change made to entities stored by Orion. As a result STH is capable of generating the historical database.
 
 ![Architecture](Images/Architecture.png "STH&CB connection architecture")
 
-To walk through this tutorial you need to make sure that you have docker and docker compose running on your machine. Please, follow the installation process for docker-compose [here](https://docs.docker.com/compose/install/) based on your operating system.
+To walk through this tutorial you need to make sure that you have docker and docker compose running on your machine. Please, follow the installation process for docker [here](https://docs.docker.com/install/) and for docker-compose [here](https://docs.docker.com/compose/install/) based on your operating system.
 
 After ensuring that you have docker and docker-compose running on your machine. You need to make a directory and to create a  docker-compose.yml file as in the example below.
 
@@ -19,7 +19,7 @@ After ensuring that you have docker and docker-compose running on your machine. 
 
 In the previous example we have various applications on various containers, all of those containers are actually linked together, and you don’t want to execute each of those containers one by one but you want to run those containers at once with a single command. So that’s where [docker compose](https://docs.docker.com/compose/compose-file/#service-configuration-reference) comes to the picture, with docker compose we can actually run multiple applications, present in various containers, with one single command “docker-compose up”. As you can see in the example above, we are able to define three containers; one running an orion Context-Broker, one running a MongoDB and another running an STH-comet in a *.yml file, that is called “docker-compose” file.
 
-You need to notice in the previous image that the STH component allows the user to configure the component using *.conf file or *.js, but if we set environment variables then it has the precedence over other configurations set in one of the files. For more info about the STH environment variable you can find it [here](https://fiware-sth-comet.readthedocs.io/en/latest/running/index.html?q=DB_URI&check_keywords=yes&area=default).
+You need to notice in the previous figure that the STH component allows the user to configure the component using *.conf file or *.js, but if we set environment variables then it has the precedence over other configurations set in one of the files. For more info about the STH environment variables you can find it [here](https://fiware-sth-comet.readthedocs.io/en/latest/running/index.html?q=DB_URI&check_keywords=yes&area=default).
 
 # Running The Example
 
@@ -29,7 +29,7 @@ The steps that are going to be taken are the following:
 * Publish Context Information to Orion Context Broker (CB)
 * Create a Subscription to notify the STH
 * Update values in different periods of time
-* Retrieve time series and aggregated Data
+* Retrieve time series and aggregated data
 
 ## **Step by step:**
 
@@ -84,7 +84,7 @@ There are many HTTP clients that can help you quickly test web services.
 
 In our example we are using Postman to perform CRUD (Create, Remove, Update, Delete) operations.
 
-In order to check if the Orion Context Broker and the STH are really working and responsive we can test by querying the version of each and check if we get an answer. 
+In order to check if the Orion Context Broker and the STH are really working and responsive we can test by querying the version for each and check if we get an answer.
 
 Once we open postman we need to specify that we need to do a GET query and we need to specify the target (URI:port), in our case the queried target is as follows:
 
@@ -148,7 +148,7 @@ orion  0.000GB
 
 ## Operations on Entities
 
-When saying “entity” we mean an object that we need to add to the Context Broker so we can start reading, updating, subscribing to one of its attributes in order to be notified once a values has been changed. The operations that we can perform on the entities are Post, Get, Put, Delete.
+As entity is an object stored by the Context Broker. Each entity has one or more attributes. We can read, update, subscribe to one of these attributes in order to be notified once a values has been changed. The operations that we can perform on the entities are Post, Get, Put, Delete.
 
 ### Create Entity
 
@@ -164,7 +164,7 @@ We need to specify some header values too when sending the request:
 
 “Content-type” is to specify the type of data that we want to send, always application/json.
 
-“Fiware-Service” and “FiwareServicepath” are intended to the logical separation of the data, this is called multi-tenant model, this term refers to software architecture in which a single instance of software runs on a server and serves multiple tenants. For example; Fiware-Service: Tenant1. Also, a service path is a hierarchical scope assigned to an entity at creation time. For example; Fiware-ServicePath: /some/hierarchical/path.
+`Fiware-Service` and `FiwareServicepath` are intended to the logical separation of the data, this is called multi-tenant model, this term refers to software architecture in which a single instance of software runs on a server and serves multiple tenants. For example; `Fiware-Service`: Tenant1. Also, a service path is a hierarchical scope assigned to an entity at creation time. For example; `Fiware-ServicePath`: /some/hierarchical/path.
 
 _Note: these headers need to be set for all the operations we perform in this example._
 
@@ -196,15 +196,15 @@ In our case we want to modify the attribute value for the Car1 entity, this can 
 
 ![modify attribute's value](Images/modifyAValue.png)
 
-## Create Subscriptions
+## Subscribe STH to Orion
 
 Context Consumers can subscribe to receive context information that satisfy certain conditions using the subscribe operation. Such subscriptions may have an expiration time. In return, the Context Broker notifies updates on context information to subscribed Context Consumers by invoking the notify operation they export.
 
-The _entities_ and _notifications_ subfields define the contents of the notification messages.
+The `entities` and `notifications` subfields define the contents of the notification messages.
 
-* idPattern is used to filter which entities we want. Its value is a regular expression. In our example we set it to retrieve all.
-* The url where to send notifications is defined with the  url sub-field. Here we specified the url of the STH-Comet.
-* attrsFormat: we set it to legacy because the STH only understands NGSI v1 notification payloads.
+* `idPattern` is used to filter which entities we want. Its value is a regular expression. In our example we set it to retrieve all.
+* The `url` where to send notifications is defined with the  url sub-field. Here we specified the url of the STH-Comet.
+* `attrsFormat`: we set it to legacy because the STH only understands NGSI v1 notification payloads.
 * Subscriptions may have an expiration date expires field, specified using the ISO 8601 standard format. Once subscription overpass that date, the subscription is simply ignored.
 
 > localhost:1026/v2/subscriptions
@@ -224,14 +224,14 @@ Here we will query, through the STH, all the raw data for the values that have b
 ![STH Raw Data](Images/QueryTimeSeriesValues.png)
 
 
-In the response payload we can see that the name of the changed attribute is "speed", follows with the values that have been changed within different time periods. for example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
+In the response payload we can see that the name of the changed attribute is "speed", follows by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
 
 ## Resolution and Aggregation
 
 **aggrMethod:** The aggregation method. The STH component supports the following aggregation methods: _max_ (maximum value), _min_ (minimum value), _sum_ (sum of all the samples) and sum2 (sum of the square value of all the samples) for numeric attribute values and occur for attributes values of type string.
 
 **aggrPeriod:** Aggregation period or resolution. A fixed resolution determines the origin time format and the possible offsets. It is a mandatory parameter. Resolution or aggregation period is the time period by which the aggregated time series information is grouped. Possible valid resolution values supported by the STH are: month, day, hour, minute and second.
-Note: In our example, aggregated time series context information is set for a resolution of minutes because we are performing changes on attribute’s value in seconds. Therefore,  if values are changing in hourly manner then we set the aggregated time period parameter to day so we can see the underlying hourly changes.
+Note: In our example, aggregated time series context information is set to a resolution of minutes because we are (manually) performing changes on attribute’s value in seconds. Therefore,  if values are changing in an hourly manner then we set the aggregated time period parameter to day so we can see the underlying hourly changes.
 
 For more info you can go the the [StH-Comet documentation](https://fiware-sth-comet.readthedocs.io/en/latest/getting-started/index.html "Resolution&Aggregation query parameters documentation").
 
@@ -255,7 +255,7 @@ Here we perform a GET request to the following target
 
 In the picture we can see that for the hour 11:00 and minute 58 we have only 1 sample that has occurred. Whereas, for the hour 12:00 and minute 1 we have 3 samples that have been occurred.
 
-### Retrieve the Summation
+### Retrieve the Sum
 
 Here we perform a GET request to the following target
 
@@ -263,4 +263,4 @@ Here we perform a GET request to the following target
 
 ![aggregated data - sum](Images/sum.png)
 
-We can calculate the average by combining the information provided by these aggregated methods with the number of samples, it is possible to calculate probabilistic values such as the average value, the variance as well as the standard deviation. It is a mandatory parameter. For instance, we can calculate manually the average by dividing the sum by the sample number.
+We can calculate the average by combining the information provided by these aggregated methods with the number of samples. It is possible to calculate probabilistic values such as the average value, the variance as well as the standard deviation. It is a mandatory parameter. For instance, we can calculate manually the average by dividing the sum by the sample number.
