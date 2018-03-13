@@ -264,3 +264,48 @@ Here we perform a GET request to the following target
 ![aggregated data - sum](Images/sum.png)
 
 We can calculate the average by combining the information provided by these aggregated methods with the number of samples. It is possible to calculate probabilistic values such as the average value, the variance as well as the standard deviation. It is a mandatory parameter. For instance, we can calculate manually the average by dividing the sum by the sample number.
+
+## MongoDB historical output
+
+We can connect to the mongoDB container and access all registered entities to the Orion Context Broker. We can check as well all historical data that has been generated
+
+> docker exec -it mongo mongo
+
+```console
+> show dbs
+admin          0.000GB
+local          0.000GB
+orion          0.000GB
+orion-example  0.000GB
+sth_example    0.001GB
+
+> use orion-example
+switched to db orion-example
+
+> show collections
+csubs
+entities
+
+> db.entities.count()
+4
+
+> use sth_example
+switched to db sth_example
+
+> show collections 
+sth_x002fxffffCar1xffffCarxffffspeed
+sth_x002fxffffCar1xffffCarxffffspeed.aggr
+sth_x002fxffffCar2xffffCarxffffspeed
+sth_x002fxffffCar2xffffCarxffffspeed.aggr
+sth_x002fxffffRoom2xffffRoomxffffpressure
+sth_x002fxffffRoom2xffffRoomxffffpressure.aggr
+sth_x002fxffffRoom2xffffRoomxfffftemperature
+sth_x002fxffffRoom2xffffRoomxfffftemperature.aggr
+sth_x002fxffffRoom3xffffRoomxffffpressure
+sth_x002fxffffRoom3xffffRoomxffffpressure.aggr
+sth_x002fxffffRoom3xffffRoomxfffftemperature
+sth_x002fxffffRoom3xffffRoomxfffftemperature.aggr
+
+> db.sth_x002fxffffCar1xffffCarxffffspeed.count()
+12
+```
