@@ -1,0 +1,30 @@
+mongo:
+  image: mongo:3.4
+  command: --nojournal
+  container_name: mongo
+  volumes:
+    - /Users/joudsayedissa/data/db
+
+orion:
+  image: fiware/orion
+  links:
+    - mongo
+    - sth
+  ports:
+    - "1026:1026"
+  command: -dbhost mongo
+  container_name: orion
+
+sth:
+  image: fiware/sth-comet
+  links:
+    - mongo
+  ports: 
+    - "8666:8666"
+  environment:
+    - STH_HOST=0.0.0.0
+    - DB_URI=mongo:27017
+    - NAME_ENCODING=true
+    - DATA_MODEL=collection-per-attribute
+    - LOGOPS_LEVEL=DEBUG
+  container_name: sth
