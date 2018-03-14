@@ -11,8 +11,8 @@ pages:
       - 'Using NGSI v2':
         - 'Update – query context': 'development-context-aware-applications/v2/how-to-update-and-query-context-information.md'
         - 'Subscription to context changes': 'development-context-aware-applications/v2/how-to-subscribe-to-changes-on-context-information.md'
-        - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
         - 'Geolocated context queries': 'development-context-aware-applications/v2/how-to-perform-geo-located-queries.md'
+      - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
       - 'Using NGSI v1':
         - 'Update – query context': 'development-context-aware-applications/how-to-update-and-query-context-information.md'
         - 'Connection to context providers': 'development-context-aware-applications/how-to-connect-to-external-context-providers.md'
