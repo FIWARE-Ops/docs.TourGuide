@@ -74,7 +74,7 @@ c832cb36bdfc        fiware/sth-comet    "/bin/sh -c bin/sth"     Less than a sec
 
 ```
 
-We see that the three containers are running now. Here, we can notice that the Orion Context Broker application is running on port 1026 as we specified in the “docker-compose.yml” file, as well as the STH application is running on the port 8666, and MongoDB is running on port 27017.
+We see that the three containers are running now. Here, we can notice that the Orion Context Broker container is running on port 1026 as we specified in the “docker-compose.yml” file, as well as the STH container is running on the port 8666, and MongoDB is running on port 27017.
 
 To make REST API Calls:
 There are many HTTP clients that can help you quickly test web services.
