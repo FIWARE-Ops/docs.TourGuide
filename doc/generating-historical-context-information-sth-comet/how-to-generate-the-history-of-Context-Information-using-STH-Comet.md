@@ -162,7 +162,7 @@ We need to specify some header values too when sending the request:
 
 ![Headers to pass](Images/Header.png)
 
-“Content-type” is to specify the type of data that we want to send, always application/json.
+`Content-type` is to specify the type of data that we want to send, always `application/json`.
 
 `Fiware-Service` and `FiwareServicepath` are intended to the logical separation of the data, this is called multi-tenant model, this term refers to software architecture in which a single instance of software runs on a server and serves multiple tenants. For example; `Fiware-Service`: Tenant1. Also, a service path is a hierarchical scope assigned to an entity at creation time. For example; `Fiware-ServicePath`: /some/hierarchical/path.
 

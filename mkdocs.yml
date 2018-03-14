@@ -12,12 +12,12 @@ pages:
         - 'Update – query context': 'development-context-aware-applications/v2/how-to-update-and-query-context-information.md'
         - 'Subscription to context changes': 'development-context-aware-applications/v2/how-to-subscribe-to-changes-on-context-information.md'
         - 'Geolocated context queries': 'development-context-aware-applications/v2/how-to-perform-geo-located-queries.md'
-      - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
       - 'Using NGSI v1':
         - 'Update – query context': 'development-context-aware-applications/how-to-update-and-query-context-information.md'
         - 'Connection to context providers': 'development-context-aware-applications/how-to-connect-to-external-context-providers.md'
         - 'Subscription to context changes': 'development-context-aware-applications/how-to-subscribe-to-changes-on-context-information.md'
         - 'Geolocated context queries': 'development-context-aware-applications/how-to-perform-geo-located-queries.md'
+      - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
       - 'Deep dive': 'development-context-aware-applications/deep-dive.md'
   - 'Connection to the Internet of Things':
      - 'Introduction': 'connection-to-the-internet-of-things/introduction.md'
