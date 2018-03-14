@@ -28,3 +28,4 @@ sth:
     - DATA_MODEL=collection-per-attribute
     - LOGOPS_LEVEL=DEBUG
   container_name: sth
+  

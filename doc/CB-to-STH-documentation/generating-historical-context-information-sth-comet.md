@@ -17,9 +17,9 @@ After ensuring that you have docker and docker-compose running on your machine. 
 
 ![docker-compose.yml](Images/docker-compose.png "docker compose yaml file")
 
-In the previous example we have various applications on various containers, all of those containers are actually linked together, and you don’t want to execute each of those containers one by one but you want to run those containers at once with a single command. So that’s where [docker compose](https://docs.docker.com/compose/compose-file/#service-configuration-reference) comes to the picture, with docker compose we can actually run multiple applications, present in various containers, with one single command “docker-compose up”. As you can see in the example above, we are able to define three containers; one running an orion Context-Broker, one running a MongoDB and another running an STH-comet in a *.yml file, that is called “docker-compose” file.
+In the previous example we have various applications on various containers, all of those containers are actually linked together, and you don’t want to execute each of those containers one by one but you want to run those containers at once with a single command. So that’s where [docker compose](https://docs.docker.com/compose/compose-file/#service-configuration-reference) comes to the picture, with docker compose we can actually run multiple applications, present in various containers, with one single command “docker-compose up”. As you can see in the example above, we are able to define three containers; one running an Orion Context Broker, one running a MongoDB and another running an STH-Comet in a *.yml file, that is called “docker-compose” file.
 
-You need to notice in the previous figure that the STH component allows the user to configure the component using *.conf file or *.js, but if we set environment variables then it has the precedence over other configurations set in one of the files. For more info about the STH environment variables you can find it [here](https://fiware-sth-comet.readthedocs.io/en/latest/running/index.html?q=DB_URI&check_keywords=yes&area=default).
+You need to notice in the previous figure that the STH component allows the user to configure the component using *.conf file or *.js, but if we set environment variables then it has the precedence over other configurations set in one of the files. [Here](https://fiware-sth-comet.readthedocs.io/en/latest/running/index.html?q=DB_URI&check_keywords=yes&area=default)  you can find more information about the STH environment variables.
 
 # Running The Example
 
@@ -45,7 +45,7 @@ Remove all docker images (optional)
 $ docker rmi $(docker images -a -q)
 ```
 
-To run the 3 components together (mongodb-orionCB-STH), you need to change to the directory containing the folder that has the docker-compose.yml file, then you run the following docker-compose command:
+To run the 3 components together (MongoDB-orionCB-STH), you need to change to the directory containing the folder that has the docker-compose.yml file, then you run the following docker-compose command:
 
 ```console
 $ docker-compose up
@@ -74,7 +74,7 @@ c832cb36bdfc        fiware/sth-comet    "/bin/sh -c bin/sth"     Less than a sec
 
 ```
 
-We see that the three containers are running now. Here, we can notice that the Orion Context Broker application is running on port 1026 as we specified in the “docker-compose.yml” file, as well as the STH application is running on the port 8666, and mongodb is running on port 27017.
+We see that the three containers are running now. Here, we can notice that the Orion Context Broker application is running on port 1026 as we specified in the “docker-compose.yml” file, as well as the STH application is running on the port 8666, and MongoDB is running on port 27017.
 
 To make REST API Calls:
 There are many HTTP clients that can help you quickly test web services.
@@ -113,7 +113,7 @@ Once we open postman we need to specify that we need to do a GET query and we ne
 }
 ```
 
-Now, to check whether the db is accessible as well, we need to connect to mongo container and execute the mongo command to access the mongo shell.
+Now, to check whether the DB is accessible as well, we need to connect to MongoDB container and execute the mongo command to access the mongo shell.
 
 ```console
 $ docker exec -it mongo mongo
@@ -152,7 +152,7 @@ As entity is an object stored by the Context Broker. Each entity has one or more
 
 ### Create Entity
 
-We need to perform POST request to the following target as follows:
+We need to perform a POST request to the following target as follows:
 
 > localhost:1026/v2/entities
 
@@ -224,7 +224,7 @@ Here we will query, through the STH, all the raw data for the values that have b
 ![STH Raw Data](Images/QueryTimeSeriesValues.png)
 
 
-In the response payload we can see that the name of the changed attribute is `speed`, followed by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is "2018-03-05T12:00:56:728Z".
+In the response payload we can see that the name of the changed attribute is `speed`, followed by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is `2018-03-05T12:00:56:728Z`.
 
 ## Resolution and Aggregation
 
@@ -233,7 +233,7 @@ In the response payload we can see that the name of the changed attribute is `sp
 **aggrPeriod:** Aggregation period or resolution. A fixed resolution determines the origin time format and the possible offsets. It is a mandatory parameter. Resolution or aggregation period is the time period by which the aggregated time series information is grouped. Possible valid resolution values supported by the STH are: month, day, hour, minute and second.
 Note: In our example, aggregated time series context information is set to a resolution of minutes because we are (manually) performing changes on attribute’s value in seconds. Therefore,  if values are changing in an hourly manner then we set the aggregated time period parameter to day so we can see the underlying hourly changes.
 
-For more info you can go the the [StH-Comet documentation](https://fiware-sth-comet.readthedocs.io/en/latest/getting-started/index.html "Resolution&Aggregation query parameters documentation").
+For more info you can go the the [STH-Comet documentation](https://fiware-sth-comet.readthedocs.io/en/latest/getting-started/index.html "Resolution&Aggregation query parameters documentation").
 
 ###  Retrieve the Maximum Value
 
@@ -243,7 +243,7 @@ Here we perform a GET request to the following target
 
 ![max of the updated values](Images/max.png)
 
-In this example, we can see that the resolution that we are performing our queries at is in _minutes_. Therefore when querying the maximum number for an attribute we will have a maximum value for each minute. We can see that the origin time is "2018-03-08T12:00:00:000Z" .In our example we see that in the minute 47 we have 2 samples and the maximum number is 50. Whereas, in the minute 48 we have 10 samples and the maximum value is 100.
+In this example, we can see that the resolution that we are performing our queries at is in _minutes_. Therefore when querying the maximum number for an attribute we will have a maximum value for each minute. We can see that the origin time is `2018-03-08T12:00:00:000Z` .In our example we see that in the minute 47 we have 2 samples and the maximum number is 50. Whereas, in the minute 48 we have 10 samples and the maximum value is 100.
 
 ### Retrieve Occurrences
 
@@ -253,7 +253,7 @@ Here we perform a GET request to the following target
 
 ![occur aggregation](Images/occur.png)
 
-In the picture we can see that for the hour 11:00 and minute 58 we have only 1 sample that has occurred. Whereas, for the hour 12:00 and minute 1 we have 3 samples that have been occurred.
+In the picture we can see that for the hour 11:00 and minute 58 we have only 1 sample that has occurred. Whereas, for the hour 12:00 and minute 1 we have 3 samples that have occurred.
 
 ### Retrieve the Sum
 
@@ -267,7 +267,7 @@ We can calculate the average by combining the information provided by these aggr
 
 ## MongoDB historical output
 
-We can connect to the mongoDB container and access all registered entities to the Orion Context Broker. We can check as well all historical data that has been generated
+We can connect to the MongoDB container and access all registered entities to the Orion Context Broker. We can check as well all historical data that has been generated
 
 > docker exec -it mongo mongo
 
