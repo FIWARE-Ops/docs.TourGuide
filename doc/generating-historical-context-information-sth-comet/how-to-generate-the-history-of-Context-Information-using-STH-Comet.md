@@ -3,6 +3,7 @@
 Context Information stored by the FIWARE Context Broker only includes the latest value of entity attributes. In order to be able to register the history of attribute values, the STH-Comet component is needed. STH Comet allows to generate "historical raw and aggregated time series context information", using a historic database built on top of MongoDB.
 
 Therefore, the three main components used are:
+
 * [Orion Context Broker](https://fiware-orion.readthedocs.io/en/master/ "OrionCB Documentation")
 * [STH-Comet](https://fiware-sth-comet.readthedocs.io/en/latest/ "STH-Comet Documentation")
 * [MongoDB](https://docs.mongodb.com/ "MongoDB Documentation")
@@ -35,26 +36,26 @@ The steps that are going to be taken are the following:
 
 Remove all docker containers (optional)
 
- ```console
-$ docker rm `docker ps -aq`
+```console
+docker rm `docker ps -aq`
 ```
 
 Remove all docker images (optional)
 
 ```console
-$ docker rmi $(docker images -a -q)
+docker rmi $(docker images -a -q)
 ```
 
 To run the 3 components together (MongoDB-orionCB-STH), you need to change to the directory containing the folder that has the docker-compose.yml file, then you run the following docker-compose command:
 
 ```console
-$ docker-compose up
+docker-compose up
 ```
 
 To check the images built on your local machine
 
 ```console
-$ docker images
+docker images
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
 fiware/orion        latest              d6ff87a7b412        6 days ago          266MB
@@ -65,7 +66,7 @@ fiware/sth-comet    latest              6915eeff95d3        4 months ago        
 To check the current running containers
 
 ```console
-$ docker ps
+docker ps
 
 CONTAINER ID        IMAGE               COMMAND                  CREATED                  STATUS              PORTS                    NAMES
 ccb6441ba878        fiware/orion        "/usr/bin/contextBro…"   Less than a second ago   Up 10 seconds       0.0.0.0:1026->1026/tcp   orion
@@ -88,9 +89,9 @@ In order to check if the Orion Context Broker and the STH are really working and
 
 Once we open postman we need to specify that we need to do a GET query and we need to specify the target (URI:port), in our case the queried target is as follows:
 
-> curl --request GET \ --url http://localhost:1026/version
+```console
+$ curl --request GET \ --url http://localhost:1026/version
 
-```json
 {
     "orion": {
         "version": "1.12.0-next",
@@ -105,9 +106,9 @@ Once we open postman we need to specify that we need to do a GET query and we ne
 }
 ```
 
-> curl --request GET \ --url http://localhost:8666/version
+```console
+$ curl --request GET \ --url http://localhost:8666/version
 
-```json
 {
     "version": "2.3.0-next"
 }
@@ -117,7 +118,7 @@ Now, to check whether the DB is accessible as well, we need to connect to MongoD
 
 ```console
 $ docker exec -it mongo mongo
-```
+
 
 MongoDB shell version v3.4.13
 connecting to: mongodb://127.0.0.1:27017
@@ -132,10 +133,10 @@ Server has startup warnings:
 2018-03-08T11:50:52.662+0000 I STORAGE  [initandlisten] 
 2018-03-08T11:50:52.662+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
 2018-03-08T11:50:52.662+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
-2018-03-08T11:50:52.764+0000 I CONTROL  [initandlisten] 
+2018-03-08T11:50:52.764+0000 I CONTROL  [initandlisten]
 2018-03-08T11:50:52.765+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
 2018-03-08T11:50:52.765+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
-2018-03-08T11:50:52.765+0000 I CONTROL  [initandlisten] 
+2018-03-08T11:50:52.765+0000 I CONTROL  [initandlisten]
 >
 ```
 
@@ -224,7 +225,7 @@ Here we will query, through the STH, all the raw data for the values that have b
 ![STH Raw Data](Images/QueryTimeSeriesValues.png)
 
 
-In the response payload we can see that the name of the changed attribute is `speed`, followed by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is `2018-03-05T12:00:56:728Z`.
+In the response payload we can see that the name of the changed attribute is `speed`, followed by the values that have been changed within different time periods. For example, we can see that the timestamp corresponding to the speed value of 22 is `2018-03-20T10:50:40.089Z`.
 
 ## Resolution and Aggregation
 
@@ -239,27 +240,27 @@ For more info you can go the the [STH-Comet documentation](https://fiware-sth-co
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**max**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=max&aggrPeriod=minute&dateFrom=2018-03-20T00:00:00.000Z&dateTo=2018-03-20T23:59:59.999Z
 
 ![max of the updated values](Images/max.png)
 
-In this example, we can see that the resolution that we are performing our queries at is in _minutes_. Therefore when querying the maximum number for an attribute we will have a maximum value for each minute. We can see that the origin time is `2018-03-08T12:00:00:000Z` .In our example we see that in the minute 47 we have 2 samples and the maximum number is 50. Whereas, in the minute 48 we have 10 samples and the maximum value is 100.
+In this example, we can see that the resolution that we are performing our queries at is in _minutes_. Therefore when querying the maximum number for an attribute we will have a maximum value for each minute. We can see that the origin time is `2018-03-20T10:00:00.000Z` .In our example we see that in the minute 47 we have 2 samples and the maximum number is 50. Whereas, in the minute 48 we have 10 samples and the maximum value is 100.
 
 ### Retrieve Occurrences
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**occur**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=occur&aggrPeriod=minute&dateFrom=2018-03-20T00:00:00.000Z&dateTo=2018-03-20T23:59:59.999Z
 
 ![occur aggregation](Images/occur.png)
 
-In the picture we can see that for the hour 11:00 and minute 58 we have only 1 sample that has occurred. Whereas, for the hour 12:00 and minute 1 we have 3 samples that have occurred.
+In the picture we can see that for the hour 10:00 and minute 50 we have 6 samples that have occurred.
 
 ### Retrieve the Sum
 
 Here we perform a GET request to the following target
 
-> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=**sum**&aggrPeriod=**minute**&dateFrom=2018-03-08T00:00:00.000Z&dateTo=2018-03-08T23:59:59.999Z
+> localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=sum&aggrPeriod=minute&dateFrom=2018-03-20T00:00:00.000Z&dateTo=2018-03-20T23:59:59.999Z
 
 ![aggregated data - sum](Images/sum.png)
 
@@ -272,12 +273,13 @@ We can connect to the MongoDB container and access all registered entities to th
 > docker exec -it mongo mongo
 
 ```console
+
 > show dbs
 admin          0.000GB
 local          0.000GB
 orion          0.000GB
 orion-example  0.000GB
-sth_example    0.001GB
+sth_example    0.000GB
 
 > use orion-example
 switched to db orion-example
@@ -287,25 +289,23 @@ csubs
 entities
 
 > db.entities.count()
-4
+3
 
 > use sth_example
 switched to db sth_example
 
-> show collections 
+> show collections
 sth_x002fxffffCar1xffffCarxffffspeed
 sth_x002fxffffCar1xffffCarxffffspeed.aggr
-sth_x002fxffffCar2xffffCarxffffspeed
-sth_x002fxffffCar2xffffCarxffffspeed.aggr
+sth_x002fxffffRoom1xffffRoomxffffpressure
+sth_x002fxffffRoom1xffffRoomxffffpressure.aggr
+sth_x002fxffffRoom1xffffRoomxfffftemperature
+sth_x002fxffffRoom1xffffRoomxfffftemperature.aggr
 sth_x002fxffffRoom2xffffRoomxffffpressure
 sth_x002fxffffRoom2xffffRoomxffffpressure.aggr
 sth_x002fxffffRoom2xffffRoomxfffftemperature
 sth_x002fxffffRoom2xffffRoomxfffftemperature.aggr
-sth_x002fxffffRoom3xffffRoomxffffpressure
-sth_x002fxffffRoom3xffffRoomxffffpressure.aggr
-sth_x002fxffffRoom3xffffRoomxfffftemperature
-sth_x002fxffffRoom3xffffRoomxfffftemperature.aggr
 
 > db.sth_x002fxffffCar1xffffCarxffffspeed.count()
-12
+6
 ```
