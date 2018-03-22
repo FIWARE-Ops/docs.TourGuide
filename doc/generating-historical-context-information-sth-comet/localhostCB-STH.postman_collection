@@ -1,0 +1,554 @@
+{
+	"owner": "2392164",
+	"lastUpdatedBy": "2392164",
+	"lastRevision": 3363450715,
+	"team": null,
+	"id": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+	"name": "localhostCB-STH",
+	"description": "",
+	"variables": null,
+	"auth": null,
+	"events": null,
+	"folders_order": [],
+	"order": [
+		"2787bc6f-95a4-c92f-5318-6175494574ab",
+		"ff2052f4-abe1-e17f-88b0-873dc60172bd",
+		"5bde6e53-766e-70cd-290f-0cad449ffa49",
+		"0a088b7c-2da5-494a-5671-5ffe55ff6f8a",
+		"0ee33511-0ee6-3bdd-bee0-d7d11ad9d4c9",
+		"4eda0536-180f-3db7-1315-98c3d9fa4112",
+		"d08d34a2-52ca-3cdf-4925-35a545d48d8a",
+		"7586037a-5527-83b1-32af-4e5dfb959c97",
+		"7b08c9e1-d046-b979-4a7d-26e3249ba351",
+		"6bfb839a-5759-2382-c4c1-ae4c2634835d",
+		"c9e30c09-d707-e6cd-eeb4-d5c8327f5a95",
+		"3fb6e510-1287-3e0f-1387-8062cc526dfc",
+		"3ad28a65-3fe0-7518-b001-eed236529a68"
+	],
+	"requests": [
+		{
+			"id": "0a088b7c-2da5-494a-5671-5ffe55ff6f8a",
+			"headers": "fiware-service: example\nfiware-servicepath: /\n",
+			"headerData": [
+				{
+					"key": "fiware-service",
+					"value": "example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fiware-servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:1026/v2/entities/Car1",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521542975843,
+			"name": "localhost-GET an entity-CB",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"id": "0ee33511-0ee6-3bdd-bee0-d7d11ad9d4c9",
+			"headers": "//Content-Type: text/plain\nFiware-Service: Example\nFiware-Servicepath: /\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "text/plain",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:1026/v2/entities/Car1/attrs/speed/value",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "PUT",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1520855012746,
+			"name": "localhost-change Value for attribute-CB",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+			"rawModeData": "100"
+		},
+		{
+			"folder": null,
+			"id": "2787bc6f-95a4-c92f-5318-6175494574ab",
+			"name": "localhost:1026/version",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:1026/version",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"id": "3ad28a65-3fe0-7518-b001-eed236529a68",
+			"headers": "fiware-service: example\nfiware-servicepath: /\n",
+			"headerData": [
+				{
+					"key": "fiware-service",
+					"value": "example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fiware-servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?aggrMethod=max&aggrPeriod=minute&dateFrom=2018-03-20T00:00:00.000Z&dateTo=2018-03-20T23:59:59.999Z",
+			"queryParams": [
+				{
+					"key": "aggrMethod",
+					"value": "max",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "aggrPeriod",
+					"value": "minute",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateFrom",
+					"value": "2018-03-20T00:00:00.000Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "dateTo",
+					"value": "2018-03-20T23:59:59.999Z",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521543403218,
+			"name": "localhost-STH - Aggregation",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"id": "3fb6e510-1287-3e0f-1387-8062cc526dfc",
+			"headers": "fiware-service: example\nfiware-servicepath: /\n",
+			"headerData": [
+				{
+					"key": "fiware-service",
+					"value": "example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fiware-servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?lastN=20",
+			"folder": null,
+			"queryParams": [
+				{
+					"key": "lastN",
+					"value": "20",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": [],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521543142841,
+			"name": "localhost-STH - Raw Request",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"folder": null,
+			"id": "4eda0536-180f-3db7-1315-98c3d9fa4112",
+			"name": "localhost -GET entities-CB",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": null,
+			"description": null,
+			"variables": null,
+			"headers": "Fiware-Service: Example\nFiware-Servicepath: /\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:1026/v2/entities",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"id": "5bde6e53-766e-70cd-290f-0cad449ffa49",
+			"headers": "Content-Type: application/json\nFiware-Service: Example\nFiware-Servicepath: /\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:1026/v2/entities",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521540615746,
+			"name": "localhost-post-CB",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+			"rawModeData": "{\n  \"id\":\"Car1\",\n  \"type\":\"Car\",\n  \"speed\": {\n    \"type\":\"Float\",\n    \"value\":98\n  }\n}"
+		},
+		{
+			"folder": null,
+			"id": "6bfb839a-5759-2382-c4c1-ae4c2634835d",
+			"name": "localhost-delete subscription-CB",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"rawModeData": "",
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "//Content-Type: application/json\nFiware-Service: Example\nFiware-Servicepath: /\n",
+			"method": "DELETE",
+			"pathVariables": {},
+			"url": "localhost:1026/v2/subscriptions/5a9d2348e9217008b29ca669",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"folder": null,
+			"id": "7586037a-5527-83b1-32af-4e5dfb959c97",
+			"name": "localhost-add subscription-STH",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "Content-Type: application/json\nFiware-Service: Example\nFiware-Servicepath: /\n",
+			"method": "POST",
+			"pathVariables": {},
+			"url": "localhost:1026/v2/subscriptions",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+			"rawModeData": "{\n  \"description\": \"STH Subscription\",\n  \"subject\": {\n    \"entities\": [\n      {\n        \"idPattern\": \".*\"\n      }\n    ]\n  },\n  \"notification\": {\n    \"http\": {\n      \"url\": \"http://sth:8666/notify\"\n    },\n    \"attrsFormat\": \"legacy\"\n  },\n  \"expires\": \"2040-01-01T14:00:00.00Z\"\n}"
+		},
+		{
+			"folder": null,
+			"id": "7b08c9e1-d046-b979-4a7d-26e3249ba351",
+			"name": "localhost-list existing subscriptions-CB",
+			"dataMode": "raw",
+			"data": [],
+			"auth": null,
+			"events": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "//Content-Type: application/json\nFiware-Service: Example\nFiware-Servicepath: /\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:1026/v2/subscriptions",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": false
+				},
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+			"rawModeData": "{  \r\n  \"subject\": {\r\n    \"entities\": [\r\n      {\r\n        \"id\": \"Room1\",\r\n        \"type\": \"Room\"\r\n      }\r\n    ],\r\n    \"condition\": {\r\n      \"attrs\": [ \"temperature\"  ]\r\n      }\r\n    },\r\n   \"notification\": {\r\n    \"http\": {\r\n      \"url\": \"localhost:1026/publish\"\r\n    },\r\n    \"attrs\": [  \"temperature\"   ]\r\n  },\r\n  \"expires\": \"2026-04-05T14:00:00.00Z\"\r\n}\r\n"
+		},
+		{
+			"folder": null,
+			"id": "c9e30c09-d707-e6cd-eeb4-d5c8327f5a95",
+			"name": "localhost-aggregation-sth",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "fiware-service: Example\nfiware-servicepath: /\n",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "http://localhost:8666/STH/v1/contextEntities/type/Car/id/Car1/attributes/speed?lastN=1\n",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [
+				{
+					"key": "lastN",
+					"value": "1\n",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"headerData": [
+				{
+					"key": "fiware-service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "fiware-servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		},
+		{
+			"id": "d08d34a2-52ca-3cdf-4925-35a545d48d8a",
+			"headers": "Fiware-Service: Example\nFiware-Servicepath: /\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Fiware-Service",
+					"value": "Example",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Fiware-Servicepath",
+					"value": "/",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "localhost:1026/op/update",
+			"folder": null,
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [],
+			"dataMode": "raw",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1521541044178,
+			"name": "localhost -post multiple entities-CB",
+			"description": null,
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa",
+			"rawModeData": "{\r\n  \"actionType\": \"APPEND\",\r\n  \"entities\": [\r\n    {\r\n      \"type\": \"Room\",\r\n      \"id\": \"Room1\",\r\n      \"temperature\": {\r\n        \"value\": 21.2,\r\n        \"type\": \"Float\"\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 722,\r\n        \"type\": \"Integer\"\r\n      }\r\n    },\r\n   {\r\n      \"type\": \"Room\",\r\n      \"id\": \"Room2\",\r\n      \"temperature\": {\r\n        \"value\": 31.8,\r\n        \"type\": \"Float\"\r\n      },\r\n      \"pressure\": {\r\n        \"value\": 712,\r\n        \"type\": \"Integer\"\r\n      }\r\n    }\r\n  ]\r\n}"
+		},
+		{
+			"folder": null,
+			"id": "ff2052f4-abe1-e17f-88b0-873dc60172bd",
+			"name": "localhost-STH-version",
+			"dataMode": "params",
+			"data": null,
+			"auth": null,
+			"events": null,
+			"rawModeData": null,
+			"descriptionFormat": "html",
+			"description": null,
+			"variables": null,
+			"headers": "",
+			"method": "GET",
+			"pathVariables": {},
+			"url": "localhost:8666/version",
+			"preRequestScript": null,
+			"tests": null,
+			"currentHelper": null,
+			"helperAttributes": null,
+			"queryParams": [],
+			"headerData": [],
+			"pathVariableData": [],
+			"collectionId": "2dcdc459-d0ad-0cfb-6763-8fdb94e9b9aa"
+		}
+	]
+}
