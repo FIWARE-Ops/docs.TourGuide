@@ -1,4 +1,4 @@
-# How to store data in mySQL using Cygnus
+# How to store data in MySQL using Cygnus
 
 Context information stored by the Fiware Context Broker only includes the latest value of entity attributes. In order to be able to store the historical data produced via the Context Broker ,we need to use Cygnus. Cygnus needs to be connected to a store. In this tutorial MySQL is used.
 
@@ -75,7 +75,7 @@ c30a8ba06958        fiware/cygnus-ngsi:latest   "/cygnus-entrypoint.…"   11 mi
 59ed1e7daba8        mysql:latest                "docker-entrypoint.s…"   11 minutes ago      Up 11 minutes       3306/tcp                                         mysql
 ```
 
-We see that four containers are running now. Here, we can notice that the Orion Context Broker is running on port 1026, Cygnus-ngsi exposes two ports (8081 and 5050), the API must be running in a port you configured and 8081 (management port) is the default one. Whereas port 5050 is the port that receives notifications from Orion.  For more info you can check the documentations [here](http://fiware-cygnus.readthedocs.io/en/1.7.1/cygnus-common/installation_and_administration_guide/management_interface_v1/index.html)
+We see that four containers are running now. Here, we can notice that the Orion Context Broker is running on port 1026. Cygnus-ngsi exposes two ports for management purposes, and 5050 for receiving notifications from Orion. The API must be running on port you configured and 8081 (management port) is the default one. For more info you can check the documentations [here](http://fiware-cygnus.readthedocs.io/en/1.7.1/cygnus-common/installation_and_administration_guide/management_interface_v1/index.html)
 
 To make REST API Calls: There are many HTTP clients that can help you quickly test web services.
 
