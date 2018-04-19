@@ -1,0 +1,45 @@
+mongo:
+  image: mongo:3.4
+  command: --nojournal
+  container_name: mongo
+  volumes:
+    - /Users/joudsayedissa/data/db
+orion:
+    image: fiware/orion:latest
+    hostname: orion
+    container_name: orion
+    links:
+        - mongo:mongo
+        - cygnus:cygnus
+    expose:
+        - "1026"
+    ports:
+        - "1026:1026"
+    command: -dbhost mongo
+
+mysql:
+    image: mysql:latest
+    hostname: mysql
+    container_name: mysql
+    expose:
+        - "3306"
+    ports:
+        - "3306:3306"
+    environment:
+        - MYSQL_ROOT_PASSWORD=mysql
+
+cygnus:
+    image: fiware/cygnus-ngsi:latest
+    hostname: cygnus
+    container_name: cygnus
+    links:
+        - mysql:iot-mysql
+    expose:
+        - "5050"
+    ports:
+        - "5050:5050"
+        - "8081:8081"
+    environment:
+        - CYGNUS_MYSQL_USER=root
+        - CYGNUS_MYSQL_PASS=mysql
+        

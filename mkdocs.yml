@@ -18,6 +18,7 @@ pages:
         - 'Subscription to context changes': 'development-context-aware-applications/how-to-subscribe-to-changes-on-context-information.md'
         - 'Geolocated context queries': 'development-context-aware-applications/how-to-perform-geo-located-queries.md'
       - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
+      - 'Storing data in MySQL through Cygnus': 'storing-data-cygnus-mysql/how-to-store-data-cygnus-mysql.md'
       - 'Deep dive': 'development-context-aware-applications/deep-dive.md'
   - 'Connection to the Internet of Things':
      - 'Introduction': 'connection-to-the-internet-of-things/introduction.md'
