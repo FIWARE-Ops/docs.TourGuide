@@ -75,7 +75,7 @@ c30a8ba06958        fiware/cygnus-ngsi:latest   "/cygnus-entrypoint.…"   11 mi
 59ed1e7daba8        mysql:latest                "docker-entrypoint.s…"   11 minutes ago      Up 11 minutes       3306/tcp                                         mysql
 ```
 
-We see that four containers are running now. Here, we can notice that the Orion Context Broker is running on port 1026. Cygnus-ngsi exposes two ports for management purposes, and 5050 for receiving notifications from Orion. The API must be running on port you configured and 8081 (management port) is the default one. For more info you can check the documentations [here](http://fiware-cygnus.readthedocs.io/en/1.7.1/cygnus-common/installation_and_administration_guide/management_interface_v1/index.html)
+We see that four containers are running now. Here, we can notice that the Orion Context Broker is running on port 1026. Cygnus-ngsi exposes two ports, 8081 for management purposes and 5050 for receiving notifications from Orion. For more info you can check the documentation [here](http://fiware-cygnus.readthedocs.io/en/1.7.1/cygnus-common/installation_and_administration_guide/management_interface_v1/index.html)
 
 To make REST API Calls: There are many HTTP clients that can help you quickly test web services.
 
