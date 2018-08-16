@@ -4,62 +4,63 @@ docs_dir: doc/
 extra_css: ["https://fiware.org/style/fiware_readthedocs.css"]
 repo_url: https://github.com/Fiware/docs.TourGuide.git
 google_analytics: ['UA-80297547-1', 'fiwaretourguide.readthedocs.io']
+theme: readthedocs
 pages:
   - Home: index.md
-  - 'Development of context-aware applications':
-      - 'Introduction': 'development-context-aware-applications/introduction.md'
-      - 'Using NGSI v2':
-        - 'Update – query context': 'development-context-aware-applications/v2/how-to-update-and-query-context-information.md'
-        - 'Subscription to context changes': 'development-context-aware-applications/v2/how-to-subscribe-to-changes-on-context-information.md'
-        - 'Geolocated context queries': 'development-context-aware-applications/v2/how-to-perform-geo-located-queries.md'
-      - 'Generate the history of Context Information using STH-Comet': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
-      - 'Store context information in MySQL through Cygnus': 'storing-data-cygnus-mysql/how-to-store-data-cygnus-mysql.md'
-      - 'Deep dive': 'development-context-aware-applications/deep-dive.md'
-  - 'Connection to the Internet of Things':
-     - 'Introduction': 'connection-to-the-internet-of-things/introduction.md'
-     - 'Reading data from IoT devices': 'connection-to-the-internet-of-things/how-to-read-measures-captured-from-iot-devices.md'
-     - 'Acting upon IoT devices': 'connection-to-the-internet-of-things/how-to-act-upon-iot-devices.md'
-     - 'Deep dive': 'connection-to-the-internet-of-things/deep-dive.md'
-  - 'Handling authorization and access control to APIs':
-     - 'Introduction': 'handling-authorization-and-access-control-to-apis/introduction.md'
-     - 'Creating your identity in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-create-your-identity-in-fiware.md'
-     - 'Implementing OAuth2 in apps': 'handling-authorization-and-access-control-to-apis/how-to-implement-oauth2-in-your-applications.md'
-     - 'How to send requests to a FIWARE GE': 'handling-authorization-and-access-control-to-apis/how-to-send-requests-to-a-fiware-ge.md'
-     - 'How to secure your backend service': 'handling-authorization-and-access-control-to-apis/how-to-secure-your-backend-service.md'
-     - 'How to manage Access Control in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware.md'
-     - 'References': 'handling-authorization-and-access-control-to-apis/references.md'
-     - 'Deep Dive': 'handling-authorization-and-access-control-to-apis/deep-dive.md'
-  - 'Publishing (Open) Data in FIWARE':
-     - 'Introduction': 'publishing-open-data-in-fiware/introduction.md'
-     - 'FIWARE Extended CKAN': 'publishing-open-data-in-fiware/fiware-extended-ckan.md'
-     - 'How to Publish datasets and context information in CKAN': 'publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2.md'
-     - 'How to Offer Datasets (including Context Information) through the FIWARE Store':
+  - 'Core Context Management':
+      - 'Core Context - Introduction': 'development-context-aware-applications/introduction.md'
+      - 'Core Context - NGSI v2':
+        - 'Orion - Query and Update Context Data': 'development-context-aware-applications/v2/how-to-update-and-query-context-information.md'
+        - 'Orion - Subscribe to context changes': 'development-context-aware-applications/v2/how-to-subscribe-to-changes-on-context-information.md'
+        - 'Orion - Geolocated context queries': 'development-context-aware-applications/v2/how-to-perform-geo-located-queries.md'
+      - 'STH-Comet - Generate Context History ': 'generating-historical-context-information-sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
+      - 'Cygnus - Store Context Information': 'storing-data-cygnus-mysql/how-to-store-data-cygnus-mysql.md'
+      - 'Core Context - Deep dive': 'development-context-aware-applications/deep-dive.md'
+  - 'Interface to Internet of Things':
+     - 'IDAS - Introduction': 'connection-to-the-internet-of-things/introduction.md'
+     - 'IDAS - Read data from devices': 'connection-to-the-internet-of-things/how-to-read-measures-captured-from-iot-devices.md'
+     - 'IDAS - Actuate devices': 'connection-to-the-internet-of-things/how-to-act-upon-iot-devices.md'
+     - 'IDAS - Deep dive': 'connection-to-the-internet-of-things/deep-dive.md'
+  - 'Security Access and API Management':
+     - 'IDM - Introduction': 'handling-authorization-and-access-control-to-apis/introduction.md'
+     - 'IDM - Create your identity in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-create-your-identity-in-fiware.md'
+     - 'IDM - Implement OAuth2 in apps': 'handling-authorization-and-access-control-to-apis/how-to-implement-oauth2-in-your-applications.md'
+     - 'IDM - Send requests to a FIWARE GE': 'handling-authorization-and-access-control-to-apis/how-to-send-requests-to-a-fiware-ge.md'
+     - 'IDM - Secure your backend service': 'handling-authorization-and-access-control-to-apis/how-to-secure-your-backend-service.md'
+     - 'IDM - Manage Access Control in FIWARE': 'handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware.md'
+     - 'IDM - References': 'handling-authorization-and-access-control-to-apis/references.md'
+     - 'IDM - Deep Dive': 'handling-authorization-and-access-control-to-apis/deep-dive.md'
+  - 'Data Publication and Monetization':
+     - 'CKAN - Introduction': 'publishing-open-data-in-fiware/introduction.md'
+     - 'CKAN - Architecture': 'publishing-open-data-in-fiware/fiware-extended-ckan.md'
+     - 'CKAN - Publish open datasets': 'publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2.md'
+     - 'CKAN - Offer open Datasets via the FIWARE Store':
        - 'Introduction': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/introduction.md'
-       - 'Offering Datasets Directly Through the CKAN Interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface.md'
-       - 'Offering Datasets Through the FIWARE Store interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface.md'
-       - 'Acquiring Datasets Offered in the FIWARE Store': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore.md'
-     - 'Deep dive': 'publishing-open-data-in-fiware/deep-dive.md'
-  - 'Big Data analysis of historic context information':
-     - 'Introduction': 'big-data-analysis-of-historic-context-information/introduction.md'
-     - 'Deep dive': 'big-data-analysis-of-historic-context-information/deep-dive.md'
-  - 'Creating application dashboards':
+       - 'Offer Datasets via the CKAN Interface': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface.md'
+       - 'Offer Datasets via FIWARE Store': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface.md'
+       - 'Acquire Datasets via FIWARE Store': 'publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore.md'
+     - 'CKAN - Deep dive': 'publishing-open-data-in-fiware/deep-dive.md'
+  - 'Big Data Analysis':
+     - 'Cosmos - Introduction': 'big-data-analysis-of-historic-context-information/introduction.md'
+     - 'Cosmos - Deep dive': 'big-data-analysis-of-historic-context-information/deep-dive.md'
+  - 'Visualization  - Creating application dashboards':
      - 'Introduction': 'creating-application-dashboards/introduction.md'
-     - 'How to find widgets and other components for your dashboard': 'creating-application-dashboards/how-to-find-widgets-and-other-components-for-your-dashboard.md'
-     - 'How to create your application dashboard from these building blocks': 'creating-application-dashboards/how-to-create-your-application-dashboard-from-these-building-blocks.md'
-     - 'How to interconnect widgets and connect them to backend resources': 'creating-application-dashboards/how-to-interconnect-widgets-and-connect-them-to-backend-resources.md'
-     - 'How to share, sell or make available your new dashboard': 'creating-application-dashboards/how-to-share-sell-or-make-available-your-new-dashboard.md'
-     - 'How to develop new widgets and operators': 'creating-application-dashboards/how-to-develop-new-widgets-and-operators.md'
-     - 'How to make AJAX requests to external services': 'creating-application-dashboards/how-to-make-ajax-requests-to-external-services.md'
-     - 'How to receive events': 'creating-application-dashboards/how-to-receive-events.md'
-     - 'How to send events': 'creating-application-dashboards/how-to-send-events.md'
-     - 'How to use other FIWARE GEs from your widgets and operators': 'creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md'
-     - 'Deep dive': 'creating-application-dashboards/deep-dive.md'
-  - 'Real-time processing of media streams':
-     - 'Introduction': 'real-time-processing-of-media-streams/introduction.md'
-     - 'What is WebRTC and what is a media server': 'real-time-processing-of-media-streams/whats-webrtc-and-whats-a-media-server.md'
-     - 'What is the architecture of a Kurento enabled application': 'real-time-processing-of-media-streams/whats-the-architecture-of-a-kurento-enabled-application.md'
-     - 'How to develop a Kurento enabled application': 'real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application.md'
-     - 'Deep dive': 'real-time-processing-of-media-streams/deep-dive.md'
+     - 'Wirecloud - Find widgets and other components': 'creating-application-dashboards/how-to-find-widgets-and-other-components-for-your-dashboard.md'
+     - 'Wirecloud - Create dashboards': 'creating-application-dashboards/how-to-create-your-application-dashboard-from-these-building-blocks.md'
+     - 'Wirecloud - Connect widgets and other resources': 'creating-application-dashboards/how-to-interconnect-widgets-and-connect-them-to-backend-resources.md'
+     - 'Wirecloud - Share, sell or make available your new dashboard': 'creating-application-dashboards/how-to-share-sell-or-make-available-your-new-dashboard.md'
+     - 'Wirecloud - Develop new widgets and operators': 'creating-application-dashboards/how-to-develop-new-widgets-and-operators.md'
+     - 'Wirecloud - Make AJAX requests to external services': 'creating-application-dashboards/how-to-make-ajax-requests-to-external-services.md'
+     - 'Wirecloud - Receive events': 'creating-application-dashboards/how-to-receive-events.md'
+     - 'Wirecloud - Send events': 'creating-application-dashboards/how-to-send-events.md'
+     - 'Wirecloud - Connect to other FIWARE GEs': 'creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md'
+     - 'Wirecloud - Deep dive': 'creating-application-dashboards/deep-dive.md'
+  - 'Real-time media stream processing':
+     - 'Kurento - Introduction': 'real-time-processing-of-media-streams/introduction.md'
+     - 'Kurento - What is WebRTC and what is a media server': 'real-time-processing-of-media-streams/whats-webrtc-and-whats-a-media-server.md'
+     - 'Kurento - Architecture of a media stream enabled application': 'real-time-processing-of-media-streams/whats-the-architecture-of-a-kurento-enabled-application.md'
+     - 'Kurento - Develop a media stream enabled application': 'real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application.md'
+     - 'Kurento - Deep dive': 'real-time-processing-of-media-streams/deep-dive.md'
   - 'FIWARE Tour Guide Application. A tutorial on how to integrate the main FIWARE GEs':
      - 'Introduction': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/introduction.md'
      - 'Installation': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/installation.md'
