@@ -32,16 +32,13 @@ Futher Tutorials on **Core Context Management: History** persist historic contex
    - [NGSIv2 Overview for NGSIv1 Developers](http://bit.ly/ngsiv2-vs-ngsiv1)
    - [NGSIv2 and NGSI-LD Overview](https://bit.ly/2Htk5Z8)  ![New Badge](https://img.shields.io/badge/New-!-red.svg)
 
-## GitHub Repositories
+## GitHub Repositories and Docker Hub Images
 
-  - [Orion (reference implementation)](https://github.com/Fiware/context.Orion)
-  - [Cygnus (reference implementation)](https://github.com/Fiware/context.Cygnus)
-  - [STH-Comet(reference implementation)](https://github.com/Fiware/context.STH.Comet)
-
-  - [Orion Docker Image](https://hub.docker.com/r/fiware/orion/)
-  - [Cygnus Docker Image](https://hub.docker.com/r/fiware/cygnus-ngsi/)
-  - [STH-Comet Docker container](https://hub.docker.com/r/fiware/sth-comet/)
-
-
-
-
+* GitHub
+    * [Orion (reference implementation)](https://github.com/Fiware/context.Orion)
+    * [Cygnus (reference implementation)](https://github.com/Fiware/context.Cygnus)
+    * [STH-Comet(reference implementation)](https://github.com/Fiware/context.STH.Comet)
+* Docker
+    * [Orion Docker Image](https://hub.docker.com/r/fiware/orion/)
+    * [Cygnus Docker Image](https://hub.docker.com/r/fiware/cygnus-ngsi/)
+    * [STH-Comet Docker container](https://hub.docker.com/r/fiware/sth-comet/)

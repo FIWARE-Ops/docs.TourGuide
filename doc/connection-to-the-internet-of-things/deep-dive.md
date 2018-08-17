@@ -28,5 +28,3 @@ The following Tutorials on **IoT Agents** also are available:
 - [IoT Agent Node Lib](https://github.com/Fiware/iot.IoTagent-node-lib): library to create new agents. This core library allows to develop new protocols for specific southbound protocols.
 
 There are existing [IoT Agents instances up and running](https://catalogue.fiware.org/enablers/backend-device-management-idas/instances) available. These would be useful for testing purposes and for learning about how to interact between IoT Agents and Orion Context Broker.
-
-
