@@ -61,6 +61,12 @@ pages:
      - 'Kurento - Architecture of a media stream enabled application': 'real-time-processing-of-media-streams/whats-the-architecture-of-a-kurento-enabled-application.md'
      - 'Kurento - Develop a media stream enabled application': 'real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application.md'
      - 'Kurento - Deep dive': 'real-time-processing-of-media-streams/deep-dive.md'
+  - 'Real-time processing of Context Events':
+     - 'CEP - Introduction':  'real-time-processing-of-context-events/introduction.md'
+     - 'CEP - Defining a CEP Application': 'real-time-processing-of-context-events/how-to-define-a-cep-application.md'
+     - 'CEP - How to Send Events': 'real-time-processing-of-context-events/how-to-send-input-events-to-the-cep.md'
+     - 'CEP - Administration': 'real-time-processing-of-context-events/how-to-administrate-the-cep.md'
+     - 'CEP - Deep dive': 'real-time-processing-of-context-events/deep-dive.md'
   - 'FIWARE Tour Guide Application. A tutorial on how to integrate the main FIWARE GEs':
      - 'Introduction': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/introduction.md'
      - 'Installation': 'fiware-tour-guide-application-a-tutorial-on-how-to-integrate-the-main-fiware-ges/installation.md'

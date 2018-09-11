@@ -28,9 +28,17 @@ Futher Tutorials on **Core Context Management: History** persist historic contex
 
 ## Presentations
 
-   - [Introduction to NGSI API and Orion Context Broker](http://bit.ly/fiware-orion)
-   - [NGSIv2 Overview for NGSIv1 Developers](http://bit.ly/ngsiv2-vs-ngsiv1)
-   - [NGSIv2 and NGSI-LD Overview](https://bit.ly/2Htk5Z8)  ![New Badge](https://img.shields.io/badge/New-!-red.svg)
+Presentations about Core Context Management from recent FIWARE Global Summits:
+
+| Porto 2018 | Malaga 2017 |
+|------------|-------------|
+|[Context Information Management](https://www.slideshare.net/FI-WARE/fiware-global-summit-fiware-context-information-management)|[Introduction to Orion and NGSI API](https://www.slideshare.net/FI-WARE/fiware-tech-summit-jose-manuel-cantera-fiware-ngsiv2-introduction)|
+||[How to deploy Orion](https://www.slideshare.net/FI-WARE/fiware-tech-summit-fernando-lopez-how-to-deploy-context-broker-in-10-minutes)|
+||[Cygnus and STH-Comet](https://www.slideshare.net/FI-WARE/fiware-tech-summit-joaquin-salvachua-fiware-cygnus-and-sthcomet)|
+||[Quantum Leap - Timeseries DB](https://www.slideshare.net/FI-WARE/fiware-tech-summit-quantum-leap-a-fiware-ttmeseries-db)|
+
+
+- Conversion from NGSI v1 - [NGSIv2 Overview for NGSIv1 Developers](http://bit.ly/ngsiv2-vs-ngsiv1)
 
 ## GitHub Repositories and Docker Hub Images
 
