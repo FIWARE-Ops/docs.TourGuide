@@ -1,4 +1,4 @@
-Should you wish to learn much more about this, please check:
+Should you wish to learn much more about Complex Event Processing, please check:
 
    - [Github repository (reference implementation)](https://github.com/Fiware/context.Proton)
    - [Play with the Docker container](https://hub.docker.com/r/fiware/proactivetechnologyonline/)

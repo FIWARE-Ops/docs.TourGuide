@@ -1,6 +1,6 @@
 ## Documentation
 
-Should you wish to learn much more about this chapter, please check out the following in depth documentation:
+Should you wish to learn much more about Core Context Management, please check out the following in depth documentation:
 
   - Read the full [Orion documentation](https://fiware-orion.readthedocs.io/en/latest/)
   - [FIWARE Harmonized Data Models](http://schema.fiware.org)

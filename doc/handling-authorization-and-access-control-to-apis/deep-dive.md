@@ -1,6 +1,6 @@
 ## Documentation
 
-Should you wish to learn much more about this chapter, please check out the following in depth documentation:
+Should you wish to learn much more about security, please check out the following in depth documentation:
 
   - Read the full [Keyrock documentation](http://fiware-idm.readthedocs.org/en/latest/)
   - [Keyrock Open API Specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/security.Idm/Idm-openapi.json)

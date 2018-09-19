@@ -1,4 +1,4 @@
-Should you wish to learn much more about this, please check:
+Should you wish to learn much more about publishing Open Data, please check:
 
    - **CKAN**:
       - [Github repository (reference implementation)](https://github.com/Fiware/context.Ckan)

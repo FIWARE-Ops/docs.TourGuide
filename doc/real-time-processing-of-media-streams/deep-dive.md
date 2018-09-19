@@ -1,5 +1,7 @@
 ## Documentation
 
+Should you wish to learn much more about Media Streams, please check:
+
    - Read the full [Kurento documentation](http://kurento.readthedocs.org/en/latest/)
    - [Kurento API Specification](http://docs.streamoriented.apiary.io/)
 

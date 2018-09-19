@@ -1,6 +1,6 @@
 ## Documentation
 
-Should you wish to learn much more about this chapter, please check out the following in-depth documentation about IoT Agents:
+Should you wish to learn much more about connecting to IoT, please check out the following in-depth documentation about IoT Agents:
 
 * Read the full [IoT Agent library documentation](https://iotagent-node-lib.readthedocs.io/en/latest)
 * [IoT Agent library Open API Specification](

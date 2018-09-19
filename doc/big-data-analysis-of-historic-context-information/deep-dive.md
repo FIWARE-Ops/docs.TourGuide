@@ -1,4 +1,4 @@
-Should you wish to learn much more about this, please check:
+Should you wish to learn much more about Big Data Analysis, please check the following:
 
    - Cygnus:
        - [Github repository (reference implementation)](https://github.com/Fiware/context.Cygnus)
