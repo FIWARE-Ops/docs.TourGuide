@@ -4,9 +4,11 @@
 Should you wish to learn much more about visualizations, please check out the following in depth documentation:
 
   - Read the full [Wirecloud documentation](http://wirecloud.readthedocs.org/en/latest/)
+  - [Wirecloud Website](https://conwet.fi.upm.es/wirecloud/)
   - [Wirecloud API Specification](http://docs.fiwareapplicationmashup.apiary.io)
   - Read the full [Knowage documentation](https://knowage.readthedocs.io/en/latest/)
   - [Knowage Website](https://www.knowage-suite.com/)
+  - [Knowage CE Manual](http://download.forge.ow2.org/knowage/Knowage_6.x_CE_Manual.pdf)
   - [Knowage API Specification](https://knowage.docs.apiary.io/)
 
 
