@@ -1,5 +1,7 @@
 ## Documentation
 
+Should you wish to learn much more about Media Streams, please check:
+
    - Read the full [Kurento documentation](http://kurento.readthedocs.org/en/latest/)
    - [Kurento API Specification](http://docs.streamoriented.apiary.io/)
 
@@ -8,6 +10,14 @@
 The Official Kurento Tutorials can be found on the [Kurento Website](https://doc-kurento.readthedocs.io/en/stable/user/tutorials.html), the following Tutorials on the **Media Streams** also are available:
 
 &nbsp; 503. [Introduction to Media Streams](https://fiware-tutorials.readthedocs.io/en/latest/media-streams)<br/>
+
+## Presentations
+
+Presentations about Media Streams from recent FIWARE Global Summits:
+
+| Porto 2018 | Malaga 2017 |
+|------------|-------------|
+|[Real-time media processing](https://www.slideshare.net/FI-WARE/fiware-global-summit-realtime-media-stream-processing-using-kurento-97030173)|[Stream Processing with Kurento](https://www.slideshare.net/FI-WARE/fiware-tech-summit-stream-processing-with-kurento-media-server)|
 
 ## Video Presentations
 

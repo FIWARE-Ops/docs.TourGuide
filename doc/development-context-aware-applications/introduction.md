@@ -8,7 +8,7 @@ that characterize those entities relevant to your application. [The Context Brok
 is able to handle context information at large scale by implementing
 standard REST APIs. 
 
-[![1](images/1.png)](images/1.png)  
+[![1](images/1.png)](images/1.png)
 Context information may come from many different sources:
 
 -   Already existing systems
@@ -37,6 +37,15 @@ equipped with sensors).
 
 [![2](images/2.png)](images/2.png)
 
+
+## What is FIWARE? - Introductory Presentations
+
+Presentations about FIWARE from recent FIWARE Global Summits:
+
+| Porto 2018 | Malaga 2017 |
+|------------|-------------|
+|[FIWARE Overview](https://www.slideshare.net/FI-WARE/fiware-global-summit-fiware-overview)|[FIWARE Overview](https://www.slideshare.net/FI-WARE/fiware-tech-summit-juanjo-gierro-fiware-overview-and-description-of-ges)|
+
 If you are interested in more details about how to make your application
 a context-aware application check out:
 
@@ -44,7 +53,7 @@ a context-aware application check out:
     - [How to update and query context information](v2/how-to-update-and-query-context-information.md)
     - [How to subscribe to changes on context information](v2/how-to-subscribe-to-changes-on-context-information.md)
     - [How to perform geo-location queries](v2/how-to-perform-geo-located-queries.md)
-    
+
 On the other hand, you can browse the full API description [here](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
 
 There is an early FIWARE NGSI HTTP binding, named NGSI v1 but it has been largely overpassed by the current NGSIv2 version and it will be deprecated soon. Anyway you can check it [here](http://fiware.github.io/context.Orion/api/v1/)

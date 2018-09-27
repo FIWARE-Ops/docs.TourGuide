@@ -1,6 +1,6 @@
 ## Documentation
 
-Should you wish to learn much more about this chapter, please check out the following in-depth documentation about IoT Agents:
+Should you wish to learn much more about connecting to IoT, please check out the following in-depth documentation about IoT Agents:
 
 * Read the full [IoT Agent library documentation](https://iotagent-node-lib.readthedocs.io/en/latest)
 * [IoT Agent library Open API Specification](
@@ -18,6 +18,21 @@ The following Tutorials on **IoT Agents** also are available:
 &nbsp; 201. [Introduction to IoT Sensors](https://fiware-tutorials.readthedocs.io/en/latest/iot-sensors)<br/>
 &nbsp; 202. [Provisioning an IoT Agent](https://fiware-tutorials.readthedocs.io/en/latest/iot-agent)<br/>
 &nbsp; 203. [IoT over MQTT](https://fiware-tutorials.readthedocs.io/en/latest/iot-over-mqtt)<br/>
+
+## Presentations
+
+Presentations about IoT Agents and Sensors from recent FIWARE Global Summits:
+
+| Porto 2018 | Malaga 2017 |
+|------------|-------------|
+|[Connecting to IoT](https://www.slideshare.net/FI-WARE/fiware-global-summit-connecting-to-iot-97030154)| [FIWARE IoT Agents](https://www.slideshare.net/FI-WARE/fiware-tech-summit-daniel-calvo-fiware-iot-agents)|
+|[Build your own IoT Agent](https://www.slideshare.net/FI-WARE/fiware-global-summit-building-your-own-iot-agent-97030112)| [Lightweight M2M IoT Agent in depth](https://www.slideshare.net/FI-WARE/fiware-tech-summit-david-fernandez-ros-lwm2m-iot-agent-in-depth) |
+|[Connecting LoRa with FIWARE](https://www.slideshare.net/FI-WARE/fiware-global-summit-connecting-lora-with-fiware-97030129)| [TST Connected Solutions](https://www.slideshare.net/FI-WARE/fiware-tech-summit-arturo-medela-tst-connected-solutions-using-fiware) |
+|[Introduction to LoRa](https://www.slideshare.net/FI-WARE/fiware-global-summit-introduction-to-lora-alliance-and-technology-97029099)| |
+|[Introduction to Fog Flow](https://www.slideshare.net/FI-WARE/fiware-tech-summit-fogflow-new-ge-for-iot-edge-computing)| |
+|[Flog Flow enabled Data Sharing](https://www.slideshare.net/FI-WARE/fiware-global-summit-fogflow-a-new-ge-for-iot-edge-computing-97030162)| |
+|[OPC UA Agent](https://www.slideshare.net/FI-WARE/fiware-global-summit-opc-ua-agent-97030170)| |
+|[OpenMTC - OneM2M](https://www.slideshare.net/FI-WARE/fiware-tech-summit-openmtc-onem2m-middleware)| |
 
 
 ## GitHub Repositories

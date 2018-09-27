@@ -1,6 +1,6 @@
 ## Documentation
 
-Should you wish to learn much more about this chapter, please check out the following in depth documentation:
+Should you wish to learn much more about security, please check out the following in depth documentation:
 
   - Read the full [Keyrock documentation](http://fiware-idm.readthedocs.org/en/latest/)
   - [Keyrock Open API Specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/security.Idm/Idm-openapi.json)
@@ -15,6 +15,14 @@ The following Tutorials on **Security** also are available:
 &nbsp; 401. [Administrating Users and Organizations](https://fiware-tutorials.readthedocs.io/en/latest/identity-management)<br/>
 &nbsp; 402. [Managing Roles and Permissions](https://fiware-tutorials.readthedocs.io/en/latest/roles-permissions)<br/>
 &nbsp; 403. [Securing Application Access](https://fiware-tutorials.readthedocs.io/en/latest/securing-access)<br/>
+
+## Presentations
+
+Presentations about Security from recent FIWARE Global Summits:
+
+| Porto 2018 | Malaga 2017 |
+|------------|-------------|
+|[API Management](https://www.slideshare.net/FI-WARE/fiware-global-summit-fiwares-api-management-97030121)|[Identity Management, Access Control and API Management](https://www.slideshare.net/FI-WARE/fiware-alvaro-alonso-complete-framework-for-identity-access-control-and-api-management)|
 
 ## Video Presentations
 
