@@ -50,9 +50,9 @@ If you are interested in more details about how to make your application
 a context-aware application check out:
 
 - Using NGSI v2:
-    - [How to update and query context information](v2/how-to-update-and-query-context-information.md)
-    - [How to subscribe to changes on context information](v2/how-to-subscribe-to-changes-on-context-information.md)
-    - [How to perform geo-location queries](v2/how-to-perform-geo-located-queries.md)
+    - [How to update and query context information](ngsi-v2/how-to-update-and-query-context-information.md)
+    - [How to subscribe to changes on context information](ngsi-v2/how-to-subscribe-to-changes-on-context-information.md)
+    - [How to perform geo-location queries](ngsi-v2/how-to-perform-geo-located-queries.md)
 
 On the other hand, you can browse the full API description [here](http://fiware.github.io/specifications/ngsiv2/latest/cookbook/)
 
