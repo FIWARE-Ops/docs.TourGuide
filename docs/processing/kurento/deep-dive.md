@@ -29,6 +29,6 @@ Presentations about Media Streams from recent FIWARE Global Summits:
 
 ## GitHub Repositories and Docker Hub Images
 
-   - [Github repository (reference implementation)](https://github.com/Fiware/context.Kurento)
+   - [Github repository (reference implementation)](https://github.com/Kurento/kurento-media-server)
    - [Play with the Docker container](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
    - [Latest stable release](https://github.com/Kurento/kurento-media-server/releases/latest)
