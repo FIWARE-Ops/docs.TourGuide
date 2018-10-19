@@ -26,7 +26,7 @@ Presentations about Data Visualization from recent FIWARE Global Summits:
 ## GitHub Repositories and Docker Hub Images
 
 * GitHub
-    * [Wirecloud (reference implementation)](https://github.com/Fiware/apps.Wirecloud)
+    * [Wirecloud (reference implementation)](https://github.com/Wirecloud/wirecloud)
     * [Knowage (reference implementation)](https://github.com/KnowageLabs/Knowage-Server)
 * Docker
     * [Wirecloud Docker Image](https://hub.docker.com/r/fiware/wirecloud/)

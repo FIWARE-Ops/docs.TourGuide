@@ -38,9 +38,9 @@ Presentations about Security from recent FIWARE Global Summits:
 ## GitHub Repositories and Docker Hub Images
 
 * GitHub
-    * [Keyrock (reference implementation)](https://github.com/Fiware/security.Idm)
-    * [AuthZForce (reference implementation)](https://github.com/Fiware/security.AuthZForce)
-    * [PEP Proxy (reference implementation)](https://github.com/Fiware/security.Pep-proxy)
+    * [Keyrock (reference implementation)](https://github.com/ging/fiware-idm/)
+    * [AuthZForce (reference implementation)](https://github.com/authzforce/server)
+    * [PEP Proxy (reference implementation)](https://github.com/ging/fiware-pep-proxy)
 * Docker
     * [Keyrock Docker Image](https://hub.docker.com/r/fiware/idm/)
     * [AuthZForce Docker Image](https://hub.docker.com/r/fiware/authzforce-ce-server/)

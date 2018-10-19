@@ -62,9 +62,4 @@ pages:
      - 'Kurento - Architecture of a media stream enabled application': 'processing/kurento/whats-the-architecture-of-a-kurento-enabled-application.md'
      - 'Kurento - Develop a media stream enabled application': 'processing/kurento/how-to-develop-a-kurento-enabled-application.md'
      - 'Media Streams - Deep dive': 'processing/kurento/deep-dive.md'
-  - 'Real-time processing of Context Events':
-     - 'CEP - Introduction':  'processing/cepheus/introduction.md'
-     - 'CEP - Defining a CEP Application': 'processing/cepheus/how-to-define-a-cep-application.md'
-     - 'CEP - How to Send Events': 'processing/cepheus/how-to-send-input-events-to-the-cep.md'
-     - 'CEP - Administration': 'processing/cepheus/how-to-administrate-the-cep.md'
-     - 'Processing - Deep dive': 'processing/cepheus/deep-dive.md'
+     
