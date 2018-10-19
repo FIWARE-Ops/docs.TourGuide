@@ -91,6 +91,6 @@ control in FIWARE check out:
  
 If you want to start experimenting and doing hands-on work, have a look at:
 
-- [IdM GEri](https://github.com/Fiware/security.Idm)
-- [AuthZForce GEri](https://github.com/Fiware/security.AuthZForce)
-- [Pep-proxy GEri](https://github.com/Fiware/security.Pep-proxy)
+- [IdM GEri](https://github.com/ging/fiware-idm/)
+- [AuthZForce GEri](https://github.com/authzforce/server)
+- [Pep-proxy GEri](https://github.com/ging/fiware-pep-proxy)

@@ -147,5 +147,5 @@ must use the WebHDFS/HttpFS RESTful API:
 
 If you want to start experimenting and doing hands-on work, have a look at:
 
-- [Cygnus](https://github.com/Fiware/context.Cygnus)
-- [Cosmos](https://github.com/Fiware/context.Cosmos)
+- [Cygnus](https://github.com/ging/fiware-cygnus/)
+- [Cosmos](https://github.com/ging/fiware-cosmos-orion-flink-connector/)

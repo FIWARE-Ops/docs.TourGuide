@@ -44,6 +44,6 @@ way of doing it.
 
 If you want to start experimenting and doing hands-on work, have a look at:
 
-- [CKAN](https://github.com/Fiware/context.Ckan)
-- [Biz Ecosystem GEri](https://github.com/FIWARE-TMForum/Business-API-Ecosystem)
+- [Extensions to CKAN](https://github.com/conwetlab/FIWARE-CKAN-Extensions)
+- [Biz Ecosystem](https://github.com/FIWARE-TMForum/Business-API-Ecosystem)
 

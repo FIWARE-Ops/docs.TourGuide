@@ -75,5 +75,5 @@ find useful the following information:
  
 If you want to start experimenting and doing hands-on work, have a look at:
 
-- [Kurento GEri](https://github.com/Fiware/context.Kurento)
+- [Kurento GEri](https://github.com/Kurento/kurento-media-server)
  
