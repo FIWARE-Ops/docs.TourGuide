@@ -1,22 +1,18 @@
-WireCloud offers support for a number of GEs including the Context
-Broker and the Object Storage GE. What follows is an example of how a
-developer can access [Orion Context
-Broker](https://github.com/telefonicaid/fiware-orion) (reference
-implementation of the FIWARE's Pub/Sub Context Broker GE) instances from
-widgets and operators running on WireCloud. For more detailed
-information on how to use this and other FIWARE GEs from WireCloud,
-please refer to WireCloud tutorials.
+WireCloud offers support for a number of GEs including the Context Broker and
+the Object Storage GE. What follows is an example of how a developer can access
+[Orion Context Broker](https://github.com/telefonicaid/fiware-orion) (reference
+implementation of the FIWARE's Pub/Sub Context Broker GE) instances from widgets
+and operators running on WireCloud. For more detailed information on how to use
+this and other FIWARE GEs from WireCloud, please refer to WireCloud tutorials.
 
-First of all, widgets and operators wishing to use the javascript
-bindings provided by WireCloud for accessing the [FIWARE NGSI Open
-RESTful
-API](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI_Open_RESTful_API_Specification_(PRELIMINARY))
-in order to seamlessly interoperate with the Orion Context Broker must
-add the NGSI feature as a requirement into their description files
-(`config.xml` files).
+First of all, widgets and operators wishing to use the javascript bindings
+provided by WireCloud for accessing the
+[FIWARE NGSI Open RESTful API](<https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI_Open_RESTful_API_Specification_(PRELIMINARY)>)
+in order to seamlessly interoperate with the Orion Context Broker must add the
+NGSI feature as a requirement into their description files (`config.xml` files).
 
-The following is an example of a widget description using the XML
-flavour of the WDL:
+The following is an example of a widget description using the XML flavour of the
+WDL:
 
     <?xml version='1.0' encoding='UTF-8'?>
     <widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="observation-reporter" version="1.0">
@@ -94,20 +90,19 @@ The RDF/xml flavour of the same widget description is:
       </wire:Widget>
     </rdf:RDF>
 
-One of the most important operations provided by the context broker is
-the support for subscriptions. By using subscriptions our dashboard can
-obtain right time notifications about the status of the entities of
-interest. Subscriptions are very similar to queries, the main difference
-between queries and subscriptions is that queries are synchronous
-operations, whilst subscriptions are asynchronous. Moreover, the Orion
-Context Broker will send a first notification containing the data that
-would be returned for the equivalent query operation. This way, you will
-know that there is no gap between the current values and the notified
-changes.
+One of the most important operations provided by the context broker is the
+support for subscriptions. By using subscriptions our dashboard can obtain right
+time notifications about the status of the entities of interest. Subscriptions
+are very similar to queries, the main difference between queries and
+subscriptions is that queries are synchronous operations, whilst subscriptions
+are asynchronous. Moreover, the Orion Context Broker will send a first
+notification containing the data that would be returned for the equivalent query
+operation. This way, you will know that there is no gap between the current
+values and the notified changes.
 
-Subscriptions are created through the `createSubscription` method. The
-following example explains how to be notified about the changes of the
-position of the vans we are managing:
+Subscriptions are created through the `createSubscription` method. The following
+example explains how to be notified about the changes of the position of the
+vans we are managing:
 
     var entityIdList = [
         {type: 'Van', id: '.*', isPattern: true}
@@ -131,24 +126,23 @@ position of the vans we are managing:
     var ngsi_connection = new NGSI.Connection(ngsi_server[, options]);
     ngsi_connection.createSubscription(entityIdList, attributeList, duration, throttling, notifyConditions, options);
 
-In this example, the call to createSubscription will make the context
-broker invoke the onNotify function each time the 'current\_position'
-attribute of the entities of type 'Van' is changed. You must take into
-account that the Orion Context Broker evaluates patterns at runtime, so
-using patters you will be able to receive notification about new
-entities provided that the notify conditions are meet.
+In this example, the call to createSubscription will make the context broker
+invoke the onNotify function each time the 'current_position' attribute of the
+entities of type 'Van' is changed. You must take into account that the Orion
+Context Broker evaluates patterns at runtime, so using patters you will be able
+to receive notification about new entities provided that the notify conditions
+are meet.
 
-This subscription will be expiring after 3 hours, time from which the
-context broker will stop sending notifications. Anyway,
-widgets/operators can renew those subscriptions by using the
-`updateSubscription` method, even if they have expired. Subscriptions can
-be cancelled using the `cancelSubscription` method making the context
-broker release any info about the subscription. In any case, WireCloud
-will cancel any subscription automatically when widgets/operators are
+This subscription will be expiring after 3 hours, time from which the context
+broker will stop sending notifications. Anyway, widgets/operators can renew
+those subscriptions by using the `updateSubscription` method, even if they have
+expired. Subscriptions can be cancelled using the `cancelSubscription` method
+making the context broker release any info about the subscription. In any case,
+WireCloud will cancel any subscription automatically when widgets/operators are
 unloaded.
 
-As an example, what follows is the value of the data parameter passed
-to the onNotify callback when using the flat option:
+As an example, what follows is the value of the data parameter passed to the
+onNotify callback when using the flat option:
 
     {
         "elements": {
@@ -167,9 +161,9 @@ to the onNotify callback when using the flat option:
         "originator": "localhost"
     }
 
-WireCloud tutorial on how to use Orion Context Broker from widgets and
-operators further explain how to create connections, make queries, deal
-with pagination, create entities and update their attributes, use
-geolocation capabilities, etc. It also includes a complete example.
-Please also refer to the NGSI javascript API documentation for a more
-detailed description of the API calls used along the tutorial.
+WireCloud tutorial on how to use Orion Context Broker from widgets and operators
+further explain how to create connections, make queries, deal with pagination,
+create entities and update their attributes, use geolocation capabilities, etc.
+It also includes a complete example. Please also refer to the NGSI javascript
+API documentation for a more detailed description of the API calls used along
+the tutorial.

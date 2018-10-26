@@ -4,17 +4,20 @@
 [![License: CC-BY-4.0](https://img.shields.io/github/license/fiware/docs.TourGuide.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Documentation](https://img.shields.io/readthedocs/fiwaretourguide.svg)](https://fiwaretourguide.rtfd.io)
 [![Docker](https://img.shields.io/docker/pulls/fiware/tutorials.tourguide-app.svg)](https://hub.docker.com/r/fiware/tutorials.tourguide-app/)
-[![Support badge]( https://img.shields.io/badge/support-askbot-yellowgreen.svg)](http://ask.fiware.org)
+[![Support badge](https://img.shields.io/badge/support-askbot-yellowgreen.svg)](http://ask.fiware.org)
 
-This repository stores all the content of the ["Quick FIWARE Tour Guide"](http://developer.fiware.org) for developers.
+This repository stores all the content of the
+["Quick FIWARE Tour Guide"](http://developer.fiware.org) for developers.
 
 ## How to contribute
 
-Here is a [guide for contributors](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/TourGuide_Contributions).
+Here is a
+[guide for contributors](https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/TourGuide_Contributions).
 
 ## How to experiment
 
-Please have a look at the [FIWARE Tour Guide Application](https://github.com/Fiware/tutorials.TourGuide-App)
+Please have a look at the
+[FIWARE Tour Guide Application](https://github.com/Fiware/tutorials.TourGuide-App)
 
 ---
 
