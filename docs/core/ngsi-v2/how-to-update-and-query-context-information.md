@@ -2,13 +2,13 @@ Processes running as part of your application architecture that update context
 information using REST operations that the Context Broker GE exports, are said
 to play a **Context Producer** role.  As an example, let’s consider an
 application for reviewing restaurants (let’s call it NiceEating). The client
-part of that application running on the smartphone of users would play the role
-of Context Producer, enabling them to rate restaurants.
+part of that application running on the mobile phone of users would play the
+role of Context Producer, enabling them to rate restaurants.
 
 On the other hand, processes running as part of your application architecture
 that query context information using REST operations that the Context Broker GE
 exports are said to play a **Context Consumer** role.  Continuing with our
-NiceEating app, the mobile application running on the smartphone of users and
+NiceEating app, the mobile application running on the mobile phone of users and
 enabling them to query for the rating of restaurants would play the role of
 Context Consumer.  Note that a given part of your application may play both the
 Context Producer and Context Consumer roles.  This would be the case of the
@@ -17,7 +17,7 @@ reviews of restaurants.
 
 Entities that would be relevant to the NiceEating application are of type
 Restaurant, Client and Review. In this guide, the restaurant Elizalde is used as
-an example. In order to get its id and department for performing the different
+an example. In order to get its ID and department for performing the different
 requests, we can use (with extra headers `Fiware-Service: tourguide`):
 
     GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name,department&options=keyValues
@@ -33,9 +33,9 @@ requests, we can use (with extra headers `Fiware-Service: tourguide`):
 
 When a given user reviews a restaurant (e.g. in a scale from 0 to 5,
 “Client1234” scores “4” for the Elizalde restaurant and describes his/her
-experience with "Cheap and nice place to eat.") the smartphone application plays
-the Context Producer role **creating** a Review entity by issuing the following
-HTTP request :
+experience with "Cheap and nice place to eat.") the mobile phone application
+plays the Context Producer role **creating** a Review entity by issuing the
+following HTTP request :
 
     POST <cb_host>:<cb_port>/v2/entities?options=keyValues
 
@@ -84,8 +84,8 @@ operations because all restaurants are defined inside the scope of their
 department. For further information about this option visit
 <http://fiware-orion.readthedocs.io/en/master/user/service_path/>.
 
-Also, the user can get the information of a given Restaurant using the
-smartphone application. In that case, the application works as Context Consumer,
+Also, the user can get the information of a given Restaurant using the mobile
+phone application. In that case, the application works as Context Consumer,
 **querying** the Restaurant entity. For example, to get the aggregateRating
 attribute, the client application could query for it in the following way (with
 extra headers `Fiware-Service: tourguide`):

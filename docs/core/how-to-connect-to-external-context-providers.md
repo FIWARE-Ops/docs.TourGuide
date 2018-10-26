@@ -26,7 +26,7 @@ occupancy level (as an absolute value). That system runs at
 http://booking.restaurants.foo.com and plays the role of a Context Provider.
 
 First, the Context Provider is registered as provider of `occupancyLevels` for
-Elizalde restaurant which id is `0115206c51f60b48b77e4c937835795c33bb953f`:
+Elizalde restaurant which ID is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
     POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
 
@@ -45,7 +45,7 @@ Elizalde restaurant which id is `0115206c51f60b48b77e4c937835795c33bb953f`:
     }
 
 Thus, each time `occupancyLevels` is queried at Context Broker GE (e.g. from the
-user smartphone application), that query is forwarded to
+user mobile phone application), that query is forwarded to
 http://booking.restaurants.foo.com. From a Context Consumer perspective, all the
 process is transparent, as if the information were actually managed by Context
 Broker GE locally.

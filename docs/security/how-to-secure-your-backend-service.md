@@ -10,7 +10,7 @@ The instructions to install and use it are:
 Installation:
 
 **1.** Software requirements:  
- nodejs  
+ Node.js  
  npm
 
 Note: Both can be installed from (http://nodejs.org/download/)
@@ -30,7 +30,7 @@ Note: Both can be installed from (http://nodejs.org/download/)
  config.app_port = '80';
 
 **5.** Start the proxy server  
- sudo node server
+ sudo Node.js server
 
 **How to use**
 

@@ -5,7 +5,7 @@ implementation of the FIWARE's Pub/Sub Context Broker GE) instances from widgets
 and operators running on WireCloud. For more detailed information on how to use
 this and other FIWARE GEs from WireCloud, please refer to WireCloud tutorials.
 
-First of all, widgets and operators wishing to use the javascript bindings
+First of all, widgets and operators wishing to use the JavaScript bindings
 provided by WireCloud for accessing the
 [FIWARE NGSI Open RESTful API](<https://forge.fiware.org/plugins/mediawiki/wiki/fiware/index.php/FI-WARE_NGSI_Open_RESTful_API_Specification_(PRELIMINARY)>)
 in order to seamlessly interoperate with the Orion Context Broker must add the

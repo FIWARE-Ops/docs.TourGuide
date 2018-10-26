@@ -43,8 +43,8 @@ details have a look at the user guide in
     -   Version: The version of the dataset (typically: 1.0)
     -   Brand: Your brand name (It migth be your username if you do not have
         one)
-    -   ID Number: An external Id used for identify the dataset outside of the
-        FIWARE Store (i.e the Id in CKAN of the dataset)
+    -   ID Number: An external ID used for identify the dataset outside of the
+        FIWARE Store (i.e the ID in CKAN of the dataset)
     -   Description: Description of the dataset
 
 [![Offering Datasets Through the FIWARE Store
@@ -62,7 +62,7 @@ Interface2](../images/Offering-Datasets-Through-the-WStore-Interface2.png)](../i
         FIWARE Data Portal (typically:
         https://data.lab.fiware.org/dataset/{dataset_name}). You can check this
         URL by accessing your dataset in FIWARE Data Portal.
-    -   Media Type: Mime type of the dataset (e.g application/json, text/csv,
+    -   Media Type: MIME type of the dataset (e.g application/json, text/csv,
         etc.)
 
 [![Offering Datasets Through the FIWARE Store

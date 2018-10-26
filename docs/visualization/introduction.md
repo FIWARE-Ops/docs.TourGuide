@@ -48,7 +48,7 @@ develop these widgets and operators check out:
 -   [How to interconnect widgets and connect them to backend resources](/creating-application-dashboards/how-to-interconnect-widgets-and-connect-them-to-backend-resources/)
 -   [How to share, sell or make available your new dashboard](/creating-application-dashboards/how-to-share-sell-or-make-available-your-new-dashboard/)
 -   [How to develop new widgets and operators](/creating-application-dashboards/how-to-develop-new-widgets-and-operators/)
--   [How to make AJAX requests to external services](/creating-application-dashboards/how-to-make-ajax-requests-to-external-services/)
+-   [How to make Ajax requests to external services](/creating-application-dashboards/how-to-make-ajax-requests-to-external-services/)
 -   [How to receive events](/creating-application-dashboards/how-to-receive-events/)
 -   [How to send events](/creating-application-dashboards/how-to-send-events/)
 -   [How to use other FIWARE GEs from your widgets and operators](/creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators/)

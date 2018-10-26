@@ -20,7 +20,7 @@ database.
 
 ![Architecture](Images/Architecture.png "STH&CB connection architecture")
 
-To walk through this tutorial you need to make sure that you have docker and
+To walkthrough this tutorial you need to make sure that you have docker and
 docker compose running on your machine. Please, follow the installation process
 for docker [here](https://docs.docker.com/install/) and for docker-compose
 [here](https://docs.docker.com/compose/install/) based on your operating system.
@@ -112,8 +112,8 @@ Orion Context Broker container is running on port 1026 as we specified in the
 To make REST API Calls: There are many HTTP clients that can help you quickly
 test web services.
 
--   Postman application: http://www.getpostman.com/
--   Command Line using curl: https://curl.haxx.se/docs/httpscripting.html
+-   Postman application: `http://www.getpostman.com/`
+-   Command-line using curl: `https://curl.haxx.se/docs/httpscripting.html`
 
 In our example we are using Postman to perform CRUD (Create, Remove, Update,
 Delete) operations.
@@ -264,8 +264,8 @@ notification messages.
 
 -   `idPattern` is used to filter which entities we want. Its value is a regular
     expression. In our example we set it to retrieve all.
--   The `url` where to send notifications is defined with the url sub-field.
-    Here we specified the url of the STH-Comet.
+-   The `url` where to send notifications is defined with the URL sub-field.
+    Here we specified the URL of the STH-Comet.
 -   `attrsFormat`: we set it to legacy because the STH only understands NGSI v1
     notification payloads.
 -   Subscriptions may have an expiration date expires field, specified using the

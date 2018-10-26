@@ -3,7 +3,7 @@ developers. This API is implemented by means of libraries called Kurento
 Clients. Kurento offers two clients out of the box for Java and JavaScript. If
 you have another favourite language, you can still use Kurento using directly
 the Kurento Protocol. This protocol allows to control Kurento Media Server and
-it is based on Internet standards such as WebSocket and JSON-RPC. The picture
+it is based on internet standards such as WebSocket and JSON-RPC. The picture
 below shows how to use Kurento Clients in three scenarios:
 
 -   Using the Kurento JavaScript Client directly in a compliant WebRTC browser

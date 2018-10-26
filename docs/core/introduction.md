@@ -25,7 +25,7 @@ obtained may vary from place to place.  Thus, the temperature of a given street
 may be measured through temperature sensors deployed in that street, while in
 another street it may be obtained through temperature sensors deployed on buses
 that circulate through the street and even in some other streets may be obtained
-through users who report the temperature using their smartphones.  Using the
+through users who report the temperature using their mobile phones.  Using the
 RESTAPI exported by the Context Broker GE, the way in which your application
 will be able to query the temperature of places, or subscribe to changes on
 temperatures of places will be the same no matter which is the source of a

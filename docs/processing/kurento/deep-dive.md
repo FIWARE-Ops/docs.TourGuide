@@ -9,7 +9,7 @@ Should you wish to learn much more about Media Streams, please check:
 ## Tutorials
 
 The Official Kurento Tutorials can be found on the
-[Kurento Website](https://doc-kurento.readthedocs.io/en/stable/user/tutorials.html),
+[Kurento site](https://doc-kurento.readthedocs.io/en/stable/user/tutorials.html),
 the following Tutorials on the **Media Streams** also are available:
 
 &nbsp; 503.
@@ -32,6 +32,6 @@ Presentations about Media Streams from recent FIWARE Global Summits:
 
 ## GitHub Repositories and Docker Hub Images
 
--   [Github repository (reference implementation)](https://github.com/Kurento/kurento-media-server)
+-   [GitHub repository (reference implementation)](https://github.com/Kurento/kurento-media-server)
 -   [Play with the Docker container](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
 -   [Latest stable release](https://github.com/Kurento/kurento-media-server/releases/latest)

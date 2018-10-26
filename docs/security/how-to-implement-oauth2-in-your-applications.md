@@ -16,7 +16,7 @@ Java, Ruby, Javascript, Python … We have developed a Node.js
 test following these instructions:
 
 1. Software requirements:  
-   nodejs  
+   Node.js  
    npm
 
 2. Install the dependencies:  

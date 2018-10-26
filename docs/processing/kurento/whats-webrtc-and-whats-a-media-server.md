@@ -1,7 +1,7 @@
 WebRTC is an open source technology that enables web browsers with Real-Time
 Communications (RTC) capabilities via JavaScript APIs. WebRTC is currently under
 standardization at the IETF and W3C and has the support of the most important
-companies in the area of Internet and telecommunications. WebRTC has been
+companies in the area of internet and telecommunications. WebRTC has been
 conceived as a peer-to-peer technology where browsers can directly communicate
 without the mediation of any kind of infrastructure. This model is enough for
 creating basic applications but features such as group communications, media

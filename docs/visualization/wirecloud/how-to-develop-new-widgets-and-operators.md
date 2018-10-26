@@ -27,4 +27,4 @@ There are three types of operators:
 
 Operators use the same structure as widgets. The only difference is that the
 descriptor file (`config.xml`) does not link to an initial HTML document.
-Instead, it directly links to the list of javascript files.
+Instead, it directly links to the list of JavaScript files.

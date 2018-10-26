@@ -17,7 +17,7 @@ If you want to quickly connect or simulate virtual devices you may also check
 scripts working as a client SDK for any desktop PC, laptop or gateway supporting
 a Python 2.7 environment. This way you may skip the steps described below and
 use the python commands as described in the README.md file available at the
-Github repository linked above.
+GitHub repository linked above.
 
 For a more detailed description of the IDAS (FIWARE IoT Agent suite) APIs,
 please have a look [here](http://docs.telefonicaiotiotagents.apiary.io/).

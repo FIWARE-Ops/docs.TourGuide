@@ -6,8 +6,8 @@ specific user so she can consume the data.
 In order to acquire datasets, you have to enter the
 [FIWARE Store](https://store.lab.fiware.org/) and sign in with a valid FIWARE
 Account. Once in the FIWARE Store, you can search for CKAN datasets filtering by
-category. In particular, you can browse categories using the the breadcrumb
-located in the top of the offering list, and search for the “Datasets” category.
+category. In particular, you can browse categories using the breadcrumb located
+in the top of the offering list, and search for the “Datasets” category.
 
 [![Acquiring Datasets Offered in the
 FIWARE Store](../images/Acquiring-Datasets-Offered-in-the-WStore.png)](../images/Acquiring-Datasets-Offered-in-the-WStore.png)

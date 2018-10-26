@@ -30,13 +30,13 @@ your account will be given once registered, typically:
 
 -   Cosmos username: if your FI-LAB username is \<my_user\>@mailprovider.com,
     your cosmos username will be \<my_user\>. This will give you a Unix-like
-    account in the Head Node of the global instance, being your user space
+    account in the head node of the global instance, being your user space
     /home/\<my_user\>/.
 -   Cosmos HDFS space: Apart from your Unix-like user space in the Head Node,
     you will have a HDFS space located at the entire cluster, it will
     be/user/\<my_user\>/
 
-Now you should be ready to login into the Head Node of the global instance of
+Now you should be ready to login into the head node of the global instance of
 Cosmos in FI-LAB, simply using your FI-LAB credentials:
 
     [remote-vm]$ export COSMOS_USER= // this is not strictly necessary, junt in order the example commands can be copied&pasted
@@ -73,11 +73,11 @@ HTTP client):
 As you can see, the data uploading is a two-step operation, as stated in the
 WebHDFS specification: the first invocation of the API talks directly with the
 Head Node, specifying the new file creation and its name; then the Head Node
-sends a temporary redirection response, specifying the Data Node among all the
+sends a temporary redirection response, specifying the data node among all the
 existing ones in the cluster where the data has to be stored, which is the
 endpoint of the second step. Nevertheless, the HttpFS gateway implements the
 same API but its internal behaviour changes, making the redirection to point to
-the Head Node itself.
+the head node itself.
 
 If the data you have uploaded to your HDFS space is a CSV-like file, i.e. a
 structured file containing lines of data fields separated by a common character,
@@ -104,9 +104,9 @@ These Hive tables can be queried locally, by using the Hive CLI as well:
 
 Or remotely, by developing a Hive client (typically, using JDBC, but there are
 some other options for other non-Java programming languages) connecting
-tocosmos.lab.fi-ware.org:10000.  
- Several pre-loaded MapReduce examples can be found in every Hadoop distribution.
-You can list them by ssh'ing the Head Node and commanding Hadoop:
+tocosmos.lab.fi-ware.org:10000. Several pre-loaded MapReduce examples can be
+found in every Hadoop distribution. You can list them by ssh'ing the head node
+and commanding Hadoop:
 
     [head-node]$ hadoop jar /usr/lib/hadoop-0.20/hadoop-examples.jar
 
@@ -115,13 +115,13 @@ For instance, you can run the word count example (this is also known as the
 
     [head-node]$ hadoop jar /usr/lib/hadoop-0.20/hadoop-examples.jar wordcount /user/$COSMOS_USER/input/unstructured/unstructured_data.txt /user/$COSMOS_USER/output/
 
-Please observe the output HDFS folder is automatically created.  
- The MapReduce results are stored in HDFS. You can download them to your Unix user
-space within the Head Node by doing:
+Please observe the output HDFS folder is automatically created. The MapReduce
+results are stored in HDFS. You can download them to your Unix user space within
+the head node by doing:
 
     [head-node]$ hadoop fs -getmerge /user/$COSMOS_USER/output /home/$COSMOS_USER/count_result.txt
 
-You can also download any HDFS file to you home user in the Head Node by doing:
+You can also download any HDFS file to you home user in the head node by doing:
 
     [head-node]$ hadoop fs -get /user/$COSMOS_USER/structured/structured_data.txt /home/$COSMOS_USER/
 

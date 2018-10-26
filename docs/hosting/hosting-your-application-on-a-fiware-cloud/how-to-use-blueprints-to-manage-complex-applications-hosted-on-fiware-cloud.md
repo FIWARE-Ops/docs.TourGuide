@@ -1,6 +1,6 @@
 When progressing from small experimental environments to a more extensive use of
 the cloud infrastructure, it is often required to automate the provisioning and
-life cycle of complex applications comprising multiple resources -- such as
+lifecycle of complex applications comprising multiple resources -- such as
 multi-tier applications with several inter-dependent Virtual Machines, each
 running a particular software stack and configured to interact with the other
 Virtual Machines. FIWARE Cloud provides advanced capabilities to manage

@@ -17,7 +17,7 @@ out the following in depth documentation:
 ## Tutorials
 
 The following introductory Tutorials on the **Fundamentals of Core Context
-Managment** are available:
+Management** are available:
 
 &nbsp; 101.
 [Getting Started](https://fiware-tutorials.readthedocs.io/en/latest/getting-started)<br/>
@@ -32,7 +32,7 @@ Managment** are available:
 &nbsp; 106.
 [Subscribing to Changes in Context](https://fiware-tutorials.readthedocs.io/en/latest/subscriptions)<br/>
 
-Futher Tutorials on **Core Context Management: History** persist historic
+Further Tutorials on **Core Context Management: History** persist historic
 context data:
 
 &nbsp; 301.

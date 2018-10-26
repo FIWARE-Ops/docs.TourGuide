@@ -92,8 +92,8 @@ Once the process starts storing data, the dataset and resource will appear in
 CKAN and it will be possible to browse and download data from CKAN portal, or
 query it throught he Datastore API. More information at:
 
-http://docs.ckan.org/en/ckan-2.2/datastore.html\#the-datastore-api
+-   `http://docs.ckan.org/en/ckan-2.2/datastore.html\#the-datastore-api`
 
-For instance, the following query would return the first 5 results of a
-dataset.  
- GET CKAN_HOST/api/action/datastore_search?resource_id=5a2ed5ca-2024-48d7-b198-cf9d95c7374d&limit=5
+For instance, the following query would return the first 5 results of a dataset.
+GET
+CKAN_HOST/api/action/datastore_search?resource_id=5a2ed5ca-2024-48d7-b198-cf9d95c7374d&limit=5

@@ -3,7 +3,7 @@ Compute (Nova), Storage (Cinder), Network (Neutron) and Image (Glance) services.
 The services are available both via OpenStack APIs and via the FIWARE Cloud
 Portal. **OpenStack Compute (Nova)** service can be used to provision Virtual
 Machine instances by specifying the virtual machine configuration ‘flavor’ (from
-a catalogue of pre-defined flavors configured by the administrator) and virtual
+a catalogue of predefined flavors configured by the administrator) and virtual
 machine image, which comprise a pre-packaged Operating System and a software
 stack managed by **OpenStack Image (Glance)** service. FIWARE Lab holds a rich
 catalogue of Virtual Machine images, including base Operating Systems (such as
@@ -20,7 +20,7 @@ to hold persistent data of an application. **OpenStack Network (Neutron)**
 service is used to provision and manage virtual networks, which can be used to
 define connectivity domains and attach Virtual Machine instances to them, as
 well as virtual routers, used to control connectivity between virtual networks
-and with the Internet.
+and with the internet.
 
 More details on how to work with the FIWARE Cloud infrastructure via the FIWARE
 Cloud Portal can be found at  http://edu.fi-ware.org/mod/scorm/view.php?id=90   

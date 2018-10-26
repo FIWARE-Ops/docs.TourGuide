@@ -22,7 +22,7 @@ depicted in the following picture:
 
 **FIWARE IoT Device Management GE architecture**
 
--   **Orion ContextBroker:** That remains as the main front-end for developers.
+-   **Orion ContextBroker:** That remains as the main frontend for developers.
     Developers access IoT data as attributes of entities representing devices
     and Developers may also send commands to devices by updating command-related
     attributes, providing they have access rights for that operation. You can
@@ -38,7 +38,7 @@ depicted in the following picture:
 For simplicity, in this article Ultralight2.0/HTTP is explained. To find out
 more information plese visit Github
 [site](https://github.com/telefonicaid/iotagent-ul).  
-If you are interested to connect your application to the Internet of Things,
+If you are interested to connect your application to the internet of Things,
 keep on reading:
 
 -   [How to read measures captured from IoT devices](/connection-to-the-internet-of-things/how-to-read-measures-captured-from-iot-devices/)
