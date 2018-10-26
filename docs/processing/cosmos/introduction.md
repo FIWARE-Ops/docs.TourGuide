@@ -28,13 +28,13 @@ Browse the Cosmos portal (http://cosmos.lab.fiware.org/cosmos-gui/). Use an
 already registered user in FI-LAB to create a Cosmos account. The details of
 your account will be given once registered, typically:
 
--   Cosmos username: if your FI-LAB username is \<my_user\>@mailprovider.com,
-    your cosmos username will be \<my_user\>. This will give you a Unix-like
+-   Cosmos username: if your FI-LAB username is`<my_user>@mailprovider.com`,
+    your cosmos username will be `<my_user>`. This will give you a Unix-like
     account in the head node of the global instance, being your user space
-    /home/\<my_user\>/.
+    `/home/<my_user>/`.
 -   Cosmos HDFS space: Apart from your Unix-like user space in the Head Node,
-    you will have a HDFS space located at the entire cluster, it will
-    be/user/\<my_user\>/
+    you will have a HDFS space located at the entire cluster, it will be
+    `/user/<my_user>/`
 
 Now you should be ready to login into the head node of the global instance of
 Cosmos in FI-LAB, simply using your FI-LAB credentials:

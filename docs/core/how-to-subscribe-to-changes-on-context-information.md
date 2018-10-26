@@ -9,37 +9,41 @@ each time a new review is cast by any user, the backend gets notified (in order
 to recalculate restaurant average score and publish it back in the Context
 Broker GE).
 
+```
     POST <cb_host>:<cb_port>/v1/subscribeContext
+```
 
-    Headers:
+Headers:
 
-    {
-      'Content-Type':     'application/json',
-      'Fiware-Service':   'tourguide'
-    }
+```json
+{
+    "Content-Type": "application/json",
+    "Fiware-Service": "tourguide"
+}
+```
 
-    Payload:
+Payload:
 
-    {
-      "entities": [
+```json
+{
+    "entities": [
         {
-          "type": "Review",
-          "isPattern": "true",
-          "id": ".*"
+            "type": "Review",
+            "isPattern": "true",
+            "id": ".*"
         }
-      ],
-      "attributes": [ "ratingValue"  ],
-      "reference": "http://backend.niceeating.foo.com:1028/ratings",
-      "duration": "P1M",
-      "notifyConditions": [
+    ],
+    "attributes": ["ratingValue"],
+    "reference": "http://backend.niceeating.foo.com:1028/ratings",
+    "duration": "P1M",
+    "notifyConditions": [
         {
-          "type": "ONCHANGE",
-          "condValues": [
-              "ratingValue"
-          ]
+            "type": "ONCHANGE",
+            "condValues": ["ratingValue"]
         }
-      ]
-    }
+    ]
+}
+```
 
 Another case would be an application that subscribes to changes in average
 ratings of a given restaurant. This may be useful for restaurant owners in order
@@ -47,34 +51,38 @@ to know how their restaurants score is evolving. In this example a subscription
 to the restaurant Elizalde which ID is
 `0115206c51f60b48b77e4c937835795c33bb953f` is performed:
 
+```
     POST <cb_host>:<cb_port>/v1/subscribeContext
+```
 
-    Headers:
+Headers:
 
-    {
-      'Content-Type':     'application/json',
-      'Fiware-Service':   'tourguide'
-    }
+```json
+{
+    "Content-Type": "application/json",
+    "Fiware-Service": "tourguide"
+}
+```
 
-    Payload:
+Payload:
 
-    {
-      "entities": [
+```json
+{
+    "entities": [
         {
-          "type": "Restaurant",
-          "isPattern": "false",
-          "id": "0115206c51f60b48b77e4c937835795c33bb953f"
+            "type": "Restaurant",
+            "isPattern": "false",
+            "id": "0115206c51f60b48b77e4c937835795c33bb953f"
         }
-      ],
-      "attributes": [ "aggregateRating"  ],
-      "reference": "http://myapp.foo.com:1028/restaurant_average_scorings",
-      "duration": "P1M",
-      "notifyConditions": [
+    ],
+    "attributes": ["aggregateRating"],
+    "reference": "http://myapp.foo.com:1028/restaurant_average_scorings",
+    "duration": "P1M",
+    "notifyConditions": [
         {
-          "type": "ONCHANGE",
-          "condValues": [
-              "aggregateRating"
-          ]
+            "type": "ONCHANGE",
+            "condValues": ["aggregateRating"]
         }
-      ]
-    }
+    ]
+}
+```

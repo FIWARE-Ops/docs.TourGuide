@@ -70,11 +70,11 @@ plays the role of PDP (Policy Decision Point) in XACML terms.
 If you are interested in more details about how to handle access control in
 FIWARE check out:
 
--   [How to create your identity in FIWARE](/handling-authorization-and-access-control-to-apis/how-to-create-your-identity-in-fiware/)
--   [How to implement OAuth2 in your applications](/handling-authorization-and-access-control-to-apis/how-to-implement-oauth2-in-your-applications/)
--   [How to send requests to a FIWARE GE](/handling-authorization-and-access-control-to-apis/how-to-send-requests-to-a-fiware-ge/)
--   [How to secure your backend service](/handling-authorization-and-access-control-to-apis/how-to-secure-your-backend-service/)
--   [How to manage Access Control in FIWARE](/handling-authorization-and-access-control-to-apis/how-to-manage-access-control-in-fiware/)
+-   [How to create your identity in FIWARE](/security/how-to-create-your-identity-in-fiware.md)
+-   [How to implement OAuth2 in your applications](/security/how-to-implement-oauth2-in-your-applications.md)
+-   [How to send requests to a FIWARE GE](/security/how-to-send-requests-to-a-fiware-ge.md)
+-   [How to secure your backend service](/security/how-to-secure-your-backend-service.md)
+-   [How to manage Access Control in FIWARE](/security/how-to-manage-access-control-in-fiware.md)
 
 If you want to start experimenting and doing hands-on work, have a look at:
 

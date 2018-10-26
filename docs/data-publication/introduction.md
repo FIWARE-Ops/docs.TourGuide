@@ -23,17 +23,17 @@ FIWARE extended CKAN. In this regard, the following section explains what are
 the existing CKAN extensions build within FIWARE, and the architecture followed
 for the monetization of those resources.
 
--   [FIWARE Extended CKAN](/publishing-open-data-in-fiware/fiware-extended-ckan)
+-   [FIWARE Extended CKAN](/data-publication/fiware-extended-ckan)
 
 If you are not interested in the technical details, the following sections
 explain how data and context information can be published in CKAN, what are the
 benefits of publishing your data in the FIWARE Store and the way of doing it.
 
--   [How to Publish datasets and context information in CKAN](/publishing-open-data-in-fiware/how-to-publish-open-datasets-in-ckan-2/)
--   [How to Offer Datasets (including Context Information) through the FIWARE Store](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/introduction/)
-    -   [Offering Datasets Directly Through the CKAN Interface](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface/)
-    -   [Offering Datasets Through the FIWARE Store interface](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface/)
-    -   [Acquiring Datasets Offered in the FIWARE Store](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore/)
+-   [How to Publish datasets and context information in CKAN](/data-publication/how-to-publish-open-datasets-in-ckan-2/)
+-   [How to Offer Datasets (including Context Information) through the FIWARE Store](/data-publication/how-to-offer-datasets-including-context-information-through-the-wstore/introduction/)
+    -   [Offering Datasets Directly Through the CKAN Interface](/data-publication/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-directly-through-the-ckan-interface/)
+    -   [Offering Datasets Through the FIWARE Store interface](/data-publication/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface/)
+    -   [Acquiring Datasets Offered in the FIWARE Store](/data-publication/how-to-offer-datasets-including-context-information-through-the-wstore/acquiring-datasets-offered-in-the-wstore/)
 
 If you want to start experimenting and doing hands-on work, have a look at:
 

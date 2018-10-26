@@ -59,9 +59,9 @@ If you are interested in learning more about the Real-time Multimedia Stream
 Processing GE and its reference implementation, Kurento, you may find useful the
 following information:
 
--   [What’s WebRTC and what’s a media server](/real-time-processing-of-media-streams/whats-webrtc-and-whats-a-media-server/)
--   [What’s the architecture of a Kurento enabled application](/real-time-processing-of-media-streams/whats-the-architecture-of-a-kurento-enabled-application/)
--   [How to develop a Kurento enabled application](/real-time-processing-of-media-streams/how-to-develop-a-kurento-enabled-application/)
+-   [What’s WebRTC and what’s a media server](/processing/kurento/whats-webrtc-and-whats-a-media-server.md)
+-   [What’s the architecture of a Kurento enabled application](/processing/kurento/whats-the-architecture-of-a-kurento-enabled-application.md)
+-   [How to develop a Kurento enabled application](/processing/kurento/how-to-develop-a-kurento-enabled-application.md)
 
 If you want to start experimenting and doing hands-on work, have a look at:
 

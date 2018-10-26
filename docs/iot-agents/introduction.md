@@ -37,9 +37,8 @@ depicted in the following picture:
 
 For simplicity, in this article Ultralight2.0/HTTP is explained. To find out
 more information plese visit Github
-[site](https://github.com/telefonicaid/iotagent-ul).  
-If you are interested to connect your application to the internet of Things,
-keep on reading:
+[site](https://github.com/telefonicaid/iotagent-ul). If you are interested to
+connect your application to the internet of Things, keep on reading:
 
--   [How to read measures captured from IoT devices](/connection-to-the-internet-of-things/how-to-read-measures-captured-from-iot-devices/)
--   [How to act upon IoT devices](/connection-to-the-internet-of-things/how-to-act-upon-iot-devices/)
+-   [How to read measures captured from IoT devices](/iot-agents/how-to-read-measures-captured-from-iot-devices.md)
+-   [How to act upon IoT devices](/iot-agents/how-to-act-upon-iot-devices.md)

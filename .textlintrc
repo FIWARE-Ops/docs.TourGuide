@@ -10,6 +10,7 @@
       "so": false
     },
     "no-dead-link": {
+       "checkRelative": false,
        "ignoreRedirects": true,
        "ignore": [
           "mailto:*",

@@ -43,15 +43,15 @@ If you are interested in more details about how to use WireCloud to (a) create
 your application dashboard from pre-existing widgets and operators or (b)
 develop these widgets and operators check out:
 
--   [How to find widgets and other components for your dashboard](/creating-application-dashboards/how-to-find-widgets-and-other-components-for-your-dashboard/)
--   [How to create your application dashboard from these building blocks](/creating-application-dashboards/how-to-create-your-application-dashboard-from-these-building-blocks/)
--   [How to interconnect widgets and connect them to backend resources](/creating-application-dashboards/how-to-interconnect-widgets-and-connect-them-to-backend-resources/)
--   [How to share, sell or make available your new dashboard](/creating-application-dashboards/how-to-share-sell-or-make-available-your-new-dashboard/)
--   [How to develop new widgets and operators](/creating-application-dashboards/how-to-develop-new-widgets-and-operators/)
--   [How to make Ajax requests to external services](/creating-application-dashboards/how-to-make-ajax-requests-to-external-services/)
--   [How to receive events](/creating-application-dashboards/how-to-receive-events/)
--   [How to send events](/creating-application-dashboards/how-to-send-events/)
--   [How to use other FIWARE GEs from your widgets and operators](/creating-application-dashboards/how-to-use-other-fiware-ges-from-your-widgets-and-operators/)
+-   [How to find widgets and other components for your dashboard](/visualization/wirecloud/how-to-find-widgets-and-other-components-for-your-dashboard.md)
+-   [How to create your application dashboard from these building blocks](/visualization/wirecloud/how-to-create-your-application-dashboard-from-these-building-blocks.md)
+-   [How to interconnect widgets and connect them to backend resources](/visualization/wirecloud/how-to-interconnect-widgets-and-connect-them-to-backend-resources.md)
+-   [How to share, sell or make available your new dashboard](/visualization/wirecloud/how-to-share-sell-or-make-available-your-new-dashboard.md)
+-   [How to develop new widgets and operators](/visualization/wirecloud/how-to-develop-new-widgets-and-operators.md)
+-   [How to make Ajax requests to external services](/visualization/wirecloud/how-to-make-ajax-requests-to-external-services.md)
+-   [How to receive events](/visualization/wirecloud/how-to-receive-events.md)
+-   [How to send events](/visualization/wirecloud/how-to-send-events.md)
+-   [How to use other FIWARE GEs from your widgets and operators](/visualization/wirecloud/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md)
 
 If you want to start experimenting and doing hands-on work, have a look at:
 

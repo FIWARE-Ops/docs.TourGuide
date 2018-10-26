@@ -33,7 +33,7 @@ persist your data into your database.
 
 For this case, if Cygnus receive a notification with this format:
 
-```
+```bash
 URL=$1
 
 curl $URL -v -s -S --header 'Content-Type: application/json; charset=utf-8' --header 'Accept: application/json' --header "Fiware-Service: qsg" --header "Fiware-ServicePath: test" -d @- <<EOF
@@ -55,7 +55,7 @@ EOF
 The data will be stored in the MySQL database with the name "qsg"
 (Fiware-Service value) in the table "test"(Fiware-Service-Path value) and the
 structure of the table defined by the entities and attributes (for information
-about the structures please go the the
+about the structures please go to the
 [Cygnus Documentation](https://fiware-cygnus-ld.readthedocs.io/en/latest/)):
 
 output:

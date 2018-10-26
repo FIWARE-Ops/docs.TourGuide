@@ -1,14 +1,13 @@
 Publishing and consuming open data is a cornerstone for the development of
 applications and the creation of an innovation ecosystem. Through the mechanisms
 described in the section
-[Development of context-aware applications](http://www.fiware.org/devguides/development-context-aware-applications/),
-the Context Broker can be used to publish and consume context information. In
-particular, this information can be indeed open data and consumed through the
-queries and subscriptions APIs (NGSI10). This way, it is possible to publish
-real time or dynamic data, typically well structured, and offered it as open
-data through the reutilization by developers. For instance, it is possible to
-offer in real time data from sensors or systems to leverage the creation of new
-applications.
+[Development of context-aware applications](/core/introduction.md), the Context
+Broker can be used to publish and consume context information. In particular,
+this information can be indeed open data and consumed through the queries and
+subscriptions APIs (NGSI10). This way, it is possible to publish real time or
+dynamic data, typically well structured, and offered it as open data through the
+reutilization by developers. For instance, it is possible to offer in real time
+data from sensors or systems to leverage the creation of new applications.
 
 However, the Context Broker only provides the latest snapshot of the context
 information in a given moment, but there are many cases where it is also
@@ -49,44 +48,48 @@ specifying the CKAN sink, the sink channel (where to read the notifications
 from), the CKAN’s user API key, CKAN instance detail (IP, port, etc.), and
 Context Broker instance endpoint. All the details can be found at:
 
-https://github.com/telefonicaid/fiware-connectors/blob/master/flume/README.md
+https://github.com/telefonicaid/fiware-connectors
 
 Once the storage has been configured, it is required to run the process with,
 for instance, the following command:
 
-    $ APACHE_FLUME_HOME/bin/flume-ng agent –conf APACHE_FLUME_HOME/conf -f
-    APACHE_FLUME_HOME/conf/cygnus.conf -n cygnusagent -Dflume.root.logger=INFO,console
+```bash
+$ APACHE_FLUME_HOME/bin/flume-ng agent –conf APACHE_FLUME_HOME/conf -f
+APACHE_FLUME_HOME/conf/cygnus.conf -n cygnusagent -Dflume.root.logger=INFO,console
+```
 
 Once the connector is running, it is necessary to tell Orion Context Broker
 about it, in order Orion can send context data notifications to the connector.
 This can be done on behalf of the connector by performing the following curl
 command (specifying the endpoint where Cygnus is listening):
 
-    (curl localhost:1026/v1/subscribeContext -s -S –header 'Content-Type: application/json' –header 'Accept: application/json' -d @- | python -mjson.tool) <<EOF
-    {
-        "entities": [
-            {
-                "type": "Room",
-                "isPattern": "false",
-                "id": "Room1"
-            }
-        ],
-        "attributes": [
-            "temperature"
-        ],
-        "reference": "http://host_running_cygnus:5050/notify",
-        "duration": "P1M",
-        "notifyConditions": [
-            {
-                "type": "ONCHANGE",
-                "condValues": [
-                    "pressure"
-                ]
-            }
-        ],
-        "throttling": "PT5S"
-    }
-    EOF
+```bash
+(curl localhost:1026/v1/subscribeContext -s -S –header 'Content-Type: application/json' –header 'Accept: application/json' -d @- | python -mjson.tool) <<EOF
+{
+    "entities": [
+        {
+            "type": "Room",
+            "isPattern": "false",
+            "id": "Room1"
+        }
+    ],
+    "attributes": [
+        "temperature"
+    ],
+    "reference": "http://host_running_cygnus:5050/notify",
+    "duration": "P1M",
+    "notifyConditions": [
+        {
+            "type": "ONCHANGE",
+            "condValues": [
+                "pressure"
+            ]
+        }
+    ],
+    "throttling": "PT5S"
+}
+EOF
+```
 
 Once the process starts storing data, the dataset and resource will appear in
 CKAN and it will be possible to browse and download data from CKAN portal, or
@@ -95,5 +98,7 @@ query it throught he Datastore API. More information at:
 -   `http://docs.ckan.org/en/ckan-2.2/datastore.html\#the-datastore-api`
 
 For instance, the following query would return the first 5 results of a dataset.
-GET
-CKAN_HOST/api/action/datastore_search?resource_id=5a2ed5ca-2024-48d7-b198-cf9d95c7374d&limit=5
+
+```bash
+ GET CKAN_HOST/api/action/datastore_search?resource_id=5a2ed5ca-2024-48d7-b198-cf9d95c7374d&limit=5
+```

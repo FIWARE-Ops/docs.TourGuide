@@ -7,7 +7,7 @@ in CKAN.
 To publish your own datasets (open data) in CKAN, you have to access the
 [FIWARE Data portal](https://data.lab.fiware.org/) and sign in with a valid
 FIWARE Account (see the section
-[Create your identity in FIWARE](/handling-authorization-and-access-control-to-apis/how-to-create-your-identity-in-fiware/).
+[Create your identity in FIWARE](/security/how-to-create-your-identity-in-fiware.md).
 
 Once you have signed in, go to the “Datasets” section and click on the “Add
 Dataset” button.
@@ -65,5 +65,4 @@ you want.
 
 [![HowToPublishDatasheetsInCkan4](images/HowToPublishDatasheetsInCkan4.png)](images/HowToPublishDatasheetsInCkan4.png)
 
-[handling authorization and access control to apis]:
-    /handling-authorization-and-access-control-to-apis/introduction/
+[handling authorization and access control to apis](/security/introduction.md)

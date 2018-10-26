@@ -28,21 +28,27 @@ http://booking.restaurants.foo.com and plays the role of a Context Provider.
 First, the Context Provider is registered as provider of `occupancyLevels` for
 Elizalde restaurant which ID is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
+```
     POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
+```
 
-    Headers:
+Headers:
 
-    {
-      'Content-Type':     'application/json',
-      'Fiware-Service':   'tourguide'
-    }
+```json
+{
+    "Content-Type": "application/json",
+    "Fiware-Service": "tourguide"
+}
+```
 
-    Payload:
+Payload:
 
-    {
-      "duration" : "P1M",
-      "providingApplication" : "http://booking.restaurants.foo.com"
-    }
+```json
+{
+    "duration": "P1M",
+    "providingApplication": "http://booking.restaurants.foo.com"
+}
+```
 
 Thus, each time `occupancyLevels` is queried at Context Broker GE (e.g. from the
 user mobile phone application), that query is forwarded to

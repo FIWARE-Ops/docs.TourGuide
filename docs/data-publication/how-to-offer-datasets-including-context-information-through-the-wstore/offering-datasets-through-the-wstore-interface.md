@@ -32,7 +32,7 @@ to cover specific information of the Product Specification. Following it is
 described the purpose of these steps and the information you have to provide
 (Only the steps required for creating a CKAN Dataset are described, for more
 details have a look at the user guide in
-[here](http://business-api-ecosystem.readthedocs.io/en/latest/user-programmer-guide.html)):
+[here](https://business-api-ecosystem.readthedocs.io/en/latest/user-guide.html)):
 
 -   **General**: This step is intended to provide the basic information of the
     product specification. being created. In particular, you have to fill in the

@@ -40,19 +40,22 @@ specifying the CKAN sink, the sink channel (where to read the notifications
 from), the CKAN’s user API key, CKAN instance detail (IP, port, etc.), and
 Context Broker instance endpoint. All the details can be found at:
 
-https://github.com/telefonicaid/fiware-connectors/blob/master/flume/README.md
+https://github.com/telefonicaid/fiware-connectors
 
 Once the storage has been configured, it is required to run the process with,
 for instance, the following command:
 
-    $ APACHE_FLUME_HOME/bin/flume-ng agent –conf APACHE_FLUME_HOME/conf -f
-    APACHE_FLUME_HOME/conf/cygnus.conf -n cygnusagent -Dflume.root.logger=INFO,console
+```bash
+$ APACHE_FLUME_HOME/bin/flume-ng agent –conf APACHE_FLUME_HOME/conf -f
+APACHE_FLUME_HOME/conf/cygnus.conf -n cygnusagent -Dflume.root.logger=INFO,console
+```
 
 Once the connector is running, it is necessary to tell Orion Context Broker
 about it, in order Orion can send context data notifications to the connector.
 This can be done on behalf of the connector by performing the following curl
 command (specifying the endpoint where Cygnus is listening):
 
+```bash
     (curl localhost:1026/v1/subscribeContext -s -S –header 'Content-Type: application/json' –header 'Accept: application/json' -d @- | python -mjson.tool) <<EOF
     {
         "entities": [
@@ -78,6 +81,7 @@ command (specifying the endpoint where Cygnus is listening):
         "throttling": "PT5S"
     }
     EOF
+```
 
 Once the process starts storing data, the dataset and resource will appear in
 CKAN and it will be possible to browse and download data from CKAN portal, or

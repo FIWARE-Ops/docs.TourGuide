@@ -28,7 +28,7 @@ It is needed to remark that the context information published in CKAN is served
 by a Context Broker deployed in the backend. Thus, for those scenarios where the
 dataset is not completely open, or it is wanted to be monetized, the context
 broker instance must be secured using the security framework as described in
-[Handling Authorization and Access Control to APIs](/handling-authorization-and-access-control-to-apis/introduction/)
+[Handling Authorization and Access Control to APIs](../security/introduction.md)
 
 For the monetization of the published datasets, the Biz framework is the
 component in charge of granting and revoking access to the acquired datasets.

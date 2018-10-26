@@ -35,7 +35,7 @@
 		"start": "mkdocs serve",
 		"precommit": "lint-staged",
 		"prettier:text": "prettier 'README.md' 'docs/*.md'  'docs/**/*.md' --tab-width 4 --print-width 80 --write --prose-wrap always",
-		"test": "textlint 'README.md' 'docs/*.md'  'docs/**/*.md'  --fix"
+		"test": "textlint 'README.md' 'docs/*.md'  'docs/**/*.md'"
 	},
 	"husky": {
 		"hooks": {

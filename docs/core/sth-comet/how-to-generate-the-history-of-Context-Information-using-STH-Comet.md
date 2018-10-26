@@ -54,7 +54,7 @@ you can find more information about the STH environment variables.
 
 The steps that are going to be taken are the following:
 
--   Run the docker compose (\*.yml) file
+-   Run the docker compose (`*.yml`) file
 -   Publish Context Information to Orion Context Broker (CB)
 -   Create a Subscription to notify the STH
 -   Update values in different periods of time
@@ -64,13 +64,13 @@ The steps that are going to be taken are the following:
 
 Remove all docker containers (optional)
 
-```console
+```bash
 docker rm `docker ps -aq`
 ```
 
 Remove all docker images (optional)
 
-```console
+```bash
 docker rmi $(docker images -a -q)
 ```
 
@@ -78,13 +78,13 @@ To run the 3 components together (MongoDB-orionCB-STH), you need to change to
 the directory containing the folder that has the docker-compose.yml file, then
 you run the following docker-compose command:
 
-```console
+```bash
 docker-compose up
 ```
 
 To check the images built on your local machine
 
-```console
+```bash
 docker images
 
 REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
@@ -95,7 +95,7 @@ fiware/sth-comet    latest              6915eeff95d3        4 months ago        
 
 To check the current running containers
 
-```console
+```bash
 docker ps
 
 CONTAINER ID        IMAGE               COMMAND                  CREATED                  STATUS              PORTS                    NAMES
@@ -126,7 +126,7 @@ Once we open postman we need to specify that we need to do a GET query and we
 need to specify the target (URI:port), in our case the queried target is as
 follows:
 
-```console
+```bash
 $ curl --request GET \ --url http://localhost:1026/version
 
 {
@@ -143,7 +143,7 @@ $ curl --request GET \ --url http://localhost:1026/version
 }
 ```
 
-```console
+```bash
 $ curl --request GET \ --url http://localhost:8666/version
 
 {
@@ -154,7 +154,7 @@ $ curl --request GET \ --url http://localhost:8666/version
 Now, to check whether the DB is accessible as well, we need to connect to
 MongoDB container and execute the mongo command to access the mongo shell.
 
-```console
+```bash
 $ docker exec -it mongo mongo
 
 
@@ -178,7 +178,7 @@ Server has startup warnings:
 >
 ```
 
-```console
+```bash
 > show dbs
 admin  0.000GB
 local  0.000GB
@@ -315,7 +315,7 @@ time series context information is set to a resolution of minutes because we are
 values are changing in an hourly manner then we set the aggregated time period
 parameter to day so we can see the underlying hourly changes.
 
-For more info you can go the the
+For more info you can go the
 [STH-Comet documentation](https://fiware-sth-comet.readthedocs.io/en/latest/getting-started/index.html "Resolution&Aggregation query parameters documentation").
 
 ### Retrieve the Maximum Value
@@ -366,7 +366,7 @@ generated
 
 > docker exec -it mongo mongo
 
-```console
+```bash
 > show dbs
 admin          0.000GB
 local          0.000GB
