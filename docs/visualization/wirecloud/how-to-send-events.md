@@ -1,6 +1,6 @@
-As we did with the input endpoint, we need to declare the new output
-endpoint in the weather widget's template. This is the final result of
-the Wiring section after adding it:
+As we did with the input endpoint, we need to declare the new output endpoint in
+the weather widget's template. This is the final result of the Wiring section
+after adding it:
 
     <wiring>
         <inputendpoint
@@ -35,7 +35,7 @@ This is how to declare the output endpoint when using RDF (turtle):
                     wire:friendcode "location";
                     wire:type "text" ];
 
-After adding the output endpoint to the widget description, we can send
-data through it using the MashupPlatform.wiring.pushEvent method. The
-following code adds an event listener to the location title that sends
-the location of the current forecast.
+After adding the output endpoint to the widget description, we can send data
+through it using the MashupPlatform.wiring.pushEvent method. The following code
+adds an event listener to the location title that sends the location of the
+current forecast.

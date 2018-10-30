@@ -1,7 +1,7 @@
-Input endpoints must be declared into the widget template before it can
-be used by the javascript code of the widget. To do so, open `config.xml`
-and add an `<inputendpoint>` element into the `<wiring>` section. The
-final result should look like:
+Input endpoints must be declared into the widget template before it can be used
+by the JavaScript code of the widget. To do so, open `config.xml` and add an
+`<inputendpoint>` element into the `<wiring>` section. The final result should
+look like:
 
     <wiring>
         <inputendpoint
@@ -13,7 +13,6 @@ final result should look like:
         />
     </wiring>
 
-
 This is how to declare the input endpoint when using RDF (turtle):
 
     wire:hasPlatformWiring [ a ;
@@ -24,14 +23,12 @@ This is how to declare the input endpoint when using RDF (turtle):
                     wire:friendcode "location";
                     wire:type "text" ] ];
 
-
-Once declared the input endpoint in the widget descriptor, you can
-register a callback for this endpoint making use of the
-`MashupPlatform.wiring.registerCallback` method. In addition to
-registering the input endpoint, we need to process event data before
-using it and to notify the user that the forecast data for the given
-location is being requested. This can be accomplished by using the
-following code:
+Once declared the input endpoint in the widget descriptor, you can register a
+callback for this endpoint making use of the
+`MashupPlatform.wiring.registerCallback` method. In addition to registering the
+input endpoint, we need to process event data before using it and to notify the
+user that the forecast data for the given location is being requested. This can
+be accomplished by using the following code:
 
     var searchByCoordListener = function searchByCoordListener(event_data) {
         var tmp, coord;
@@ -49,5 +46,5 @@ following code:
             stopLoadingAnimation();
         });
     };
-    
+
     MashupPlatform.wiring.registerCallback("coord", searchByCoordListener);

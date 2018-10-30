@@ -1,17 +1,16 @@
 Apart from getting information using queries in a synchronous way (as
-illustrated in the “How to update and query context information” section
-above), Context Consumers can also get context information in an
-asynchronous way using notifications. In this scenario, the Context
-Broker GE is “programmed” to send notifications upon given conditions
-(specified in the subscription request).
+illustrated in the “How to update and query context information” section above),
+Context Consumers can also get context information in an asynchronous way using
+notifications. In this scenario, the Context Broker GE is “programmed” to send
+notifications upon given conditions (specified in the subscription request).
 
-In the case of NiceEating, the application backend could use a
-subscription so each time a new review is cast by any user, the backend
-gets notified (in order to recalculate restaurant average rating and
-publish it back in the Context Broker GE).
+In the case of NiceEating, the application backend could use a subscription so
+each time a new review is cast by any user, the backend gets notified (in order
+to recalculate restaurant average rating and publish it back in the Context
+Broker GE).
 
-    POST <cb_host>:<cb_port>/v2/subscriptions 
-        
+    POST <cb_host>:<cb_port>/v2/subscriptions
+
     Headers:
 
     {
@@ -49,14 +48,12 @@ publish it back in the Context Broker GE).
       "throttling": 5
     }
 
-
-
-Another case would be an application that subscribes to changes in
-average ratings of a given restaurant. This may be useful for restaurant
-owners in order to know how their restaurants score is evolving.
+Another case would be an application that subscribes to changes in average
+ratings of a given restaurant. This may be useful for restaurant owners in order
+to know how their restaurants score is evolving.
 
     POST <cb_host>:<cb_port>/v2/subscriptions
-        
+
     Headers:
 
     {
@@ -93,5 +90,3 @@ owners in order to know how their restaurants score is evolving.
       "expires": "2020-04-05T14:00:00.00Z",
       "throttling": 5
     }
-
- 

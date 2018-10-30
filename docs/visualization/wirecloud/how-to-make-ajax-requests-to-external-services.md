@@ -1,11 +1,10 @@
-We will use the Weather Underground service to show how to make AJAX
-requests to third party services. This service provides a rest API
-(documented at http://www.wunderground.com/weather/api/d/docs), but it
-is impossible to access this API using normal AJAX request (using
-XMLHttpRequest) due browsers applying the “Same Origin Policy” to
-javascript code. Fortunately, WireCloud provides the
-MashupPlatform.http.makeRequest method for dealing with this problem. A
-possible way to access to this API is by using the following code:
+We will use the Weather Underground service to show how to make Ajax requests to
+third party services. This service provides a rest API (documented at
+http://www.wunderground.com/weather/api/d/docs), but it is impossible to access
+this API using normal Ajax request (using XMLHttpRequest) due browsers applying
+the “Same Origin Policy” to JavaScript code. Fortunately, WireCloud provides the
+MashupPlatform.http.makeRequest method for dealing with this problem. A possible
+way to access to this API is by using the following code:
 
     var getForecastByCoord = function getForecastByCoord(coord, onSuccess, onError) {
         var url;
@@ -32,5 +31,5 @@ possible way to access to this API is by using the following code:
         });
     };
 
-The getForecastByCoord function makes the appropriated request to
-Weather Underground and passes the result to the onSuccess callback.
+The getForecastByCoord function makes the appropriated request to Weather
+Underground and passes the result to the onSuccess callback.
