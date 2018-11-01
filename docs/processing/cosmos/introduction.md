@@ -1,3 +1,5 @@
+<!-- textlint-disable terminology -->
+
 Similarly to what has been described in section Publication of context
 information as Open Data, Cygnus software allows to store all the selected data
 published in the Context Broker in an HDFS based storage. This allows having a

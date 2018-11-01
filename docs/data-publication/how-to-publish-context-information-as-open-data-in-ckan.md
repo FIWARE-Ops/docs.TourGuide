@@ -25,9 +25,13 @@ Cygnus, a piece of software complementary to the Context Broker GE. The
 instructions to install Cygnus can be found
 [here](https://fiware-cygnus.readthedocs.io/en/latest/index.html).
 
+<!-- textlint-disable write-good -->
+
 Once Cygnus has been installed, it is required to configure it. In a nutshell,
 there are three steps: configure CKAN storage, create the desired subscriptions
 in the Context Broker and run the process.
+
+<!-- textlint-enable write-good -->
 
 This sink persists the data in a datastore in CKAN. Datastores are associated to
 CKAN resources and as CKAN resources we use the entityId-entityType string
@@ -85,7 +89,7 @@ command (specifying the endpoint where Cygnus is listening):
 
 Once the process starts storing data, the dataset and resource will appear in
 CKAN and it will be possible to browse and download data from CKAN portal, or
-query it throught he Datastore API. More information at:
+query it through the Datastore API. More information at:
 
 -   `http://docs.ckan.org/en/ckan-2.2/datastore.html\#the-datastore-api`
 
