@@ -65,4 +65,4 @@ you want.
 
 [![HowToPublishDatasheetsInCkan4](images/HowToPublishDatasheetsInCkan4.png)](images/HowToPublishDatasheetsInCkan4.png)
 
-[handling authorization and access control to apis](/security/introduction.md)
+[handling authorization and access control to APIs](/security/introduction.md)

@@ -5,9 +5,13 @@ the FIWARE Store, by enabling the creation of offerings directly from the CKAN
 interface. In this way, users do not need to go to a different system saving
 time and improving the usability.
 
+<!-- textlint-disable write-good -->
+
 In order to create an offering using the CKAN interface, you must be logged in,
 so you can manage your published datasets. Once you have entered in CKAN, open
 the dataset you want to offer and click on the “Manage” button.
+
+<!-- textlint-enable write-good -->
 
 [![OfferingDatasetsDirectlyThrough1](../images/OfferingDatasetsDirectlyThrough1.png)](../images/OfferingDatasetsDirectlyThrough1.png)
 
@@ -40,6 +44,8 @@ to acquire the offering.
 [![Offering Datasets Directly Through the CKAN
 Interface1](../images/Offering-Datasets-Directly-Through-the-CKAN-Interface1.png)](../images/Offering-Datasets-Directly-Through-the-CKAN-Interface1.png)
 
+<!-- textlint-disable write-good -->
+
 You may have noticed that this way of creating offerings has some restrictions.
 On the one hand, the offering is created just with the dataset, so you cannot
 create composite offerings with multiple data sources or visualization tools. On
@@ -48,3 +54,5 @@ so you cannot create recurring payments or usage based payments. If your model
 require any of these features you can offer your datasets using the FIWARE Store
 interface as explained in
 [here](/publishing-open-data-in-fiware/how-to-offer-datasets-including-context-information-through-the-wstore/offering-datasets-through-the-wstore-interface/)
+
+<!-- textlint-enable write-good -->

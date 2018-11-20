@@ -2,8 +2,7 @@
 
 Should you wish to learn much more about Media Streams, please check:
 
--   Read the full
-    [Kurento documentation](https://kurento.readthedocs.org/en/latest/)
+-   Read the full [Kurento documentation](https://kurento.rtfd.io/)
 -   [Kurento API Specification](http://docs.streamoriented.apiary.io/)
 
 ## Tutorials
