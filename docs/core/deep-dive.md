@@ -5,10 +5,10 @@ out the following in depth documentation:
 
 -   Read the full **documentation** for each Generic Enabler:
     -   [Orion](https://fiware-orion.readthedocs.io/en/latest/)
-    -   [Cygnus ](https://fiware-cygnus.readthedocs.io/en/latest/)
+    -   [Cygnus](https://fiware-cygnus.readthedocs.io/en/latest/)
     -   [Draco](https://fiware-draco.readthedocs.io/en/latest/)
-    -   [QuantumLeap ](https://quantumleap.rtfd.io/)
-    -   [STH-Comet ](https://fiware-sth-comet.readthedocs.io/en/latest/)
+    -   [QuantumLeap](https://quantumleap.rtfd.io/)
+    -   [STH-Comet](https://fiware-sth-comet.readthedocs.io/en/latest/)
 -   [FIWARE Harmonized Data Models](http://schema.fiware.org)
 -   [NGSI v2 Open API Specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/ngsiv2/ngsiv2-openapi.json)
 
