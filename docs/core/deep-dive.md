@@ -3,21 +3,20 @@
 Should you wish to learn much more about Core Context Management, please check
 out the following in depth documentation:
 
--   Read the full
-    [Orion documentation](https://fiware-orion.readthedocs.io/en/latest/)
+-   Read the full **documentation** for each Generic Enabler:
+    -   [Orion](https://fiware-orion.readthedocs.io/en/latest/)
+    -   [Cygnus ](https://fiware-cygnus.readthedocs.io/en/latest/)
+    -   [Draco](https://fiware-draco.readthedocs.io/en/latest/)
+    -   [QuantumLeap ](https://quantumleap.rtfd.io/)
+    -   [STH-Comet ](https://fiware-sth-comet.readthedocs.io/en/latest/)
 -   [FIWARE Harmonized Data Models](http://schema.fiware.org)
 -   [NGSI v2 Open API Specification](https://swagger.lab.fiware.org/?url=https://raw.githubusercontent.com/Fiware/specifications/master/OpenAPI/ngsiv2/ngsiv2-openapi.json)
-    <br/><br/>
--   Read the full
-    [Cygnus documentation](https://fiware-cygnus.readthedocs.io/en/latest/)
--   Read the full
-    [STH-Comet documentation](https://fiware-sth-comet.readthedocs.io/en/latest/)
--   Read the full [Quantum Leap documentation](https://quantumleap.rtfd.io/)
 
 ## Tutorials
 
-The following introductory Tutorials on the **Fundamentals of Core Context
-Management** are available:
+The following tutorials are available:
+
+<h4>Fundamentals of Core Context</h4>
 
 &nbsp; 101.
 [Getting Started](https://fiware-tutorials.readthedocs.io/en/latest/getting-started)<br/>
@@ -32,8 +31,7 @@ Management** are available:
 &nbsp; 106.
 [Subscribing to Changes in Context](https://fiware-tutorials.readthedocs.io/en/latest/subscriptions)<br/>
 
-Further Tutorials on **Core Context Management: History** persist historic
-context data:
+<h4>Core Context Management: History</h4>
 
 &nbsp; 301.
 [Persisting Context Data (Mongo-DB, MySQL, PostgreSQL)](https://fiware-tutorials.readthedocs.io/en/latest/historic-context)<br/>
@@ -41,6 +39,16 @@ context data:
 [Querying Time Series Data (Mongo-DB)](https://fiware-tutorials.readthedocs.io/en/latest/short-term-history)<br/>
 &nbsp; 303.
 [Querying Time Series Data (Crate-DB)](https://fiware-tutorials.readthedocs.io/en/latest/time-series-data)<br/>
+
+## Academy Courses
+
+Video tutorials and slide decks are available for the following Generic
+Enablers:
+
+-   [Orion](https://fiware-academy.readthedocs.io/en/latest/core/orion/)
+-   [Cygnus](https://fiware-academy.readthedocs.io/en/latest/core/cygnus/)
+-   [QuantumLeap](https://fiware-academy.readthedocs.io/en/latest/core/quantum-leap/)
+-   [STH-Comet](https://fiware-academy.readthedocs.io/en/latest/core/sth-comet/)
 
 ## Presentations
 
@@ -56,15 +64,12 @@ Presentations about Core Context Management from recent FIWARE Global Summits:
 -   Conversion from NGSI v1 -
     [NGSIv2 Overview for NGSIv1 Developers](http://bit.ly/ngsiv2-vs-ngsiv1)
 
-## GitHub Repositories and Docker Hub Images
+## GitHub
 
--   GitHub
-    -   [Orion (reference implementation)](https://github.com/telefonicaid/fiware-orion/)
-    -   [Cygnus (reference implementation)](https://github.com/ging/fiware-cygnus/)
-    -   [STH-Comet(reference implementation)](https://github.com/ging/fiware-sth-comet/)
-    -   [Quantum Leap](https://github.com/smartsdk/ngsi-timeseries-api/)
--   Docker
-    -   [Orion Docker Image](https://hub.docker.com/r/fiware/orion/)
-    -   [Cygnus Docker Image](https://hub.docker.com/r/ging/fiware-cygnus/)
-    -   [STH-Comet Docker Image](https://hub.docker.com/r/fiware/sth-comet/)
-    -   [Quantum Leap Docker Image](https://hub.docker.com/r/smartsdk/quantumleap/)
+Source code for all the Generic Enablers can be found within the FIWARE
+Catalogue GitHub repository:
+
+-   [Core Context Management](https://github.com/Fiware/catalogue/tree/master/core)
+
+The GitHub repository also includes additional information such as links to the
+official Docker Images

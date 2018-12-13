@@ -14,6 +14,13 @@ the following Tutorials on the **Media Streams** also are available:
 &nbsp; 503.
 [Introduction to Media Streams](https://fiware-tutorials.readthedocs.io/en/latest/media-streams)<br/>
 
+## Academy Courses
+
+Video tutorials and slide decks are available for the following Generic
+Enablers:
+
+-   [Kurento](https://fiware-academy.readthedocs.io/en/latest/processing/kurento)
+
 ## Presentations
 
 Presentations about Media Streams from recent FIWARE Global Summits:
@@ -22,15 +29,12 @@ Presentations about Media Streams from recent FIWARE Global Summits:
 | --------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | [Real-time media processing](https://www.slideshare.net/FI-WARE/fiware-global-summit-realtime-media-stream-processing-using-kurento-97030173) | [Stream Processing with Kurento](https://www.slideshare.net/FI-WARE/fiware-tech-summit-stream-processing-with-kurento-media-server) |
 
-## Video Presentations
+## GitHub
 
--   [Part 1 - Kurento main concepts](https://www.youtube.com/watch?v=1EKV1wpz4iU)
--   [Part 2 - Installation guide](https://www.youtube.com/watch?v=I-qAFViQfBk)
--   [Part 3 - Development guide](https://www.youtube.com/watch?v=rloBE438avU)
--   [Part 4 - Kurento and the FILAB](https://www.youtube.com/watch?v=U-_vh03g5cs)
+Source code for the Kurento Generic Enabler can be found within the FIWARE
+Catalogue GitHub repository:
 
-## GitHub Repositories and Docker Hub Images
+-   [Processing](https://github.com/Fiware/catalogue/tree/master/processing#kurento)
 
--   [GitHub repository (reference implementation)](https://github.com/Kurento/kurento-media-server)
--   [Play with the Docker container](https://hub.docker.com/r/fiware/stream-oriented-kurento/)
--   [Latest stable release](https://github.com/Kurento/kurento-media-server/releases/latest)
+The GitHub repository also includes additional information such as links to the
+official Docker Images
