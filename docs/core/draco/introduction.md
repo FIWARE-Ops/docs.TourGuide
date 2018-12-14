@@ -1,6 +1,6 @@
 Context information stored by the Fiware Context Broker only includes the latest
-value of entity attributes. In order to be able to store the historical data
-produced via the Context Broker ,we need to use Draco. Draco needs to be
+value of entity attributes. Draco is an alternative option to Cygnus for storing
+the historical data produced via the Context Broker ,. Draco needs to be
 connected to a store.
 
 Draco is a is an easy to use, powerful, and reliable system to process and
