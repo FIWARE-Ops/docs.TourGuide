@@ -11,6 +11,12 @@ following:
     -   [Read the full documentation](https://fiware-cosmos-flink.readthedocs.io)
     -   [Latest stable release](https://github.com/ging/fiware-cosmos-orion-flink-connector/releases/latest)
 
+## Academy Courses
+
+Video tutorials and slide decks are available for the Cosmos Generic Enabler:
+
+-   [Cosmos](https://fiware-academy.readthedocs.io/en/latest/processing/cosmos/)
+
 ## Presentations
 
 Presentations about Data Analysis from recent FIWARE Global Summits:

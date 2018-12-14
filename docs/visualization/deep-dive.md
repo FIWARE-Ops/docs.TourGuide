@@ -13,6 +13,14 @@ following in depth documentation:
 -   [Knowage CE Manual](http://download.forge.ow2.org/knowage/Knowage_6.x_CE_Manual.pdf)
 -   [Knowage API Specification](https://knowage.docs.apiary.io/)
 
+## Academy Courses
+
+Video tutorials and slide decks are available for the following Generic
+Enablers:
+
+-   [Wirecloud](https://fiware-academy.readthedocs.io/en/latest/processing/wirecloud/)
+-   [Knowage](https://fiware-academy.readthedocs.io/en/latest/processing/knowage/)
+
 ## Presentations
 
 Presentations about Data Visualization from recent FIWARE Global Summits:
@@ -22,11 +30,12 @@ Presentations about Data Visualization from recent FIWARE Global Summits:
 | [Business Analytics using Knowage](https://www.slideshare.net/FI-WARE/fiware-global-summit-business-intelligence-using-knowage-97030885) | [Building Wirecloud Real-time Dashboards](https://www.slideshare.net/FI-WARE/fiware-tech-summit-miguel-jimenez-building-realtime-dashboards-to-monitor-context) |
 |                                                                                                                                          | [Building Professional Dashboards in Minutes](https://www.slideshare.net/FI-WARE/fiware-tech-summit-professional-dashboards-for-dummies)                        |
 
-## GitHub Repositories and Docker Hub Images
+## GitHub
 
--   GitHub
-    -   [Wirecloud (reference implementation)](https://github.com/Wirecloud/wirecloud)
-    -   [Knowage (reference implementation)](https://github.com/KnowageLabs/Knowage-Server)
--   Docker
-    -   [Wirecloud Docker Image](https://hub.docker.com/r/fiware/wirecloud/)
-    -   [Knowage Docker Image](https://hub.docker.com/r/fiware/knowage-server-docker/)
+Source code for all the Generic Enablers can be found within the FIWARE
+Catalogue GitHub repository:
+
+-   [Visualization](https://github.com/Fiware/catalogue/tree/master/processing)
+
+The GitHub repository also includes additional information such as links to the
+official Docker Images
