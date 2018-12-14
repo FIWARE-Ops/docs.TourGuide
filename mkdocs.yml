@@ -16,6 +16,7 @@ pages:
         - 'Orion - Geolocated context queries': 'core/ngsi-v2/how-to-perform-geo-located-queries.md'
       - 'STH-Comet - Generate Context History ': 'core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
       - 'Cygnus - Store Context Information': 'core/cygnus/introduction.md'
+      - 'Draco - Store Context Information': 'core/draco/introduction.md'
       - 'Core Context - Deep dive': 'core/deep-dive.md'
   - 'Interface to Internet of Things':
      - 'IDAS - Introduction': 'iot-agents/introduction.md'
