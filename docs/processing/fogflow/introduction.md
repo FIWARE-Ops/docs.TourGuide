@@ -2,5 +2,18 @@ In the FIWARE IoT architecture, FogFlow is the cloud-edge computing framework to
 
 [![System View](images/systemview.png)](images/systemview.png)
 
-As illustrated by the figure above, FogFlow can allow IoT service developers to quickly define and launch a data processing function over the cloud and edges in a transparent and efficient manner. 
+As illustrated by the figure above, FogFlow can allow IoT service developers to quickly define and launch a data processing function over the cloud and edges in a transparent and efficient manner. The main features of FogFlow can be guided by the following three steps. 
+
+1) Service developers define and submit fog functions with the provided function template
+
+
+2) Context producers start to producer the raw contextual data, which will trigger the relevant fog functions to be deployed on the fly for generating high level contextual situations. 
+
+
+3) Situations are consumed by consumers 
+
+
+
+
+
 
