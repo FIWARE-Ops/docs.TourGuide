@@ -6,7 +6,9 @@ As illustrated by the figure above, FogFlow can allow IoT service developers to 
 
 1) Service developers define and submit fog functions with the provided function template
 
-More detailed steps are provided here. [![Specify a fog function](images/systemview.png)](images/systemview.png)
+More detailed steps are provided here.
+
+-   [pecify a fog function](https://fogflow.readthedocs.io/en/latest/example1.html)
 
 2) Context producers start to producer the raw contextual data, which will trigger the relevant fog functions to be deployed on the fly for generating high level contextual situations. 
 
