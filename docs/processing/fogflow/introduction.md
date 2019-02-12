@@ -4,7 +4,7 @@ Assume that a FogFlow system has been set up [Setup FogFlow](https://fogflow.rea
 
 [![System View](images/systemview.png)](images/systemview.png)
 
-Step 1: Service developers define and submit fog functions with the provided function template
+1) Service developers define and submit fog functions with the provided function template
 
 With the fog function editor at the FogFlow Dashboard, a fog function can be defined and summited in a few minutes. 
 Please check the detailed instructions below. 
