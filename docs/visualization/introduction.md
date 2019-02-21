@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>Visualization</h2>
+
 WireCloud is a web mashup platform aimed at empowering end users, without
 programming skills, to easily create fully-fledged application dashboards built
 up from widgets, operators and other pre-existing mashups. These building blocks
@@ -21,8 +24,7 @@ a developer or an end user:
 
 The following screenshots showcases some dashboards created using WireCloud.
 
-<img src="../images/sample-dashboard1.png" srcset="../images/sample-dashboard1.png 2x" alt="Fleet management dashboard"/>
-<img src="../images/sample-dashboard2.png" srcset="../images/sample-dashboard2.png 2x" alt="Weather Forecast dashboard"/>
+![](images/sample-dashboard1.png) ![](images/sample-dashboard2.png)
 
 Usually, those dashboards are build by domain experts by means of mashing up
 widgets and operators that were previously developed and shared by other
@@ -36,8 +38,7 @@ map in the app dashboard shown in the following screenshot has been
 automatically replaced by a native component with better performance and with
 access to the GPS features of the tablet.
 
-[![Creating application
-dashboards2](images/Creating-application-dashboards2.png)](images/Creating-application-dashboards2.png)
+![](images/Creating-application-dashboards2.png)
 
 If you are interested in more details about how to use WireCloud to (a) create
 your application dashboard from pre-existing widgets and operators or (b)

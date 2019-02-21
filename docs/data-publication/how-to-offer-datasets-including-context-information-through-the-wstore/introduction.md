@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Offer Open Datasets via the FIWARE Store</h2>
+
 The FIWARE Store is one of the portals deployed in FIWARE Lab, which is the main
 showcase of the project. Therefore, it is the best way, together with the Open
 Data GE and its reference implementation (CKAN), for advertising your datasets

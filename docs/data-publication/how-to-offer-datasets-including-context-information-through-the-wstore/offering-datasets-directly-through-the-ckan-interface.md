@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Offering Datasets via the CKAN Interface</h2>
+
 The FIWARE CKAN version has been extended with a set of plugins intended to
 provide a high integration with other FIWARE components. In particular, the
 Store Publisher plugin allows FIWARE users to offer their published datasets in

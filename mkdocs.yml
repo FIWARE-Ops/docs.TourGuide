@@ -14,6 +14,8 @@ pages:
         - 'Orion - Query and Update Context Data': 'core/ngsi-v2/how-to-update-and-query-context-information.md'
         - 'Orion - Subscribe to context changes': 'core/ngsi-v2/how-to-subscribe-to-changes-on-context-information.md'
         - 'Orion - Geolocated context queries': 'core/ngsi-v2/how-to-perform-geo-located-queries.md'
+        - 'Orion - External Context Providers': 'core/ngsi-v2/how-to-connect-to-external-context-providers.md'
+
       - 'STH-Comet - Generate Context History ': 'core/sth-comet/how-to-generate-the-history-of-Context-Information-using-STH-Comet.md'
       - 'Cygnus - Store Context Information': 'core/cygnus/introduction.md'
       - 'Draco - Store Context Information': 'core/draco/introduction.md'
@@ -63,4 +65,6 @@ pages:
      - 'Kurento - Architecture of a media stream enabled application': 'processing/kurento/whats-the-architecture-of-a-kurento-enabled-application.md'
      - 'Kurento - Develop a media stream enabled application': 'processing/kurento/how-to-develop-a-kurento-enabled-application.md'
      - 'Media Streams - Deep dive': 'processing/kurento/deep-dive.md'
+  - 'Cloud Edge processing':
+     - 'FogFlow - Introduction': 'processing/fogflow/introduction.md'
      

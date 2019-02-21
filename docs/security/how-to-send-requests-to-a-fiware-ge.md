@@ -1,3 +1,6 @@
+<hr class="security" style="display:none"/>
+<h2>How to send requests to a FIWARE Generic Enabler</h2>
+
 If your web app is going to use a FIWARE GE service you have to authenticate the
 requests.
 
@@ -10,9 +13,7 @@ this flow is:
 
 So for include the access‐token in your requests you have to do:
 
-GET /GE_URL_path HTTP/1.1  
- Host: GE_hostname  
- X-­Auth-Token: access_token
+GET /GE_URL_path HTTP/1.1 Host: GE_hostname X-­Auth-Token: access_token
 
 For instance, using our OAuth2 example explained previously, you can get the
 access_token in this code fragment:

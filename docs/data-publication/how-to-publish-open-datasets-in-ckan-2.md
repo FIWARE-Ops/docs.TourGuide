@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Publish Open Datasets</h2>
+
 CKAN allows you to publish your own datasets in order to make them accessible to
 other users of the platform. In particular, you can upload your datasets as
 files directly into CKAN, or you can provide a link to the data. This section
@@ -57,12 +60,12 @@ details).
 > dataset is private, the `fiware-ngsi` must require an auth token for
 > coherence.
 
-[<img src="../images/PublishDyncamicContextInformationResource.png" srcset="../images/PublishDyncamicContextInformationResource.png 2x" alt="Empty workspace"/>](images/PublishDyncamicContextInformationResource.png)
+![](images/PublishDyncamicContextInformationResource.png)
 
 In the last step you can provide some metadata (Author, version, maintainer,
 etc). Nevertheless, this metadata is not a must, so you can skip this section if
 you want.
 
-[![HowToPublishDatasheetsInCkan4](images/HowToPublishDatasheetsInCkan4.png)](images/HowToPublishDatasheetsInCkan4.png)
+![](images/HowToPublishDatasheetsInCkan4.png)
 
 [handling authorization and access control to APIs](/security/introduction.md)

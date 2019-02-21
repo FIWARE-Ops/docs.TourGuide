@@ -1,3 +1,5 @@
+<hr class="processing" style="display:none"/>
+
 ## Documentation
 
 Should you wish to learn much more about visualizations, please check out the

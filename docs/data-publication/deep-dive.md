@@ -1,3 +1,5 @@
+<hr class="data-publication" style="display:none"/>
+
 ## Documentation
 
 Should you wish to learn much more about publishing Open Data, please check the

@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>What is the Architecture of a Kurento-enabled Application</h2>
+
 Kurento Media Server capabilities are exposed by the Kurento API to application
 developers. This API is implemented by means of libraries called Kurento
 Clients. Kurento offers two clients out of the box for Java and JavaScript. If

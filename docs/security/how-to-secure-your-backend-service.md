@@ -1,3 +1,6 @@
+<hr class="security" style="display:none"/>
+<h2>How to secure your backend service</h2>
+
 You can also develop backend applications using FIWARE Account authentication.
 To do so you should use our FIWARE PEP Proxy that allows you to validate the
 requests before sending them to your server:

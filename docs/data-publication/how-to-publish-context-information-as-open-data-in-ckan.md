@@ -1,3 +1,5 @@
+<hr class="data-publication" style="display:none"/>
+
 Through the mechanisms described in the section
 [Development of context-aware applications](/development-context-aware-applications/introduction/),
 the Context Broker can be used to publish and consume context information. In

@@ -1,3 +1,5 @@
+<hr class="processing" style="display:none"/>
+
 Should you wish to learn much more about Big Data Analysis, please check the
 following:
 

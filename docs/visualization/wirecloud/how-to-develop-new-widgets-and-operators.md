@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>How to develop new widgets and operators</h2>
+
 Widgets can be split up into three different components:
 
 -   Descriptor (`config.xml`), which is a declarative description of the widget.

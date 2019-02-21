@@ -1,3 +1,6 @@
+<hr class="iotagents" style="display:none"/>
+<h2>Reading Data from IoT Devices</h2>
+
 The first thing you need to do is to connect your IoT devices or Gateways to
 FIWARE. This basically means that your IoT devices’ observations reach a Context
 Broker.
@@ -29,32 +32,34 @@ Step 1 : **Create an IDAS Service**
 If you are using the public IDAS instance with the public `openiot` testing
 service available at `130.206.80.47` (Port `5073`) you may skip this step. Just
 keep in mind the shared secret for this public service (that your devices need
-to know) is the string `4jggokgpepnvsb2uv4s40d59ov`.  
- Otherwise, creating an IDAS Service consists of a simple HTTP POST like this:
+to know) is the string `4jggokgpepnvsb2uv4s40d59ov`. Otherwise, creating an IDAS
+Service consists of a simple HTTP POST like this:
 
-    POST http://130.206.80.40:5371/iot/services
+```
+POST http://130.206.80.40:5371/iot/services
 
-    Headers:
+Headers:
 
+{
+  'Content-Type':       'application/json',
+  'X-Auth-Token' :      '[TOKEN]',
+  'Fiware-Service':     'openiot',
+  'Fiware-ServicePath': '/'
+}
+
+Payload:
+
+{
+  "services": [
     {
-      'Content-Type':       'application/json',
-      'X-Auth-Token' :      '[TOKEN]',
-      'Fiware-Service':     'openiot',
-      'Fiware-ServicePath': '/'
+      "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
+      "cbroker":     "http://0.0.0.0:1026",
+      "entity_type": "thing",
+      "resource":    "/iot/d"
     }
-
-    Payload:
-
-    {
-      "services": [
-        {
-          "apikey":      "4jggokgpepnvsb2uv4s40d59ov",
-          "cbroker":     "http://0.0.0.0:1026",
-          "entity_type": "thing",
-          "resource":    "/iot/d"
-        }
-      ]
-    }
+  ]
+}
+```
 
 Where `0.0.0.0:1026` might be replaced by a private instance of a Context Broker
 or just leave it as it is (`0.0.0.0:1026`) if the public instance is running at
@@ -66,70 +71,74 @@ needed as well, a simple way of obtaining one is described
 Likewise, you may want to experiment using the _FIWARE Tour Guide Application_.
 Assuming you have installed it locally, you can issue the following request:
 
-    POST http://localhost:4041/iot/services/
+```
+POST http://localhost:4041/iot/services/
 
-    Headers:
+Headers:
 
+{
+  'Content-Type':       'application/json',
+  'Fiware-Service':     'tourguide',
+  'Fiware-ServicePath': '/'
+}
+
+Payload:
+
+{
+  "services": [
     {
-      'Content-Type':       'application/json',
-      'Fiware-Service':     'tourguide',
-      'Fiware-ServicePath': '/'
+      "apikey":   "tourguide-devices",
+      "cbroker":  "http://orion:1026",
+      "resource": "/iot/dev-restaurants"
     }
-
-    Payload:
-
-    {
-      "services": [
-        {
-          "apikey":   "tourguide-devices",
-          "cbroker":  "http://orion:1026",
-          "resource": "/iot/dev-restaurants"
-        }
-      ]
-    }
+  ]
+}
+```
 
 Step 2: **Register your IoT device**
 
 Before your device sends observations or receives commands a register operation
 is needed:
 
-    POST http://130.206.80.40:5371/iot/devices
+```
+POST http://130.206.80.40:5371/iot/devices
 
-    Headers:
+Headers:
 
+{
+  'Content-Type':       'application/json',
+  'X-Auth-Token' :      '[TOKEN]',
+  'Fiware-Service' :    'openiot',
+  'Fiware-ServicePath': '/'
+}
+
+Payload:
+
+{
+  "devices": [
     {
-      'Content-Type':       'application/json',
-      'X-Auth-Token' :      '[TOKEN]',
-      'Fiware-Service' :    'openiot',
-      'Fiware-ServicePath': '/'
-    }
-
-    Payload:
-
-    {
-      "devices": [
+      "device_id":   "[DEV_ID]",
+      "entity_name": "[ENTITY_ID]",
+      "entity_type": "thing",
+      "timezone":    "Europe/Madrid",
+      "attributes": [
         {
-          "device_id":   "[DEV_ID]",
-          "entity_name": "[ENTITY_ID]",
-          "entity_type": "thing",
-          "timezone":    "Europe/Madrid",
-          "attributes": [
-            {
-              "object_id": "t",
-              "name":      "temperature",
-              "type":      "number"
-            }
-          ],
-          "static_attributes": [
-            {
-              "name":  "attr_name",
-              "type":  "string",
-              "value": "value"
-            }
-          ]
+          "object_id": "t",
+          "name":      "temperature",
+          "type":      "number"
+        }
+      ],
+      "static_attributes": [
+        {
+          "name":  "attr_name",
+          "type":  "string",
+          "value": "value"
         }
       ]
     }
+  ]
+}
+```
 
 The important parameters to be provided are:
 
@@ -146,53 +155,57 @@ Likewise, using the _Tour Guide Application_, you can create a device bound to a
 restaurant entity. Such device will provide ambient measurements, for instance
 `temperature`, for a specific restaurant.
 
-    POST http://localhost:4041/iot/devices/
+```
+POST http://localhost:4041/iot/devices/
 
-    Headers:
+Headers:
 
+{
+  'Content-Type':       'application/json',
+  'Fiware-Service':     'tourguide',
+  'Fiware-ServicePath': '/'
+}
+
+Payload:
+
+{
+  "devices": [
     {
-      'Content-Type':       'application/json',
-      'Fiware-Service':     'tourguide',
-      'Fiware-ServicePath': '/'
-    }
-
-    Payload:
-
-    {
-      "devices": [
+      "device_id": "restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f",
+      "protocol": "UL20",
+      "entity_name": "0115206c51f60b48b77e4c937835795c33bb953f",
+      "entity_type": "Restaurant",
+      "attributes": [
         {
-          "device_id": "restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f",
-          "protocol": "UL20",
-          "entity_name": "0115206c51f60b48b77e4c937835795c33bb953f",
-          "entity_type": "Restaurant",
-          "attributes": [
-            {
-              "object_id": "t",
-              "name":      "temperature",
-              "type":      "number"
-            }
-          ]
+          "object_id": "t",
+          "name":      "temperature",
+          "type":      "number"
         }
       ]
     }
+  ]
+}
+```
 
 Step 3: **Send Observations related to your IoT device**
 
 Sending an observation from an IoT device is extremely efficient and simple with
 the following HTTP request:
 
-    POST  http://130.206.80.40:5371/iot/d?k=[APIKEY]&i=[DEV_ID]
+```
+POST  http://130.206.80.40:5371/iot/d?k=[APIKEY]&i=[DEV_ID]
 
-    Headers:
+Headers:
 
-    {
-      'Content-Type':  'text/plain',
-      'X-Auth-Token' : '[TOKEN]'
-    }
+{
+  'Content-Type':  'text/plain',
+  'X-Auth-Token' : '[TOKEN]'
+}
 
-    Payload:
+Payload:
 
-    't|25'
+'t|25'
+```
 
 The previous example sends a new temperature measurement which is automatically
 propagated to the corresponding entity at the Context Broker and FIWARE Service
@@ -202,24 +215,28 @@ registered.
 
 Similarly, you can do the same with the _Tour Guide Application_:
 
-    POST http://localhost:7896/iot/d?k=tourguide-devices&i=restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f
+```
+POST http://localhost:7896/iot/d?k=tourguide-devices&i=restaurant-sensor-0115206c51f60b48b77e4c937835795c33bb953f
 
-    Headers:
+Headers:
 
-    {
-      'Content-Type': 'text/plain',
-    }
+{
+  'Content-Type': 'text/plain',
+}
 
-    Payload:
+Payload:
 
-    't|22.3'
+'t|22.3'
+```
 
 Sending multiple observations in the same message is also possible with the
 following payload:
 
-    "alias1|value1#alias2|value2#alias3|value3..."
+```
+"alias1|value1#alias2|value2#alias3|value3..."
 
-    't|23#h|80#l|95#m|Quiet'
+'t|23#h|80#l|95#m|Quiet'
+```
 
 Step 4: **Reading measurements sent by your IoT device**
 
@@ -236,17 +253,19 @@ In the _Tour Guide Application_ example you can check that the temperature value
 has been properly propagated by running (with extra headers
 `fiware-service: tourguide`):
 
-    GET http://localhost:1026/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?attrs=temperature
+```
+GET http://localhost:1026/v2/entities/0115206c51f60b48b77e4c937835795c33bb953f?attrs=temperature
 
-    {
-      "id": "0115206c51f60b48b77e4c937835795c33bb953f",
-      "type": "Restaurant",
-      "temperature": {
-        "type": "number",
-        "value": "22.3",
-        "metadata": {}
-      }
-    }
+{
+  "id": "0115206c51f60b48b77e4c937835795c33bb953f",
+  "type": "Restaurant",
+  "temperature": {
+    "type": "number",
+    "value": "22.3",
+    "metadata": {}
+  }
+}
+```
 
 For more examples on how to access the Context Broker, please refer to such
 component section.

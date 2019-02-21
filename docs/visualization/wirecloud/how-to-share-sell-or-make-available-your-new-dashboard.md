@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>How to share or sell your dashboard</h2>
+
 Once you are finished with your dashboard, you can either describe and share it
 with other people by uploading it to the WireCloud catalogue, or make it
 available in the marketplace by creating a new offering. You can even embed the
@@ -7,6 +10,6 @@ create an offering you can refer to the Business API Ecosystem documentation.
 The following figures illustrate how to obtain the HTML code needed to embed
 your dashboard in external sites:
 
-<img src="../images/wiring/embed_workspace_entry.png" srcset="../images/wiring/embed_workspace_entry.png 2x" alt="*Embed* workspace option"/>
+![](images/wiring/embed_workspace_entry.png)
 
-<img src="../images/wiring/embed_workspace_dialog.png" srcset="../images/wiring/embed_workspace_dialog.png 2x" alt="Embed workspace dialog"/>
+![](images/wiring/embed_workspace_dialog.png)

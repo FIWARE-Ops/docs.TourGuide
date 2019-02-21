@@ -1,8 +1,11 @@
+<hr class="security" style="display:none"/>
+<h2>How to implement OAuth2 in your applications</h2>
+
 The first step to start managing authorization in your application is to
 register the application in FIWARE Account. In order to do that you have to
 click on “Register” option of the Account Portal
 
-[![HowToImplementOAuth2InYourApplication1](images/HowToImplementOAuth2InYourApplication1.png)](images/HowToImplementOAuth2InYourApplication1.png)  
+[![HowToImplementOAuth2InYourApplication1](images/HowToImplementOAuth2InYourApplication1.png)](images/HowToImplementOAuth2InYourApplication1.png)
 Then follow the steps with the data of your application. Once registered, you
 have to implement OAuth2 protocol in your application. The message flow between
 your web application and IDM account server should be:
@@ -15,12 +18,9 @@ Java, Ruby, Javascript, Python … We have developed a Node.js
 [example](https://github.com/ging/fi-ware-pep-proxy) that you can download and
 test following these instructions:
 
-1. Software requirements:  
-   Node.js  
-   npm
+1. Software requirements: Node.js npm
 
-2. Install the dependencies:  
-   npm install
+2. Install the dependencies: npm install
 
 3. Configure OAuth2 credentials (ClientID and Client Secret) in config.js file.
    You will find them in your IDM account:

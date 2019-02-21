@@ -1,3 +1,4 @@
+<hr class="core" style="display:none"/>
 ## Documentation
 
 Should you wish to learn much more about Core Context Management, please check

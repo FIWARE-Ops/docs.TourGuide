@@ -1,3 +1,5 @@
+<hr class="iotagents" style="display:none"/>
+
 ## Documentation
 
 Should you wish to learn much more about connecting to IoT, robotics or
