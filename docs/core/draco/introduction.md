@@ -1,3 +1,6 @@
+<hr class="core" style="display:none"/>
+<h2>How to store data in MySQL using Draco</h2>
+
 Context information stored by the Fiware Context Broker only includes the latest
 value of entity attributes. Draco is an alternative option to Cygnus for storing
 the historical data produced via the Context Broker ,. Draco needs to be

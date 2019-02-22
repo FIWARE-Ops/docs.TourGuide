@@ -1,3 +1,5 @@
+<hr class="data-publication" style="display:none"/>
+
 # CKAN Monetization Architecture
 
 In the context of the FIWARE platform, CKAN is used as the catalog where data
@@ -12,7 +14,7 @@ allow to manage the access and monetisation of published datasets.
 The following picture shows the architecture followed in FIWARE for the
 publication and monetization of data.
 
-[<img src="../images/ckan-monetization-arch.png" srcset="../images/ckan-monetization-arch.png 2x" alt="CKAN Monetization Architecture"/>](images/ckan-monetization-arch.png)
+![](images/ckan-monetization-arch.png)
 
 As can be seen in the previous image, the following components are integrated in
 order to manage and monetize data:

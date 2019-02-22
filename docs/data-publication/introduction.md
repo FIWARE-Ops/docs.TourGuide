@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Data Publication and Monetization</h2>
+
 Publishing and consuming open data is a cornerstone for the development of
 applications and the creation of an innovation ecosystem. In this regard, this
 section explains how users (both end users and developers) can expose their data

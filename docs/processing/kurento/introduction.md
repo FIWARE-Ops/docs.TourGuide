@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>Real-Time Media Stream Processing</h2>
+
 Your application may also need to integrate multimedia information. Multimedia
 information comprises audio and video data, which is commonly used for the
 exchange of complex information among humans (i.e. video conferencing,

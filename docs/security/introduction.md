@@ -1,3 +1,6 @@
+<hr class="security" style="display:none"/>
+<h2>Identity Management</h2>
+
 In FIWARE we offer some services and tools to allow you to manage authentication
 and authorization in your applications and backend services. If you want to
 manage identity in your application without developing your own mechanisms, you

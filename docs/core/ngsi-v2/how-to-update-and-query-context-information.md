@@ -1,3 +1,6 @@
+<hr class="core" style="display:none"/>
+<h2>How to query and update context</h2>
+
 Processes running as part of your application architecture that update context
 information using REST operations that the Context Broker GE exports, are said
 to play a **Context Producer** role.  As an example, let’s consider an
@@ -21,7 +24,7 @@ an example. In order to get its ID and department for performing the different
 requests, we can use (with extra headers `Fiware-Service: tourguide`):
 
 ```
-    GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name,department&options=keyValues
+GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name,department&options=keyValues
 ```
 
 ```json
@@ -42,7 +45,7 @@ plays the Context Producer role **creating** a Review entity by issuing the
 following HTTP request :
 
 ```
-    POST <cb_host>:<cb_port>/v2/entities?options=keyValues
+POST <cb_host>:<cb_port>/v2/entities?options=keyValues
 ```
 
 Headers:

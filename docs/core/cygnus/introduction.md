@@ -1,4 +1,5 @@
-# How to store data in MySQL using Cygnus
+<hr class="core" style="display:none"/>
+<h2>How to store data in MySQL using Cygnus</h2>
 
 Context information stored by the Fiware Context Broker only includes the latest
 value of entity attributes. Cygnus is one option to be able to store the

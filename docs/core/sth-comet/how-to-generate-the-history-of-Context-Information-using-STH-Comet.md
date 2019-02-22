@@ -1,4 +1,5 @@
-# How to generate the history of Context Information using STH-Comet
+<hr class="core" style="display:none"/>
+<h2>How to generate short-term history</h2>
 
 Context Information stored by the FIWARE Context Broker only includes the latest
 value of entity attributes. In order to be able to register the history of

@@ -1,3 +1,5 @@
+<hr class="data-publication" style="display:none"/>
+
 Publishing and consuming open data is a cornerstone for the development of
 applications and the creation of an innovation ecosystem. Through the mechanisms
 described in the section

@@ -1,3 +1,6 @@
+<hr class="iotagents" style="display:none"/>
+<h2>IoT Agents</h2>
+
 Connecting “objects” or “things” involves the need to overcome a set of problems
 arising in the different layers of the communication model. Using its data or
 acting upon them requires interaction with a heterogeneous environment of

@@ -1,3 +1,5 @@
+<hr class="processing" style="display:none"/>
+<h2>Big Data Analysis</h2>
 <!-- textlint-disable terminology -->
 
 Similarly to what has been described in section Publication of context

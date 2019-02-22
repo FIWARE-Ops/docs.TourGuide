@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>How to use other Generic Enablers from your Dashboard</h2>
+
 WireCloud offers support for a number of GEs including the Context Broker and
 the Object Storage GE. What follows is an example of how a developer can access
 [Orion Context Broker](https://github.com/telefonicaid/fiware-orion) (reference
@@ -14,6 +17,7 @@ NGSI feature as a requirement into their description files (`config.xml` files).
 The following is an example of a widget description using the XML flavour of the
 WDL:
 
+```xml
     <?xml version='1.0' encoding='UTF-8'?>
     <widget xmlns="http://wirecloud.conwet.fi.upm.es/ns/macdescription/1" vendor="CoNWeT" name="observation-reporter" version="1.0">
       <details>
@@ -32,9 +36,11 @@ WDL:
       <contents src="index.html" contenttype="text/html" charset="utf-8" useplatformstyle="true"/>
       <rendering height="20" width="5"/>
     </widget>
+```
 
 The RDF/xml flavour of the same widget description is:
 
+```xml
     <?xml version='1.0' encoding='UTF-8'?>
     <rdf:RDF
       xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -89,6 +95,7 @@ The RDF/xml flavour of the same widget description is:
         </dcterms:creator>
       </wire:Widget>
     </rdf:RDF>
+```
 
 One of the most important operations provided by the context broker is the
 support for subscriptions. By using subscriptions our dashboard can obtain right
@@ -104,6 +111,7 @@ Subscriptions are created through the `createSubscription` method. The following
 example explains how to be notified about the changes of the position of the
 vans we are managing:
 
+```javascript
     var entityIdList = [
         {type: 'Van', id: '.*', isPattern: true}
     ];
@@ -125,6 +133,7 @@ vans we are managing:
     };
     var ngsi_connection = new NGSI.Connection(ngsi_server[, options]);
     ngsi_connection.createSubscription(entityIdList, attributeList, duration, throttling, notifyConditions, options);
+```
 
 In this example, the call to createSubscription will make the context broker
 invoke the onNotify function each time the 'current_position' attribute of the
@@ -144,22 +153,24 @@ unloaded.
 As an example, what follows is the value of the data parameter passed to the
 onNotify callback when using the flat option:
 
-    {
-        "elements": {
-            "van2": {
-                "id": "van2",
-                "type": "Van",
-                "current_position": "43.47258, -3.8026643"
-            },
-            "van4": {
-                "id": "van4",
-                "type": "Van",
-                "current_position": "43.471214, -3.7994885"
-            }
+```json
+{
+    "elements": {
+        "van2": {
+            "id": "van2",
+            "type": "Van",
+            "current_position": "43.47258, -3.8026643"
         },
-        "subscriptionId": "53708768286043030c116e2c",
-        "originator": "localhost"
-    }
+        "van4": {
+            "id": "van4",
+            "type": "Van",
+            "current_position": "43.471214, -3.7994885"
+        }
+    },
+    "subscriptionId": "53708768286043030c116e2c",
+    "originator": "localhost"
+}
+```
 
 WireCloud tutorial on how to use Orion Context Broker from widgets and operators
 further explain how to create connections, make queries, deal with pagination,

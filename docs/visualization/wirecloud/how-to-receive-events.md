@@ -1,8 +1,12 @@
+<hr class="processing" style="display:none"/>
+<h2>How to receive events</h2>
+
 Input endpoints must be declared into the widget template before it can be used
 by the JavaScript code of the widget. To do so, open `config.xml` and add an
 `<inputendpoint>` element into the `<wiring>` section. The final result should
 look like:
 
+```xml
     <wiring>
         <inputendpoint
             name="coord"
@@ -12,6 +16,7 @@ look like:
             friendcode="location"
         />
     </wiring>
+```
 
 This is how to declare the input endpoint when using RDF (turtle):
 

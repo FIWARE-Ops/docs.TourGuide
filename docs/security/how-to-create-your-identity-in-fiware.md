@@ -1,3 +1,6 @@
+<hr class="security" style="display:none"/>
+<h2>How to create your Identity in FIWARE</h2>
+
 The first step to start using identity components in FIWARE is to create an
 account under “Account”. In order to do that you have to access the Account
 Portal and click in “Sign Up” option:

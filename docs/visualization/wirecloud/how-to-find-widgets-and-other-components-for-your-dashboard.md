@@ -1,3 +1,6 @@
+<hr class="processing" style="display:none"/>
+<h2>How to find widgets and other components</h2>
+
 The first step to create an application dashboard using WireCloud is the
 discovering of the components you are going to use. You can obtain those
 component in several ways, but one of the easiest way is accessing the WireCloud
@@ -12,7 +15,7 @@ mashups.
 The following figure illustrates how the FIWARE Store portal is viewed from
 WireCloud:
 
-<img src="../images/bae/summary.png" srcset="../images/bae/summary.png 2x" alt="Initial marketplace view"/>
+![](images/bae/summary.png)
 
 The WireCloud community has already made available an ever-growing catalogue of
 widgets, operators and pre-built mashups that help you to create your

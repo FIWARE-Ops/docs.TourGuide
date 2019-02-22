@@ -1,3 +1,5 @@
+<hr class="security" style="display:none"/>
+
 ## Documentation
 
 Should you wish to learn much more about security, please check out the

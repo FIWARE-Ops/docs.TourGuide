@@ -1,7 +1,11 @@
+<hr class="processing" style="display:none"/>
+<h2>How to send events</h2>
+
 As we did with the input endpoint, we need to declare the new output endpoint in
 the weather widget's template. This is the final result of the Wiring section
 after adding it:
 
+```xml
     <wiring>
         <inputendpoint
             name="coord"
@@ -18,9 +22,11 @@ after adding it:
             friendcode="location"
      />
     </wiring>
+```
 
 This is how to declare the output endpoint when using RDF (turtle):
 
+```
     wire:hasPlatformWiring [ a <http:/​/wirecloud.conwet.fi.upm.es/ns/widget#PlatformWiring>;
             wire:hasInputEndpoint [ a <http:/​/wirecloud.conwet.fi.upm.es/ns/widget#InputEndpoint>;
                     rdfs:label "Show forecast by coord";
@@ -34,6 +40,7 @@ This is how to declare the output endpoint when using RDF (turtle):
                     dcterms:title "location_coord";
                     wire:friendcode "location";
                     wire:type "text" ];
+```
 
 After adding the output endpoint to the widget description, we can send data
 through it using the MashupPlatform.wiring.pushEvent method. The following code

@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Acquiring Datasets via the FIWARE Store</h2>
+
 Customers can access the FIWARE Store to search and acquire one or more datasets
 published in CKAN. In this way, the FIWARE Store is in charge of notifying CKAN
 the acquisition of a private dataset and thus, give access rights to the

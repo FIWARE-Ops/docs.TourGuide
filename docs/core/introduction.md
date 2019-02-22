@@ -1,3 +1,6 @@
+<hr class="core" style="display:none"/>
+<h2>Core Context Management</h2>
+
 If you want your application to be “smart”, you have to first make it “aware”.
 FIWARE provides you with means to produce, gather, publish and consume context
 information at large scale and exploit it to transform your application into a

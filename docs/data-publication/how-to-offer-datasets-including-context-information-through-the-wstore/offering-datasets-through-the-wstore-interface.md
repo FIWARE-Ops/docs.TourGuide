@@ -1,3 +1,6 @@
+<hr class="data-publication" style="display:none"/>
+<h2>Offer Open Datasets via the FIWARE Store</h2>
+
 As mentioned before, you can also offer your CKAN datasets in the FIWARE Store
 by using the methods provided by the Store itself. Using the FIWARE Store
 interface for offering your CKAN datasets allows you to create more advanced

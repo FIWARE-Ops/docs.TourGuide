@@ -1,3 +1,6 @@
+<hr class="core" style="display:none"/>
+<h2>How to connect to external context providers</h2>
+
 Context Broker GE also implements a mechanism so part of the context information
 is not managed directly by the Context Broker, but by external **Context
 Providers**. Thus, in this way, Context Broker GE becomes the single access
@@ -29,7 +32,7 @@ First, the Context Provider is registered as provider of `occupancyLevels` for
 Elizalde restaurant which ID is `0115206c51f60b48b77e4c937835795c33bb953f`:
 
 ```
-    POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
+POST <cb_host>:<cb_port>/v1/registry/contextEntities/type/Restaurant/id/0115206c51f60b48b77e4c937835795c33bb953f/attributes/occupancyLevels
 ```
 
 Headers:
