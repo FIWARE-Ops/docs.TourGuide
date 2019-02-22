@@ -41,7 +41,7 @@ nodejs/python based program, you can follow the instructions below.
 3. The generated results are consumed by consumers, which can be an actuator
    device or some external NGSI application
 
-In order to recevie the generated results, the consumers need to issue a
+In order to receive the generated results, the consumers need to issue a
 subscription. Assume that the result consumer is a running Orion Context Broker,
 you can find the detailed instructions below.
 
