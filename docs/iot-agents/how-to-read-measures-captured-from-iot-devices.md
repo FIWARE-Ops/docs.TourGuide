@@ -42,7 +42,7 @@ Headers:
 
 {
   'Content-Type':       'application/json',
-  'X-Auth-Token' :      '[TOKEN]',
+  'X-Auth-Token':       '[TOKEN]',
   'Fiware-Service':     'openiot',
   'Fiware-ServicePath': '/'
 }
@@ -107,8 +107,8 @@ Headers:
 
 {
   'Content-Type':       'application/json',
-  'X-Auth-Token' :      '[TOKEN]',
-  'Fiware-Service' :    'openiot',
+  'X-Auth-Token':       '[TOKEN]',
+  'Fiware-Service':     'openiot',
   'Fiware-ServicePath': '/'
 }
 
@@ -199,7 +199,7 @@ Headers:
 
 {
   'Content-Type':  'text/plain',
-  'X-Auth-Token' : '[TOKEN]'
+  'X-Auth-Token':  '[TOKEN]'
 }
 
 Payload:
