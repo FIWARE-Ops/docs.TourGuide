@@ -32,7 +32,7 @@ GET <cb_host>:<cb_port>/v2/entities?type=Restaurant&q=name==Elizalde&attrs=name,
       {
         "id": "0115206c51f60b48b77e4c937835795c33bb953f",
         "type": "Restaurant",
-        "name": "Elizalde"
+        "name": "Elizalde",
         "department": "Franchise1"
       }
     ]
@@ -84,7 +84,7 @@ Headers:
 ```json
     {
       'Content-Type':        'application/json',
-      'Fiware-Service':      'tourguide'
+      'Fiware-Service':      'tourguide',
       'Fiware-ServicePath':  '/Franchise1'
     }
 ```

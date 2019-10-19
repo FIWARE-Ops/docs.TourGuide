@@ -10,7 +10,7 @@ process (POST request) in the following way:
 ```
     POST <idas_host>:<idas_port>/iot/devices
     //Example: HTTP POST: http://130.206.80.40:5371/iot/devices
-    Headers: {'content-type': 'application/json’; 'X-Auth-Token' : [TOKEN]; "Fiware-Service: OpenIoT”; "Fiware-ServicePath: /"}
+    Headers: {'content-type': 'application/json’; 'X-Auth-Token': [TOKEN]; "Fiware-Service: OpenIoT”; "Fiware-ServicePath: /"}
     Payload:
     {"devices": [
         { "device_id": ”[DEV_ID]",
@@ -43,6 +43,6 @@ queue of commands will be received with the following HTTP GET request:
 ```
     POST <idas_host>:<idas_port>/d?k=<apikey>&i=<device_ID>
     //Example: HTTP GET:
-    Headers: {'content-type': 'application/text’; 'X-Auth-Token' : [TOKEN]; "Fiware-Service: OpenIoT”; "Fiware-ServicePath: /"}
+    Headers: {'content-type': 'application/text’; 'X-Auth-Token': [TOKEN]; "Fiware-Service: OpenIoT”; "Fiware-ServicePath: /"}
     http://130.206.80.40:5371/iot/d?k=[APIKEY]&i=[DEV_ID]
 ```
