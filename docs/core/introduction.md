@@ -8,7 +8,7 @@ truly smart application.
 
 Context information is represented through values assigned to attributes that
 characterize those entities relevant to your application.
-[The Context Broker GE (open source reference implementation: Orion)](http://catalogue.fiware.org/enablers/publishsubscribe-context-broker-orion-context-broker)
+[The Context Broker GE (open source reference implementation: Orion)](https://fiware-orion.readthedocs.io/en/master/)
 is able to handle context information at large scale by implementing standard
 REST APIs.
 
