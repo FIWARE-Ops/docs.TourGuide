@@ -49,6 +49,7 @@ pages:
           - "Big Data Analysis - Deep dive": "processing/cosmos/deep-dive.md"
     - "Visualization  - Creating application dashboards":
           - "Introduction": "visualization/introduction.md"
+          - "Wirecloud - Introduction": "visualization/wirecloud-introduction.md"
           - "Wirecloud - Find widgets and other components": "visualization/wirecloud/how-to-find-widgets-and-other-components-for-your-dashboard.md"
           - "Wirecloud - Create dashboards": "visualization/wirecloud/how-to-create-your-application-dashboard-from-these-building-blocks.md"
           - "Wirecloud - Connect widgets and other resources": "visualization/wirecloud/how-to-interconnect-widgets-and-connect-them-to-backend-resources.md"
@@ -59,6 +60,7 @@ pages:
           - "Wirecloud - Send events": "visualization/wirecloud/how-to-send-events.md"
           - "Wirecloud - Connect to other FIWARE GEs": "visualization/wirecloud/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md"
           - "Visualization - Deep dive": "visualization/deep-dive.md"
+          - "Knowage - Data visualization & analytics": "visualization/knowage-introduction.md"
     - "Real-time media stream processing":
           - "Kurento - Introduction": "processing/kurento/introduction.md"
           - "Kurento - What is WebRTC and what is a media server": "processing/kurento/whats-webrtc-and-whats-a-media-server.md"
