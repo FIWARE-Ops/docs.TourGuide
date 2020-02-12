@@ -1,5 +1,5 @@
 <hr class="processing" style="display:none"/>
-<h2>DATA VISUALIZATION AND DATA ANALYTICS</h2>
+<h2>DATA VISUALIZATION AND DATA ANALYTICS WITH KNOWAGE</h2>
 
 Knowage is the FIWARE component for business intelligence and data analytics.
 Knowage supports a modern vision of the data analytics, providing new
@@ -64,6 +64,7 @@ Useful Knowage resources for FIWARE Community:
 -   [FIWARE Academy Tutorials](https://fiware-academy.readthedocs.io/en/latest/processing/knowage/index.html)
 -   [Restful API](https://knowage.docs.apiary.io/)
 -   [Javascript API](https://knowage.readdthedocs.io/en/latest/user/JS/README/index.html)
+-   [GitHub repository](https://github.com/KnowageLabs/Knowage-Server)
 
 Knowage represents the next generation of the well-known open source business
 intelligence and analytical suite named SpagoBI after significant functional
