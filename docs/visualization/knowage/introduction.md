@@ -7,7 +7,7 @@ self-service capabilities that give autonomy to the end-user, now able to build
 his own analysis and explore his own data space, also combining data that come
 from different sources.
 
-![](knowage/images/screenshot.png)
+![](images/screenshot.png)
 
 Knowage offers FULL ANALYTICAL CAPABILITIES, grouped into 6 different domains:
 
@@ -43,15 +43,15 @@ The following pictures describe the main integration scenarios involving Knowage
 FIWARE ecosystem.
 
 
-![](knowage/images/realtime.jpg)
+![](images/realtime.jpg)
 
 Knowage is capable to get data from the Context Broker and to display it in real-time.
 
-![](knowage/images/context-broker-cosmos.jpg)
+![](images/context-broker-cosmos.jpg)
 
 Also historical analyses can be performed querying the context data storage system.
 
-![](knowage/images/KPIs.jpg)
+![](images/KPIs.jpg)
 
 When KPIs are evaluated, notifications can be set to send alarms throught the
 Context Broker to other applications, that may apply their feedback logic (Knowage 

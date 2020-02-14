@@ -24,7 +24,7 @@ a developer or an end user:
 
 The following screenshots showcases some dashboards created using WireCloud.
 
-![](wirecloud/images/sample-dashboard1.png) ![](wirecloud/images/sample-dashboard2.png)
+![](images/sample-dashboard1.png) ![](images/sample-dashboard2.png)
 
 Usually, those dashboards are build by domain experts by means of mashing up
 widgets and operators that were previously developed and shared by other
@@ -38,7 +38,7 @@ map in the app dashboard shown in the following screenshot has been
 automatically replaced by a native component with better performance and with
 access to the GPS features of the tablet.
 
-![](wirecloud/images/Creating-application-dashboards2.png)
+![](images/Creating-application-dashboards2.png)
 
 If you are interested in more details about how to use WireCloud to (a) create
 your application dashboard from pre-existing widgets and operators or (b)
