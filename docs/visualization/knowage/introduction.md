@@ -57,15 +57,6 @@ When KPIs are evaluated, notifications can be set to send alarms throught the
 Context Broker to other applications, that may apply their feedback logic (Knowage 
 acts as a data producer in this scenario).
 
-
-Useful Knowage resources for FIWARE Community:
--   [integration with FIWARE components](http://knowage.rtfd.io/)
--   [official documentation](https://knowage-suite.readthedocs.io/
--   [FIWARE Academy Tutorials](https://fiware-academy.readthedocs.io/en/latest/processing/knowage/index.html)
--   [Restful API](https://knowage.docs.apiary.io/)
--   [Javascript API](https://knowage.readdthedocs.io/en/latest/user/JS/README/index.html)
--   [GitHub repository](https://github.com/KnowageLabs/Knowage-Server)
-
 Knowage represents the next generation of the well-known open source business
 intelligence and analytical suite named SpagoBI after significant functional
 and technological transformations and a new offering model.  

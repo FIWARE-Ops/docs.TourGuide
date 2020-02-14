@@ -59,8 +59,8 @@ pages:
           - "Wirecloud - Receive events": "visualization/wirecloud/how-to-receive-events.md"
           - "Wirecloud - Send events": "visualization/wirecloud/how-to-send-events.md"
           - "Wirecloud - Connect to other FIWARE GEs": "visualization/wirecloud/how-to-use-other-fiware-ges-from-your-widgets-and-operators.md"
-          - "Visualization - Deep dive": "visualization/deep-dive.md"
           - "Knowage - Data visualization & analytics": "visualization/knowage-introduction.md"
+          - "Visualization - Deep dive": "visualization/deep-dive.md"
     - "Real-time media stream processing":
           - "Kurento - Introduction": "processing/kurento/introduction.md"
           - "Kurento - What is WebRTC and what is a media server": "processing/kurento/whats-webrtc-and-whats-a-media-server.md"
