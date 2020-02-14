@@ -14,7 +14,7 @@ following in depth documentation:
 -   [Knowage site](https://www.knowage-suite.com/)
 -   [Knowage CE Manual](http://download.forge.ow2.org/knowage/Knowage_6.x_CE_Manual.pdf)
 -   [Knowage REST API Specification](https://knowage.docs.apiary.io/)
--   [Knowage Javascript API Specification](https://knowage.readdthedocs.io/en/latest/user/JS/README/index.html)
+-   [Knowage Javascript API Specification](https://knowage.readthedocs.io/en/latest/user/JS/README/index.html)
 
 ## Academy Courses
 
