@@ -6,7 +6,7 @@ extra_css: ["https://www.fiware.org/style/fiware_readthedocs.css", "https://www.
 repo_url: https://github.com/Fiware/docs.TourGuide
 google_analytics: ["UA-80297547-1", "fiwaretourguide.readthedocs.io"]
 theme: readthedocs
-pages:
+nav:
     - Home: index.md
     - "Core Context Management":
           - "Core Context - Introduction": "core/introduction.md"
