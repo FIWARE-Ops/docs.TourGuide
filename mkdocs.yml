@@ -3,7 +3,7 @@ site_description: FIWARE Tour Guide
 docs_dir: docs
 site_dir: html
 extra_css: ["https://www.fiware.org/style/fiware_readthedocs.css", "https://www.fiware.org/style/fiware_readthedocs_neutral.css"]
-repo_url: https://github.com/Fiware/docs.TourGuide
+repo_url: https://github.com/FIWARE-Ops/docs.TourGuide
 google_analytics: ["UA-80297547-1", "fiwaretourguide.readthedocs.io"]
 theme: readthedocs
 nav:
